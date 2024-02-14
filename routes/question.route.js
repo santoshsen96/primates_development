@@ -96,44 +96,6 @@ let countOf5Pointers = 0;
 //   }
 // });
 
-// questionRouter.post("/", async (req, res) => {
-//   try {
-//     const { sort_order, selected_option} = req.body;
-//     const {marks,totalMarks,countOf5Pointers}=req.body
-//      const question = questions.find((q) => q.sort_order === sort_order);
-
-//     // Save the data to MongoDB
-//     const studentData = {
-//       // Assuming we have studentId available in req.body
-//       studentId: req.body.userID,
-//       user: req.body.user,
-//       attempts: [
-//         {
-//           attemptId: 1,
-//           answers: [
-//             {
-//               questionId: question.questionId,
-//               questionReadTime: question.questionReadTime,
-//               optionReadTime: question.optionReadTime,
-//               // totalQuestionTime: question.totalQuestionTime,
-//             },
-//           ],
-//           //totalExamTime: question.totalExamTime, // Assuming you have totalExamTime available
-//           // mark: marks,
-//           // totalMarks: totalMarks,
-//           // countOf5Pointers: countOf5Pointers,
-//         },
-//       ],
-//     };
-
-//     const examData = await examDataModel.create(studentData);
-
-//     res.status(200).json({ examData });
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).json({ error: "Internal server error" });
-//   }
-// });
 
 questionRouter.post('/', async (req, res) => {
   try {
@@ -155,85 +117,150 @@ questionRouter.post('/', async (req, res) => {
 });
 
 
-questionRouter.get("/getScore", (req, res) => {
-  const maxMarks = questions.length * 5;
-  const prideAccuracyScorePercentage = (totalMarks / maxMarks) * 100;
- 
-  const totalCountOf5Pointers = countOf5Pointers;
-  console.log(countOf5Pointers);
-  const ratio = countOf5Pointers / questions.length;
-
-  // Calculate Consistency Ratio Score
-  if (ratio === 0) {
-    consistencyRatioScore = `1:0`; // To handle division by zero
-  } else {
-    consistencyRatioScore = `1:${(1 / ratio).toFixed(2)}`;
-  }
-  res.json({ totalMarks, prideAccuracyScorePercentage, consistencyRatioScore });
-});
 
 ////////////////////
 
+// questionRouter.get("/testOption", async (req, res) => {
+//   try {
+//     const { userID} = req.body.userID;
+//     const examData = await examDataModel.findOne({ studentId:req.body.userID });
+// console.log(examData)
+//     if (!examData) {
+//       return res.status(404).json({ error: "No exam data found for the student" });
+//     }
+
+//     // Initialize totalMarks and countOf5Pointers
+//     let totalMarks = 0;
+//     let countOf5Pointers = 0;
+
+//     // Iterate over each answer
+//     examData.answers.forEach((answer) => {
+//       const selectedOption = answer.selectedOption;
+
+//       const question = questions.find((q) => q.sort_order === answer.sort_order);
+//       if (!question) {
+//         return res.status(404).json({ error: "Question not found for the answer" });
+//       }
+//       const selectedOptionMark = question.options.find((opt) => opt.option === selectedOption)?.mark;
+
+//       // Update totalMarks
+//       if (selectedOptionMark) {
+//         totalMarks += selectedOptionMark;
+//       }
+
+//       // Update countOf5Pointers if applicable
+//       if (selectedOptionMark === 5) {
+//         countOf5Pointers++;
+//       }
+//     });
+
+//     ///////////////
+//     let totalQuestionTime = 0;
+//     let totalOptionTime = 0;
+//     let MentalProcessingSpeed;
+// examData.answers.forEach((answer) => {
+//   totalQuestionTime += answer.questionReadTime;
+//   totalOptionTime += answer.optionReadTime;
+// });
+// totalTime=totalOptionTime+totalQuestionTime
+// MentalProcessingSpeed=(totalTime/questions.length).toFixed(2)
+
+//   const maxMarks = questions.length * 5;
+//   const prideAccuracyScorePercentage = (totalMarks / maxMarks) * 100;
+ 
+//   const totalCountOf5Pointers = countOf5Pointers;
+//   //console.log(countOf5Pointers);
+//   const ratio = countOf5Pointers / questions.length;
+
+//   // Calculate Consistency Ratio Score
+//   if (ratio === 0) {
+//     consistencyRatioScore = `1:0`; // To handle division by zero
+//   } else {
+//     consistencyRatioScore = `1:${(1 / ratio).toFixed(2)}`;
+//   }
+  
+//   const mpiScore = (prideAccuracyScorePercentage + +MentalProcessingSpeed + 1.5) ;
+
+//   // Convert percentage to a number between 1 and 10
+//   const convertedMpiScore = Math.min(Math.max(mpiScore / 10, 1), 10);
+
+//     res.status(200).json({ totalMarks, countOf5Pointers,prideAccuracyScorePercentage, consistencyRatioScore,totalTime,MentalProcessingSpeed,convertedMpiScore });
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).json({ error: "Internal server error" });
+//   }
+// });
+
 questionRouter.get("/testOption", async (req, res) => {
   try {
-    const { userID} = req.body.userID;
-//console.log(userID)
-    // Fetch answers for the given student ID
-    const examData = await examDataModel.findOne({ studentId:req.body.userID });
-console.log(examData)
+    const { userID } = req.body;
+
+    // Fetch exam data for the student
+    const examData = await examDataModel.findOne({ studentId: userID });
     if (!examData) {
       return res.status(404).json({ error: "No exam data found for the student" });
     }
 
-    // Initialize totalMarks and countOf5Pointers
     let totalMarks = 0;
     let countOf5Pointers = 0;
-
-    // Iterate over each answer
+    let totalQuestionTime = 0;
+    let totalOptionTime = 0;
+    let allottedTime=30
+    // Iterate over each answer and calculate metrics
     examData.answers.forEach((answer) => {
-      // Retrieve the selected option for the answer
-      const selectedOption = answer.selectedOption;
-
-      // Retrieve the question mark from the corresponding question
       const question = questions.find((q) => q.sort_order === answer.sort_order);
       if (!question) {
         return res.status(404).json({ error: "Question not found for the answer" });
       }
-      const selectedOptionMark = question.options.find((opt) => opt.option === selectedOption)?.mark;
 
-      // Update totalMarks
+      const selectedOptionMark = question.options.find((opt) => opt.option === answer.selectedOption)?.mark;
+
       if (selectedOptionMark) {
         totalMarks += selectedOptionMark;
       }
 
-      // Update countOf5Pointers if applicable
       if (selectedOptionMark === 5) {
         countOf5Pointers++;
       }
+
+      totalQuestionTime += answer.questionReadTime;
+      totalOptionTime += answer.optionReadTime;
     });
 
-    ///////////////
-    const maxMarks = questions.length * 5;
-  const prideAccuracyScorePercentage = (totalMarks / maxMarks) * 100;
- 
-  const totalCountOf5Pointers = countOf5Pointers;
-  console.log(countOf5Pointers);
-  const ratio = countOf5Pointers / questions.length;
+    // Calculate total time and mental processing speed
+    const totalTime = totalOptionTime + totalQuestionTime;
+    const MentalProcessingSpeed = (totalTime / questions.length).toFixed(2);
 
-  // Calculate Consistency Ratio Score
-  if (ratio === 0) {
-    consistencyRatioScore = `1:0`; // To handle division by zero
-  } else {
-    consistencyRatioScore = `1:${(1 / ratio).toFixed(2)}`;
-  }
-  //res.json({ totalMarks, prideAccuracyScorePercentage, consistencyRatioScore });
-    res.status(200).json({ totalMarks, countOf5Pointers,prideAccuracyScorePercentage, consistencyRatioScore });
+    const maxMarks = questions.length * 5;
+    const prideAccuracyScorePercentage = (totalMarks / maxMarks) * 100;
+
+    const ratio = countOf5Pointers / questions.length;
+    const percentageOfCountOf5Pointer=(countOf5Pointers/questions.length)*100
+    const consistencyRatioScore = ratio === 0 ? `1:0` : `1:${(1 / ratio).toFixed(2)}`;
+
+    const mpiScore = (prideAccuracyScorePercentage + +MentalProcessingSpeed + percentageOfCountOf5Pointer)/3;
+    const convertedMpiScore = Math.min(Math.max(mpiScore / 10, 1), 10).toFixed(2);
+
+    const equatedTimeScore=(2*allottedTime*questions.length)-totalTime //E
+    const A=totalTime/(allottedTime*questions.length) //A
+    const y=equatedTimeScore/A //E/A
+    const mentalProductivityCapacity=prideAccuracyScorePercentage*y
+    
+    res.status(200).json({
+      totalMarks,
+      countOf5Pointers,
+      prideAccuracyScorePercentage,
+      consistencyRatioScore,
+      totalTime,
+      MentalProcessingSpeed,
+      convertedMpiScore,
+      mentalProductivityCapacity
+    });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
-
 
 
 module.exports = {
