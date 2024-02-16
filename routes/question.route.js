@@ -10,11 +10,11 @@ const questions = [
       "Sen is good at imitating and acting the exact mannerism of anyone he sees for five minutes. what skill do you think he possesses that makes it easier for him to do it?",
     options: [
       { option: "Observational skills", mark: 5 },
-      { option: "Memory Skills", mark: 2 },
-      { option: "Acting Skills", mark: 1 },
-      { option: "Leadership Skills", mark: 0 },
-      { option: "All the above", mark: 0 },
-      { option: "None of the above", mark: 0 },
+      { option: "Memory Skills", mark: 3 },
+      { option: "Acting Skills", mark: 4 },
+      { option: "Leadership Skills", mark: 2 },
+      { option: "All the above", mark: 1 },
+      { option: "None of the above", mark: 1 },
     ],
   },
   {
@@ -24,10 +24,10 @@ const questions = [
     options: [
       { option: "Concentration skills", mark: 5 },
       { option: "Collaboration Skills", mark: 2 },
-      { option: "Language Skills", mark: 1 },
-      { option: "Leadership Skills", mark: 0 },
-      { option: "All the above", mark: 0 },
-      { option: "None of the above", mark: 0 },
+      { option: "Language Skills", mark: 2 },
+      { option: "Leadership Skills", mark: 3},
+      { option: "All the above", mark: 1 },
+      { option: "None of the above", mark: 1 },
     ],
   },
   {
@@ -35,12 +35,12 @@ const questions = [
     question_body:
       "Nidhi is good at finding the difference in two picture games easily, what skill do you think she possess that makes it easier for her?",
     options: [
-      { option: "Creative Skills", mark: 5 },
+      { option: "Creative Skills", mark: 2 },
       { option: "Leadership Skills", mark: 2 },
-      { option: "Attention Skills", mark: 1 },
-      { option: "Emotional Skills", mark: 0 },
-      { option: "All the above", mark: 0 },
-      { option: "None of the above", mark: 0 },
+      { option: "Attention Skills", mark: 5 },
+      { option: "Emotional Skills", mark: 1},
+      { option: "All the above", mark: 1 },
+      { option: "None of the above", mark: 1},
     ],
   },
 ];
@@ -139,7 +139,7 @@ questionRouter.get("/testOption", async (req, res) => {
 
     // Calculate total time and mental processing speed
     const totalTime = totalOptionTime + totalQuestionTime;
-    const MentalProcessingSpeed = (totalTime / questions.length).toFixed(2);
+    const MentalProcessingSpeed = (totalTime / questions.length).toFixed(2); //do percentage
 
     const maxMarks = questions.length * 5;
     const prideAccuracyScorePercentage = (totalMarks / maxMarks) * 100;
@@ -157,7 +157,7 @@ questionRouter.get("/testOption", async (req, res) => {
       3;
     const convertedMpiScore = Math.min(Math.max(mpiScore / 10, 1), 10).toFixed(
       2
-    );
+    ); //check it
 
     const equatedTimeScore = 2 * allottedTime * questions.length - totalTime; //E
     const A = totalTime / (allottedTime * questions.length); //A
