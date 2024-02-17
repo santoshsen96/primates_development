@@ -1,18 +1,18 @@
 const express = require("express");
-const { studentModel } = require("../model/student.model");
+const { studentModel} = require("../model/student.model");
 const studentRouter = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 studentRouter.post("/register", async (req, res) => {
-  const { name, email, password, image } = req.body;
+  const { photo,studentName,fatherName,motherName,email,studentId,enrollmentNo,userName,password,state,city,schoolCity,dob,mobile,standard,gender } = req.body;
   try {
     bcrypt.hash(password, 5, async (err, hash) => {
       // Store hash in your password DB.
       if (err) {
         res.status(400).json({ error: err.message });
       } else {
-        const user = new studentModel({ name, email, password: hash, image });
+        const user = new studentModel({ photo,studentName,fatherName,motherName,email,studentId,enrollmentNo,userName,password:hash,state,city,schoolCity,dob,mobile,standard,gender  });
         await user.save();
         res
           .status(200)

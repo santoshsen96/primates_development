@@ -67,7 +67,8 @@ questionRouter.post("/", async (req, res) => {
 questionRouter.get("/testOption", async (req, res) => {
   try {
     const { userID } = req.body;
-
+    const Assesments= await examDataModel.find({ studentId: userID })
+    const totalAssesment=Assesments.length
     const examData = await examDataModel
       .findOne({ studentId: userID })
       .sort({ date: -1 });
@@ -88,7 +89,7 @@ questionRouter.get("/testOption", async (req, res) => {
     let countOf5Pointers = 0;
     let totalQuestionTime = 0;
     let totalOptionTime = 0;
-    let allottedTime = 30;
+    let allottedTimePerQuestion = 30;
     // Iterate over each answer and calculate metrics
     examData.answers.forEach((answer) => {
       const question = questions.find(
@@ -138,31 +139,34 @@ questionRouter.get("/testOption", async (req, res) => {
     }
 
     // Calculate total time and mental processing speed
-    const totalTime = totalOptionTime + totalQuestionTime;
-    const MentalProcessingSpeed = (totalTime / questions.length).toFixed(2); //do percentage
+    const totalTime=totalOptionTime+totalQuestionTime
+    const totalTimeTaken = totalOptionTime
+    const totalMaxTimeAlloted=questions.length*allottedTimePerQuestion
+    AvgSecPerQuestion=totalTimeTaken/questions.length
+    const MentalProcessingSpeed = ((((allottedTimePerQuestion-AvgSecPerQuestion)+allottedTimePerQuestion)/allottedTimePerQuestion)*100).toFixed(2); //speed
 
     const maxMarks = questions.length * 5;
-    const prideAccuracyScorePercentage = (totalMarks / maxMarks) * 100;
+    const prideAccuracyScorePercentage = ((totalMarks / maxMarks) * 100).toFixed(2); //Accuracy
 
     const ratio = countOf5Pointers / questions.length;
-    const percentageOfCountOf5Pointer =
-      (countOf5Pointers / questions.length) * 100;
+   // const percentageOfCountOf5Pointer =(countOf5Pointers / questions.length) * 100;
     const consistencyRatioScore =
-      ratio === 0 ? `1:0` : `1:${(1 / ratio).toFixed(2)}`;
-
+      ratio === 0 ? `1:0` : `1:${(1 / ratio).toFixed(2)}`; //consistency
+    const consistencyPercentage=(countOf5Pointers*(1/ratio))*(1/100) //consistency percentage
+    
     const mpiScore =
-      (prideAccuracyScorePercentage +
-        +MentalProcessingSpeed +
-        percentageOfCountOf5Pointer) /
+      (+prideAccuracyScorePercentage +
+        + +MentalProcessingSpeed +
+         consistencyPercentage) /
       3;
     const convertedMpiScore = Math.min(Math.max(mpiScore / 10, 1), 10).toFixed(
       2
     ); //check it
 
-    const equatedTimeScore = 2 * allottedTime * questions.length - totalTime; //E
-    const A = totalTime / (allottedTime * questions.length); //A
+    const equatedTimeScore = 2 * allottedTimePerQuestion * questions.length - totalTime; //E
+    const A = totalTime / (allottedTimePerQuestion * questions.length); //A
     const y = equatedTimeScore / A; //E/A
-    const mentalProductivityCapacity = Math.floor(
+    const mentalProductivityCapacity = Math.floor(    //mental productivity capacity
       prideAccuracyScorePercentage * y
     );
 
@@ -170,7 +174,7 @@ questionRouter.get("/testOption", async (req, res) => {
 
     if (totalMarks && totalMarksOfPreviousExam) {
       prideGrowthPercentage = (
-        ((totalMarks - totalMarksOfPreviousExam) / totalMarksOfPreviousExam) *
+        ((totalMarks - totalMarksOfPreviousExam) / totalMarksOfPreviousExam) * //growth %
         100
       ).toFixed(2);
     }
@@ -178,13 +182,17 @@ questionRouter.get("/testOption", async (req, res) => {
     res.status(200).json({
       totalMarks,
       countOf5Pointers,
+      totalTime,
+      totalAssesment,
       prideAccuracyScorePercentage,
       consistencyRatioScore,
-      totalTime,
+      consistencyPercentage,
       MentalProcessingSpeed,
       convertedMpiScore,
       mentalProductivityCapacity,
       prideGrowthPercentage,
+      totalOptionTime,
+      
     });
   } catch (error) {
     console.error(error);
