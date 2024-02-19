@@ -76,7 +76,7 @@ questionRouter.get("/testOption", async (req, res) => {
       .findOne({ studentId: userID, date: { $lt: examData.date } })
       .sort({ date: -1 })
       .limit(1);
-
+    //console.log(examData)
     //console.log(previousExamData)
     if (!examData) {
       return res
@@ -152,7 +152,12 @@ questionRouter.get("/testOption", async (req, res) => {
    // const percentageOfCountOf5Pointer =(countOf5Pointers / questions.length) * 100;
     const consistencyRatioScore =
       ratio === 0 ? `1:0` : `1:${(1 / ratio).toFixed(2)}`; //consistency
-    const consistencyPercentage=(countOf5Pointers*(1/ratio))*(1/100) //consistency percentage
+
+    let consistencyPercentage = 0;
+
+    if (countOf5Pointers !== 0) {
+        consistencyPercentage = (countOf5Pointers * (1 / ratio)) * (1 / 100);
+    }                                                                         //consistency percentage
     
     const mpiScore =
       (+prideAccuracyScorePercentage +

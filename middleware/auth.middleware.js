@@ -13,6 +13,8 @@ const auth=(req,res,next)=>{
                 console.log(decoded)
                 req.body.userID=decoded.userID
                 req.body.user=decoded.user
+                req.body.studentName=decoded.studentName
+                req.body.userName=decoded.userName
                next()
             }else{
                 res.json({msg:"Token not recognised!!"})
