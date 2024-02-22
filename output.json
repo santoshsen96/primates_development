@@ -2,7 +2,7 @@
   {
     "sort_order": 1,
     "question_body": "Sen is good at imitating and acting the exact mannerism of anyone he sees for five minutes. what skill do you think he possesses that makes it easier for him to do it?",
-    "option1": { "text": "Observational skills", "mark": "5" },
+    "option1": "Observational skills",
     "option2": "Memory Skills",
     "option3": "Acting Skills",
     "option4": "Leadership Skills",

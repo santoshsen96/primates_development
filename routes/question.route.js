@@ -2,49 +2,67 @@ const express = require("express");
 const { examDataModel } = require("../model/question.model");
 const { auth } = require("../middleware/auth.middleware");
 const questionRouter = express.Router();
-questionRouter.use(auth);
-const questions = [
-  {
-    sort_order: 1,
-    question_body:
-      "Sen is good at imitating and acting the exact mannerism of anyone he sees for five minutes. what skill do you think he possesses that makes it easier for him to do it?",
-    options: [
-      { option: "Observational skills", mark: 5 },
-      { option: "Memory Skills", mark: 3 },
-      { option: "Acting Skills", mark: 4 },
-      { option: "Leadership Skills", mark: 2 },
-      { option: "All the above", mark: 1 },
-      { option: "None of the above", mark: 1 },
-    ],
-  },
-  {
-    sort_order: 2,
-    question_body:
-      "Krishitha has the power of listening to the lessons, taught by her teacher, even for 5 hours. What skill do you think she possesses that makes it easier for her to do it?",
-    options: [
-      { option: "Concentration skills", mark: 5 },
-      { option: "Collaboration Skills", mark: 2 },
-      { option: "Language Skills", mark: 2 },
-      { option: "Leadership Skills", mark: 3},
-      { option: "All the above", mark: 1 },
-      { option: "None of the above", mark: 1 },
-    ],
-  },
-  {
-    sort_order: 3,
-    question_body:
-      "Nidhi is good at finding the difference in two picture games easily, what skill do you think she possess that makes it easier for her?",
-    options: [
-      { option: "Creative Skills", mark: 2 },
-      { option: "Leadership Skills", mark: 2 },
-      { option: "Attention Skills", mark: 5 },
-      { option: "Emotional Skills", mark: 1},
-      { option: "All the above", mark: 1 },
-      { option: "None of the above", mark: 1},
-    ],
-  },
-];
 
+const questions=require("../output")
+const scores=require("../variables/pride.variables")
+//console.log(questions)
+questionRouter.use(auth);
+// const questions = [
+//   {
+//     sort_order: 1,
+//     question_body:
+//       "Sen is good at imitating and acting the exact mannerism of anyone he sees for five minutes. what skill do you think he possesses that makes it easier for him to do it?",
+//     options: [
+//       { option: "Observational skills", mark: 5 },
+//       { option: "Memory Skills", mark: 3 },
+//       { option: "Acting Skills", mark: 4 },
+//       { option: "Leadership Skills", mark: 2 },
+//       { option: "All the above", mark: 1 },
+//       { option: "None of the above", mark: 1 },
+//     ],
+//     pride:"perceive",
+//     skill:"attention",
+//     intelligence:"advantage",
+//     standard:10,
+//   },
+//   {
+//     sort_order: 2,
+//     question_body:
+//       "Krishitha has the power of listening to the lessons, taught by her teacher, even for 5 hours. What skill do you think she possesses that makes it easier for her to do it?",
+//     options: [
+//       { option: "Concentration skills", mark: 5 },
+//       { option: "Collaboration Skills", mark: 2 },
+//       { option: "Language Skills", mark: 2 },
+//       { option: "Leadership Skills", mark: 3},
+//       { option: "All the above", mark: 1 },
+//       { option: "None of the above", mark: 1 },
+//     ],
+//     pride:"perceive",
+//     skill:"attention",
+//     intelligence:"awareness",
+//     standard:10,
+//   },
+//   {
+//     sort_order: 3,
+//     question_body:
+//       "Nidhi is good at finding the difference in two picture games easily, what skill do you think she possess that makes it easier for her?",
+//     options: [
+//       { option: "Creative Skills", mark: 2 },
+//       { option: "Leadership Skills", mark: 2 },
+//       { option: "Attention Skills", mark: 5 },
+//       { option: "Emotional Skills", mark: 1},
+//       { option: "All the above", mark: 1 },
+//       { option: "None of the above", mark: 1},
+//     ],
+//     pride:"perceive",
+//     skill:"attention",
+//     intelligence:"application",
+//     standard:10,
+//   },
+// ];
+
+
+console.log(questions.length)
 questionRouter.post("/", async (req, res) => {
   try {
     const { answers } = req.body;
@@ -90,6 +108,7 @@ questionRouter.get("/testOption", async (req, res) => {
     let totalQuestionTime = 0;
     let totalOptionTime = 0;
     let allottedTimePerQuestion = 30;
+
     // Iterate over each answer and calculate metrics
     examData.answers.forEach((answer) => {
       const question = questions.find(
@@ -115,6 +134,7 @@ questionRouter.get("/testOption", async (req, res) => {
 
       totalQuestionTime += answer.questionReadTime;
       totalOptionTime += answer.optionReadTime;
+      
     });
 
     if (previousExamData) {
@@ -142,7 +162,8 @@ questionRouter.get("/testOption", async (req, res) => {
     const totalTime=totalOptionTime+totalQuestionTime
     const totalTimeTaken = totalOptionTime
     const totalMaxTimeAlloted=questions.length*allottedTimePerQuestion
-    AvgSecPerQuestion=totalTimeTaken/questions.length
+    AvgSecPerQuestion=totalTimeTaken/questions.length 
+    const mentalSpeedInSec=(totalTimeTaken/questions.length).toFixed(2)
     const MentalProcessingSpeed = ((((allottedTimePerQuestion-AvgSecPerQuestion)+allottedTimePerQuestion)/allottedTimePerQuestion)*100).toFixed(2); //speed
 
     const maxMarks = questions.length * 5;
@@ -166,7 +187,7 @@ questionRouter.get("/testOption", async (req, res) => {
       3;
     const convertedMpiScore = Math.min(Math.max(mpiScore / 10, 1), 10).toFixed(
       2
-    ); //check it
+    ); 
 
     const equatedTimeScore = 2 * allottedTimePerQuestion * questions.length - totalTime; //E
     const A = totalTime / (allottedTimePerQuestion * questions.length); //A
@@ -193,12 +214,66 @@ questionRouter.get("/testOption", async (req, res) => {
       consistencyRatioScore,
       consistencyPercentage,
       MentalProcessingSpeed,
+      mentalSpeedInSec,
       convertedMpiScore,
       mentalProductivityCapacity,
       prideGrowthPercentage,
       totalOptionTime,
       
     });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+questionRouter.get("/prideScore", async (req, res) => {
+  try {
+    const { userID } = req.body;
+    const examData = await examDataModel.findOne({ studentId: userID }).sort({ date: -1 });
+
+    if (!examData) {
+      return res.status(404).json({ error: "No exam data found for the student" });
+    }
+
+    
+let totalPrideScore=0
+    for (const answer of examData.answers) {
+      const question = questions.find((q) => q.sort_order == answer.sort_order);
+
+      if (!question) {
+        return res.status(404).json({ error: "Question not found for the answer" });
+      }
+
+      const selectedOption = question.options.find((opt) => opt.option === answer.selectedOption);
+
+      if (!selectedOption) {
+        return res.status(404).json({ error: "Selected option not found for the answer" });
+      }
+
+      // Award marks dynamically based on selected option for each pride, skill, and intelligence
+      scores[question.pride + 'Score'] += selectedOption.mark;
+      scores[question.skill + 'Score'] += selectedOption.mark;
+      scores[question.intelligence + 'Score'] += selectedOption.mark;
+
+      // Count occurrences of mark 5 for each skill
+      if (selectedOption.mark === 5) {
+        scores['countOf5Pointer' + question.pride.charAt(0).toUpperCase() + question.pride.slice(1)]++;
+      }
+    }
+
+totalPrideScore=scores.perceiveScore+scores.resolveScore+scores.influenceScore+scores.deliverScore+scores.engageScore
+console.log(totalPrideScore)
+if (totalPrideScore !== 0) {
+  scores.perceiveContribution = ((scores.perceiveScore / totalPrideScore) * 100).toFixed(2);
+  scores.resolveContribution = ((scores.resolveScore / totalPrideScore) * 100).toFixed(2);
+  scores.influenceContribution = ((scores.influenceScore / totalPrideScore) * 100).toFixed(2);
+  scores.deliverContribution = ((scores.deliverScore / totalPrideScore) * 100).toFixed(2);
+  scores.engageContribution = ((scores.engageScore / totalPrideScore) * 100).toFixed(2);
+} else {
+  scores.perceiveContribution = 0;
+}
+//console.log(perceiveContribution)
+    res.status(200).json(scores);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server error" });
