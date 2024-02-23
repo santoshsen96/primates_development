@@ -105,7 +105,7 @@ const questions =
       { option: "None of the above", mark: 1 }
     ],
     pride: "resolve",
-    skill: "critical thinking",
+    skill: "critical",
     intelligence: "awareness",
     standard: 10
   },
@@ -120,7 +120,7 @@ const questions =
       { option: "The last game is still happening", mark: 3 }
     ],
     pride: "resolve",
-    skill: "critical thinking",
+    skill: "critical",
     intelligence: "application",
     standard: 10
   },
@@ -136,7 +136,7 @@ const questions =
       { option: "Option 2,3 & 4", mark: 2 }
     ],
     pride: "resolve",
-    skill: "critical thinking",
+    skill: "critical",
     intelligence: "advantage",
     standard: 10
   },
@@ -151,7 +151,7 @@ const questions =
       { option: "None of the above", mark: 1 }
     ],
     pride: "resolve",
-    skill: "creative thinking",
+    skill: "creative",
     intelligence: "awareness",
     standard: 10
   },
@@ -165,7 +165,7 @@ const questions =
       { option: "None of the above", mark: 2}
     ],
     pride: "resolve",
-    skill: "creative thinking",
+    skill: "creative",
     intelligence: "application",
     standard: 10
   },
@@ -180,7 +180,7 @@ const questions =
       { option: "None of the above", mark: 1 }
     ],
     pride: "resolve",
-    skill: "creative thinking",
+    skill: "creative",
     intelligence: "advantage",
     standard: 10
   },

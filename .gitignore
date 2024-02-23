@@ -1,2 +1,5 @@
 node_modules/
-.env
+.env/
+db.json/
+output.js/
+output.json

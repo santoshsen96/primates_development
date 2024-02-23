@@ -2,10 +2,10 @@ const express = require("express");
 const { examDataModel } = require("../model/question.model");
 const { auth } = require("../middleware/auth.middleware");
 const questionRouter = express.Router();
-
-const questions=require("../output")
-const scores=require("../variables/pride.variables")
-//console.log(questions)
+const questions = require("../output");
+const {scores,outputResult} = require("../variables/pride.variables");
+const calculateOptionReadTime=require("../functions/optionReadTime")
+console.log(questions.length);
 questionRouter.use(auth);
 // const questions = [
 //   {
@@ -61,8 +61,6 @@ questionRouter.use(auth);
 //   },
 // ];
 
-
-console.log(questions.length)
 questionRouter.post("/", async (req, res) => {
   try {
     const { answers } = req.body;
@@ -85,8 +83,8 @@ questionRouter.post("/", async (req, res) => {
 questionRouter.get("/testOption", async (req, res) => {
   try {
     const { userID } = req.body;
-    const Assesments= await examDataModel.find({ studentId: userID })
-    const totalAssesment=Assesments.length
+    const Assesments = await examDataModel.find({ studentId: userID });
+    const totalAssesment = Assesments.length;
     const examData = await examDataModel
       .findOne({ studentId: userID })
       .sort({ date: -1 });
@@ -134,7 +132,6 @@ questionRouter.get("/testOption", async (req, res) => {
 
       totalQuestionTime += answer.questionReadTime;
       totalOptionTime += answer.optionReadTime;
-      
     });
 
     if (previousExamData) {
@@ -159,40 +156,49 @@ questionRouter.get("/testOption", async (req, res) => {
     }
 
     // Calculate total time and mental processing speed
-    const totalTime=totalOptionTime+totalQuestionTime
-    const totalTimeTaken = totalOptionTime
-    const totalMaxTimeAlloted=questions.length*allottedTimePerQuestion
-    AvgSecPerQuestion=totalTimeTaken/questions.length 
-    const mentalSpeedInSec=(totalTimeTaken/questions.length).toFixed(2)
-    const MentalProcessingSpeed = ((((allottedTimePerQuestion-AvgSecPerQuestion)+allottedTimePerQuestion)/allottedTimePerQuestion)*100).toFixed(2); //speed
+    const totalTime = totalOptionTime + totalQuestionTime;
+    const totalTimeTaken = totalOptionTime;
+    const totalMaxTimeAlloted = questions.length * allottedTimePerQuestion;
+    AvgSecPerQuestion = totalTimeTaken / questions.length;
+    const mentalSpeedInSec = (totalTimeTaken / questions.length).toFixed(2);
+    const MentalProcessingSpeed = (
+      ((allottedTimePerQuestion - AvgSecPerQuestion + allottedTimePerQuestion) /
+        allottedTimePerQuestion) *
+      100
+    ).toFixed(2); //speed
 
     const maxMarks = questions.length * 5;
-    const prideAccuracyScorePercentage = ((totalMarks / maxMarks) * 100).toFixed(2); //Accuracy
+    const prideAccuracyScorePercentage = (
+      (totalMarks / maxMarks) *
+      100
+    ).toFixed(2); //Accuracy
 
     const ratio = countOf5Pointers / questions.length;
-   // const percentageOfCountOf5Pointer =(countOf5Pointers / questions.length) * 100;
+    // const percentageOfCountOf5Pointer =(countOf5Pointers / questions.length) * 100;
     const consistencyRatioScore =
       ratio === 0 ? `1:0` : `1:${(1 / ratio).toFixed(2)}`; //consistency
 
     let consistencyPercentage = 0;
 
     if (countOf5Pointers !== 0) {
-        consistencyPercentage = (countOf5Pointers * (1 / ratio)) * (1 / 100);
-    }                                                                         //consistency percentage
-    
+      consistencyPercentage = countOf5Pointers * (1 / ratio) * (1 / 100);
+    } //consistency percentage
+
     const mpiScore =
       (+prideAccuracyScorePercentage +
-        + +MentalProcessingSpeed +
-         consistencyPercentage) /
+        +(+MentalProcessingSpeed) +
+        consistencyPercentage) /
       3;
     const convertedMpiScore = Math.min(Math.max(mpiScore / 10, 1), 10).toFixed(
       2
-    ); 
+    );
 
-    const equatedTimeScore = 2 * allottedTimePerQuestion * questions.length - totalTime; //E
+    const equatedTimeScore =
+      2 * allottedTimePerQuestion * questions.length - totalTime; //E
     const A = totalTime / (allottedTimePerQuestion * questions.length); //A
     const y = equatedTimeScore / A; //E/A
-    const mentalProductivityCapacity = Math.floor(    //mental productivity capacity
+    const mentalProductivityCapacity = Math.floor(
+      //mental productivity capacity
       prideAccuracyScorePercentage * y
     );
 
@@ -219,7 +225,6 @@ questionRouter.get("/testOption", async (req, res) => {
       mentalProductivityCapacity,
       prideGrowthPercentage,
       totalOptionTime,
-      
     });
   } catch (error) {
     console.error(error);
@@ -229,51 +234,116 @@ questionRouter.get("/testOption", async (req, res) => {
 questionRouter.get("/prideScore", async (req, res) => {
   try {
     const { userID } = req.body;
-    const examData = await examDataModel.findOne({ studentId: userID }).sort({ date: -1 });
+    const examData = await examDataModel
+      .findOne({ studentId: userID })
+      .sort({ date: -1 });
 
     if (!examData) {
-      return res.status(404).json({ error: "No exam data found for the student" });
+      return res
+        .status(404)
+        .json({ error: "No exam data found for the student" });
     }
-
-    
-let totalPrideScore=0
+  
     for (const answer of examData.answers) {
       const question = questions.find((q) => q.sort_order == answer.sort_order);
 
       if (!question) {
-        return res.status(404).json({ error: "Question not found for the answer" });
+        return res
+          .status(404)
+          .json({ error: "Question not found for the answer" });
       }
 
-      const selectedOption = question.options.find((opt) => opt.option === answer.selectedOption);
+      const selectedOption = question.options.find(
+        (opt) => opt.option === answer.selectedOption
+      );
 
       if (!selectedOption) {
-        return res.status(404).json({ error: "Selected option not found for the answer" });
+        return res
+          .status(404)
+          .json({ error: "Selected option not found for the answer" });
       }
 
       // Award marks dynamically based on selected option for each pride, skill, and intelligence
-      scores[question.pride + 'Score'] += selectedOption.mark;
-      scores[question.skill + 'Score'] += selectedOption.mark;
-      scores[question.intelligence + 'Score'] += selectedOption.mark;
+      scores[question.pride + "Score"] += selectedOption.mark;
+      scores[question.skill + "Score"] += selectedOption.mark;
+      scores[question.intelligence + "Score"] += selectedOption.mark;
 
       // Count occurrences of mark 5 for each skill
       if (selectedOption.mark === 5) {
-        scores['countOf5Pointer' + question.pride.charAt(0).toUpperCase() + question.pride.slice(1)]++;
+        scores[
+          "countOf5Pointer" +
+            question.pride.charAt(0).toUpperCase() +
+            question.pride.slice(1)
+        ]++;
+        scores[
+          "countOf5Pointer" +
+            question.skill.charAt(0).toUpperCase() +
+            question.skill.slice(1)
+        ]++;
+        scores[
+          "countOf5Pointer" +
+            question.intelligence.charAt(0).toUpperCase() +
+            question.intelligence.slice(1)
+        ]++;
+      } else if (selectedOption.mark >= 1) {
+        scores[
+          "optionReadTime" +
+            question.pride.charAt(0).toUpperCase() +
+            question.pride.slice(1)
+        ] += selectedOption.readTime;
+      }
+      totalPrideScore =
+        scores.perceiveScore +
+        scores.resolveScore +
+        scores.influenceScore +
+        scores.deliverScore +
+        scores.engageScore;
+
+      if (totalPrideScore !== 0) {
+        outputResult.perceiveContribution = (
+          (scores.perceiveScore / totalPrideScore) *
+          100
+        ).toFixed(2);
+        outputResult.resolveContribution = (
+          (scores.resolveScore / totalPrideScore) *
+          100
+        ).toFixed(2);
+        outputResult.influenceContribution = (
+          (scores.influenceScore / totalPrideScore) *
+          100
+        ).toFixed(2);
+        outputResult.deliverContribution = (
+          (scores.deliverScore / totalPrideScore) *
+          100
+        ).toFixed(2);
+        outputResult.engageContribution = (
+          (scores.engageScore / totalPrideScore) *
+          100
+        ).toFixed(2);
+      } else {
+        outputResult.perceiveContribution = 0;
       }
     }
+//calculation of all ort of skill and intelligence
+   calculateOptionReadTime(examData,questions)
 
-totalPrideScore=scores.perceiveScore+scores.resolveScore+scores.influenceScore+scores.deliverScore+scores.engageScore
-console.log(totalPrideScore)
-if (totalPrideScore !== 0) {
-  scores.perceiveContribution = ((scores.perceiveScore / totalPrideScore) * 100).toFixed(2);
-  scores.resolveContribution = ((scores.resolveScore / totalPrideScore) * 100).toFixed(2);
-  scores.influenceContribution = ((scores.influenceScore / totalPrideScore) * 100).toFixed(2);
-  scores.deliverContribution = ((scores.deliverScore / totalPrideScore) * 100).toFixed(2);
-  scores.engageContribution = ((scores.engageScore / totalPrideScore) * 100).toFixed(2);
-} else {
-  scores.perceiveContribution = 0;
-}
-//console.log(perceiveContribution)
-    res.status(200).json(scores);
+  console.log("total pride score:",totalPrideScore);
+    outputResult.attentionAccuracy=((scores.attentionScore/15)*100).toFixed(2)
+    outputResult.memoryAccuracy=((scores.memoryScore/15)*100).toFixed(2)
+    outputResult.criticalThinkingAccuracy=((scores.criticalScore/15)*100).toFixed(2)
+    outputResult.cretiveThinkingAccuracy=((scores.creativeScore/15)*100).toFixed(2)
+    outputResult.mindsetAccuracy=((scores.mindsetScore/15)*100).toFixed(2)
+    outputResult.attitudeAccuracy=((scores.attitudeScore/15)*100).toFixed(2)
+    outputResult.expressionAccuracy=((scores.expressionScore/15)*100).toFixed(2)
+    outputResult.communicationAccuracy=((scores.communicationScore/15)*100).toFixed(2)
+    outputResult.collaborationAccuracy=((scores.collaborationScore/15)*100).toFixed(2)
+    outputResult.leadershipAccuracy=((scores.leadershipScore/15)*100).toFixed(2)
+
+    outputResult.awarenessAccuracy=((scores.awarenessScore/50)*100).toFixed(2)
+    outputResult.applicationAccuracy=((scores.applicationScore/50)*100).toFixed(2)
+    outputResult.advantageAccuracy=((scores.advantageScore/50)*100).toFixed(2)
+    //console.log(perceiveContribution)
+    res.status(200).json(outputResult);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server error" });
