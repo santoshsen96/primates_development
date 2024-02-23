@@ -3,7 +3,7 @@ const { examDataModel } = require("../model/question.model");
 const { auth } = require("../middleware/auth.middleware");
 const questionRouter = express.Router();
 const questions = require("../output");
-const {scores,outputResult} = require("../variables/pride.variables");
+//const {scores} = require("../variables/pride.variables");
 const calculateOptionReadTime=require("../functions/optionReadTime")
 console.log(questions.length);
 questionRouter.use(auth);
@@ -244,8 +244,92 @@ questionRouter.get("/prideScore", async (req, res) => {
         .json({ error: "No exam data found for the student" });
     }
   
+    const outputResult = {}; // Initialize outputResult here
+  
+    let scores = {
+      perceiveScore: 0,
+      perceiveContribution:0,
+      resolveScore: 0,
+      resolveContribution:0,
+      influenceScore: 0,
+      influenceContribution:0,
+      deliverScore: 0,
+      deliverContribution:0,
+      engageScore: 0,
+      engageContribution:0,
+      totalPrideScore:0,
+  
+      attentionScore: 0,
+      memoryScore: 0,
+      criticalScore: 0,
+      creativeScore: 0,
+      mindsetScore: 0,
+      attitudeScore: 0,
+      expressionScore: 0,
+      communicationScore: 0,
+      collaborationScore: 0,
+      leadershipScore: 0,
+  
+      awarenessScore: 0,
+      applicationScore: 0,
+      advantageScore: 0,
+  
+      countOf5PointerPerceive: 0,
+      countOf5PointerResolve:0,
+      countOf5PointerInfluence:0,
+      countOf5PointerDeliver:0,
+      countOf5PointerEngage:0,
+  
+      countOf5PointerAttention: 0,
+      countOf5PointerMemory: 0,
+      countOf5PointerCritical: 0,
+      countOf5PointerCreative: 0,
+      countOf5PointerMindset: 0,
+      countOf5PointerAttitude: 0,
+      countOf5PointerExpression: 0,
+      countOf5PointerCommunication: 0,
+      countOf5PointerCollaboration: 0,
+      countOf5PointerLeadership: 0,
+  
+      countOf5PointerAwareness:0,
+      countOf5PointerApplication:0,
+      countOf5PointerAdvantage:0,
+  
+      // optionReadTimePerceive: 0,
+      //   optionReadTimeResolve: 0,
+      //   optionReadTimeInfluence: 0,
+      //   optionReadTimeDeliver: 0,
+      //   optionReadTimeEngage: 0,
+        optionReadTimeAttention: 0,
+        optionReadTimeMemory: 0,
+        optionReadTimeCriticalThinking: 0,
+        optionReadTimeCreativeThinking: 0,
+        optionReadTimeMindset: 0,
+        optionReadTimeAttitude: 0,
+        optionReadTimeExpression: 0,
+        optionReadTimeCommunication: 0,
+        optionReadTimeCollaboration: 0,
+        optionReadTimeLeadership: 0,
+  
+        optionReadTimeAwareness:0,
+        optionReadTimeApplication:0,
+        optionReadTimeAdvantage:0,
+  
+        //attentionAccuracy:0,
+        // memoryAccuracy:0,
+        // criticalThinkingAccuracy:0,
+        // cretiveThinkingAccuracy:0,
+        // mindsetAccuracy:0,
+        // attitudeAccuracy:0,
+        // expressionAccuracy:0,
+        // communicationAccuracy:0,
+        // collaborationAccuracy:0,
+        // leadershipAccuracy:0
+    };
+  
     for (const answer of examData.answers) {
       const question = questions.find((q) => q.sort_order == answer.sort_order);
+      
 
       if (!question) {
         return res
@@ -324,31 +408,116 @@ questionRouter.get("/prideScore", async (req, res) => {
         outputResult.perceiveContribution = 0;
       }
     }
-//calculation of all ort of skill and intelligence
-   calculateOptionReadTime(examData,questions)
+    
+    // Calculation of all ORT of skill and intelligence
+    
+    const calculateOptionReadTime=(examData, questions) =>{
+      // const scores = {
+      //     optionReadTimeAttention: 0,
+      //     optionReadTimeMemory: 0,
+      //     optionReadTimeCriticalThinking: 0,
+      //     optionReadTimeCreativeThinking: 0,
+      //     optionReadTimeMindset: 0,
+      //     optionReadTimeAttitude: 0,
+      //     optionReadTimeExpression: 0,
+      //     optionReadTimeCommunication: 0,
+      //     optionReadTimeCollaboration: 0,
+      //     optionReadTimeLeadership: 0,
+      //     optionReadTimeAwareness: 0,
+      //     optionReadTimeApplication: 0,
+      //     optionReadTimeAdvantage: 0
+      // };
+  
+      examData.answers.forEach(frontendItem => {
+          // Find corresponding backend question
+          const backendQuestion = questions.find(backendItem => backendItem.sort_order === frontendItem.sort_order);
+  
+          // Check if backendQuestion exists
+          if (backendQuestion) {
+              // Add optionReadTime based on skill or intelligence
+              switch (backendQuestion.skill) {
+                  case 'attention':
+                      scores.optionReadTimeAttention += frontendItem.optionReadTime;
+                      break;
+                  case 'memory':
+                      scores.optionReadTimeMemory += frontendItem.optionReadTime;
+                      break;
+                  case 'critical':
+                      scores.optionReadTimeCriticalThinking += frontendItem.optionReadTime;
+                      break;
+                  case 'creative':
+                      scores.optionReadTimeCreativeThinking += frontendItem.optionReadTime;
+                      break;
+                  case 'mindset':
+                      scores.optionReadTimeMindset += frontendItem.optionReadTime;
+                      break;
+                  case 'attitude':
+                      scores.optionReadTimeAttitude += frontendItem.optionReadTime;
+                      break;
+                  case 'expression':
+                      scores.optionReadTimeExpression += frontendItem.optionReadTime;
+                      break;
+                  case 'communication':
+                      scores.optionReadTimeCommunication += frontendItem.optionReadTime;
+                      break;
+                  case 'collaboration':
+                      scores.optionReadTimeCollaboration += frontendItem.optionReadTime;
+                      break;
+                  case 'leadership':
+                      scores.optionReadTimeLeadership += frontendItem.optionReadTime;
+                      break;
+                  default:
+                      break;
+              }
+  
+              switch (backendQuestion.intelligence) {
+                  case 'awareness':
+                      scores.optionReadTimeAwareness += frontendItem.optionReadTime;
+                      break;
+                  case 'application':
+                      scores.optionReadTimeApplication += frontendItem.optionReadTime;
+                      break;
+                  case 'advantage':
+                      scores.optionReadTimeAdvantage += frontendItem.optionReadTime;
+                      break;
+                  default:
+                      break;
+              }
+          }
+      });
+  
+      return scores;
+  }
+    console.log("total pride score:", totalPrideScore);
+    calculateOptionReadTime(examData, questions);
+    function calculateAccuracy(score, total) {
+      return ((score / total) * 100).toFixed(2);
+    }
 
-  console.log("total pride score:",totalPrideScore);
-    outputResult.attentionAccuracy=((scores.attentionScore/15)*100).toFixed(2)
-    outputResult.memoryAccuracy=((scores.memoryScore/15)*100).toFixed(2)
-    outputResult.criticalThinkingAccuracy=((scores.criticalScore/15)*100).toFixed(2)
-    outputResult.cretiveThinkingAccuracy=((scores.creativeScore/15)*100).toFixed(2)
-    outputResult.mindsetAccuracy=((scores.mindsetScore/15)*100).toFixed(2)
-    outputResult.attitudeAccuracy=((scores.attitudeScore/15)*100).toFixed(2)
-    outputResult.expressionAccuracy=((scores.expressionScore/15)*100).toFixed(2)
-    outputResult.communicationAccuracy=((scores.communicationScore/15)*100).toFixed(2)
-    outputResult.collaborationAccuracy=((scores.collaborationScore/15)*100).toFixed(2)
-    outputResult.leadershipAccuracy=((scores.leadershipScore/15)*100).toFixed(2)
+    // Assign calculated accuracy values to outputResult
+    outputResult.attentionAccuracy = calculateAccuracy(scores.attentionScore, 15);
+    outputResult.memoryAccuracy = calculateAccuracy(scores.memoryScore, 15);
+    outputResult.criticalThinkingAccuracy = calculateAccuracy(scores.criticalScore, 15);
+    outputResult.creativeThinkingAccuracy = calculateAccuracy(scores.creativeScore, 15);
+    outputResult.mindsetAccuracy = calculateAccuracy(scores.mindsetScore, 15);
+    outputResult.attitudeAccuracy = calculateAccuracy(scores.attitudeScore, 15);
+    outputResult.expressionAccuracy = calculateAccuracy(scores.expressionScore, 15);
+    outputResult.communicationAccuracy = calculateAccuracy(scores.communicationScore, 15);
+    outputResult.collaborationAccuracy = calculateAccuracy(scores.collaborationScore, 15);
+    outputResult.leadershipAccuracy = calculateAccuracy(scores.leadershipScore, 15);
 
-    outputResult.awarenessAccuracy=((scores.awarenessScore/50)*100).toFixed(2)
-    outputResult.applicationAccuracy=((scores.applicationScore/50)*100).toFixed(2)
-    outputResult.advantageAccuracy=((scores.advantageScore/50)*100).toFixed(2)
-    //console.log(perceiveContribution)
+    outputResult.awarenessAccuracy = calculateAccuracy(scores.awarenessScore, 50);
+    outputResult.applicationAccuracy = calculateAccuracy(scores.applicationScore, 50);
+    outputResult.advantageAccuracy = calculateAccuracy(scores.advantageScore, 50);
+
+    // Return outputResult
     res.status(200).json(outputResult);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server error" });
   }
 });
+
 
 module.exports = {
   questionRouter,
