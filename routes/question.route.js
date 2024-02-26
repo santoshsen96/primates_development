@@ -478,19 +478,9 @@ questionRouter.get("/prideScore", async (req, res) => {
       scores.advantageScore,
       50
     );
-    let total5PointerOfSkill = scores.countOf5PointerAttention +
-                           scores.countOf5PointerMemory +
-                           scores.countOf5PointerCritical +
-                           scores.countOf5PointerCreative +
-                           scores.countOf5PointerMindset +
-                           scores.countOf5PointerAttitude +
-                           scores.countOf5PointerExpression +
-                           scores.countOf5PointerCommunication +
-                           scores.countOf5PointerCollaboration +
-                           scores.countOf5PointerLeadership;
-    outputResult.MpiConsistency=(((total5PointerOfSkill/questions.length)*100 ) /20 ).toFixed(2)                    
+   
     // Return outputResult
-    res.status(200).json(scores);
+    res.status(200).json(outputResult);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server error" });
