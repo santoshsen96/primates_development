@@ -122,9 +122,9 @@ questionRouter.get("/testOption", async (req, res) => {
 
     const ratio = countOf5Pointers / questions.length;
     // const percentageOfCountOf5Pointer =(countOf5Pointers / questions.length) * 100;
-    const consistencyRatioScore =
-      ratio === 0 ? `1:0` : `1:${(1 / ratio).toFixed(2)}`; //consistency
-
+    // const consistencyRatioScore =
+    //   ratio === 0 ? `1:0` : `1:${(1 / ratio).toFixed(2)}`; //consistency
+      const mpiConsistency = (((countOf5Pointers / questions.length) * 100) / 20).toFixed(2); ///mpi Consisitency
     let consistencyPercentage = 0;
 
     if (countOf5Pointers !== 0) {
@@ -164,13 +164,13 @@ questionRouter.get("/testOption", async (req, res) => {
       totalTime,
       totalAssesment,
       prideAccuracyScorePercentage,
-      consistencyRatioScore,
       consistencyPercentage,
       MentalProcessingSpeed,
       mentalSpeedInSec,
       convertedMpiScore,
       mentalProductivityCapacity,
       prideGrowthPercentage,
+      mpiConsistency,
       totalOptionTime,
     });
   } catch (error) {
@@ -490,7 +490,7 @@ questionRouter.get("/prideScore", async (req, res) => {
                            scores.countOf5PointerLeadership;
     outputResult.MpiConsistency=(((total5PointerOfSkill/questions.length)*100 ) /20 ).toFixed(2)                    
     // Return outputResult
-    res.status(200).json(outputResult);
+    res.status(200).json(scores);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server error" });
