@@ -1,921 +1,1997 @@
 [
   {
     "sort_order": 1,
-    "question_body": "Sen is good at imitating and acting the exact mannerism of anyone he sees for five minutes. what skill do you think he possesses that makes it easier for him to do it?",
-    "option1": "Observational skills",
-    "option2": "Memory Skills",
-    "option3": "Acting Skills",
-    "option4": "Leadership Skills",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Teacher is giving you a homework. What would you pay attention to?",
+    "options": [
+      { "option": "The topic of the homework", "mark": 2 },
+      { "option": "The details you need to fill.", "mark": 4 },
+      { "option": "The deadline for the homework", "mark": 3 },
+      { "option": "What the subject is.", "mark": 2 },
+      { "option": "All the above", "mark": 5 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "pride": "perceive",
+    "skill": "attention",
+    "intelligence": "awareness",
+    "standard": 10
   },
   {
     "sort_order": 2,
-    "question_body": "Krishitha has the power of listening to the lessons, taught by her teacher, even for 5 hours. What skill do you think she possesses that makes it easier for her to do it?",
-    "option1": "Concentration skills",
-    "option2": "Collaboration Skills",
-    "option3": "Language Skills",
-    "option4": "Leadership Skills",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You are in a park with your friends playing. You need to get away from the catcher. What are some things you will look for?",
+    "options": [
+      {
+        "option": "Notice the sounds of other friends shouting as the catcher nears them.",
+        "mark": 3
+      },
+      {
+        "option": "Keep looking where the catcher goes and move in the opposite side.",
+        "mark": 5
+      },
+      {
+        "option": "Places to hide somewhere so they dont find you.",
+        "mark": 4
+      },
+      { "option": "Run when you feel someone standing next to you", "mark": 2 },
+      { "option": "Option 1,2 and 4", "mark": 3},
+      { "option": "Option 1,3 and 4", "mark": 1 }
+    ],
+    "pride": "perceive",
+    "skill": "attention",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 3,
-    "question_body": "Nidhi is good at finding the difference in two picture games easily, what skill do you think she possess that makes it easier for her?",
-    "option1": "Creative Skills",
-    "option2": "Leadership Skills",
-    "option3": "Attention Skills",
-    "option4": "Emotional Skills",
-    "option5": "All the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "When you are crossing the road, what will you pay attention to?",
+    "options": [
+      { "option": "Right and left for vehicles", "mark": 4 },
+      { "option": "At the sky to check weather.", "mark": 1 },
+      {
+        "option": "At the ground to check if I am walking properly",
+        "mark": 3
+      },
+      { "option": "At the road for potholes", "mark": 4 },
+      { "option": "At the signal to see if it shows red light", "mark": 2 },
+      { "option": "Option 1,4 & 5", "mark": 5 }
+    ],
+    "pride": "perceive",
+    "skill": "attention",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 4,
-    "question_body": "How many ducks are shown in the video",
-    "option1": 10,
-    "option2": 11,
-    "option3": 12,
-    "option4": 15,
-    "option5": 14,
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "How many ducks are shown in the video?",
+    "options": [
+      { "option": "10", "mark": 1 },
+      { "option": "11", "mark": 1 },
+      { "option": "12", "mark": 5 },
+      { "option": "15", "mark": 1 },
+      { "option": "13", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "pride": "perceive",
+    "skill": "attention",
+    "intelligence": "application"
   },
   {
     "sort_order": 5,
-    "question_body": "How many times the word Laws is spoken in the audio clip",
-    "option1": 15,
-    "option2": 13,
-    "option3": 6,
-    "option4": 7,
-    "option5": 20,
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Find the font colour of the word which starts with P (VIBGYOR Video)",
+    "options": [
+      { "option": "green", "mark": 1 },
+      { "option": "orange", "mark": 1 },
+      { "option": "pink", "mark": 5 },
+      { "option": "blue", "mark": 1 },
+      { "option": "brown", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "pride": "perceive",
+    "skill": "attention",
+    "intelligence": "application"
   },
   {
     "sort_order": 6,
-    "question_body": "Find the Font colour of the word which starts with P",
-    "option1": "Green",
-    "option2": "Orange",
-    "option3": "Pink",
-    "option4": "Blue",
-    "option5": "Brown",
-    "right_option": 2
+    "instruction":"",
+    "question_link":"",
+    "question_body": "How many animals are there in the picture?",
+    "options": [
+      { "option": "6", "mark": 4 },
+      { "option": "7", "mark": 5 },
+      { "option": "8", "mark": 1 },
+      { "option": "5", "mark": 1 },
+      { "option": "4", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "pride": "perceive",
+    "skill": "attention",
+    "intelligence": "application"
   },
   {
     "sort_order": 7,
-    "question_body": "Shiv wants to win the  tennis tournament which he will be playing next week. In order to outplay the opponent, what are the things he should do.",
-    "option1": "He needs to watch the previous match videos of his opponent to understand his playing style",
-    "option2": "He needs to observe on the ways his opponent is making errors while playing",
-    "option3": "He needs to focus on his own strength to win the game",
-    "option4": "All the Above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Hi, I am santosh! I was told to give a preference for streams i would like to study in my 11th and 12th today. I am uncertain about what I want to do in the future. I like social studies but I'm also good in science. Making a choice between the two is confusing to me. I wish I could just do them both.",
+    "options": [
+      { "option": "Choosing between science and social studies", "mark": 5 },
+      { "option": "Giving a preference", "mark": 2 },
+      { "option": "Choosing what to do in life", "mark": 2 },
+      { "option": "All of the above", "mark": 2 },
+      { "option": "Not being able to study both", "mark": 2 },
+      { "option": "None of the Above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "perceive",
+    "skill": "attention",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 8,
-    "question_body": "Rajiv was assigned to provide a presentation on Mahatma Gandhi in the class seminar. What all information he needs to observe and collect about gandhiji to make the presentation a grand success.",
-    "option1": "His Dressings Styles",
-    "option2": "His Principles",
-    "option3": "His Communication Styles",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Count the number of ducks in the picture",
+    "options": [
+      { "option": "12", "mark": 2 },
+      { "option": "14", "mark": 3 },
+      { "option": "19", "mark": 4 },
+      { "option": "21", "mark": 5 },
+      { "option": "All of the above", "mark": 1 },
+      { "option": "None of the Above", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "perceive",
+    "skill": "attention",
+    "intelligence": "advantage"
   },
+
   {
     "sort_order": 9,
-    "question_body": "What would be the appropriate way to observe the details of the person accurately?",
-    "option1": "Use our visual senses to understand the physical appearance of that person",
-    "option2": "Use our cognitive senses to understand the brilliance of that person",
-    "option3": "Use the emotional intelligence to understand the brilliance problem",
-    "option4": "Both 1&2",
-    "option5": "Both 1&3",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Count the words that are in pink colour font and are the names of fruits. ",
+    "options": [
+      {
+        "option": "5",
+        "mark": 5
+      },
+      {
+        "option": "8",
+        "mark": 1
+      },
+      {
+        "option": "6",
+        "mark": 1
+      },
+      { "option": "9", "mark": 1 },
+      {"option":"7","mark":4},
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 4,
+    "pride": "perceive",
+    "skill": "attention",
+    "intelligence": "advantage"
   },
+
   {
     "sort_order": 10,
-    "question_body": "Shreyans is good at remembering all the lessons taught by his teacher during the class hours and writing it in a fresh notebook even after a month without referring or seeing the class work notebook. What skill do you think he possesses that makes it easier for him to do",
-    "option1": "Memory skills",
-    "option2": "Attention Skills",
-    "option3": "Concentration Skills",
-    "option4": "Listening Skills",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Shreyans is good at remembering all the lessons taught by his teacher during the class hours. He has the ability to remember it even after a month. What skill does he have that helps him with this?",
+    "options": [
+      { "option": "Memory skills", "mark": 5 },
+      { "option": "Attention Skills", "mark": 3 },
+      { "option": "Concentration Skills", "mark": 3 },
+      { "option": "Listening Skills", "mark": 3 },
+      { "option": "All the above", "mark": 3 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "perceive",
+    "skill": "memory",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 11,
-    "question_body": "Sheeba is good at drawing the image again exactly as the original image. What skill do you think she possesses that makes it easier for her to do",
-    "option1": "Visual Memory skills",
-    "option2": "Auditory Memory Skills",
-    "option3": "Kinesthetic Memory Skills",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Find the odd one out",
+    "options": [
+      { "option": "Concentration", "mark": 1 },
+      { "option": "Focus", "mark": 1 },
+      { "option": "Attention", "mark": 1 },
+      { "option": "Observation", "mark": 1 },
+      { "option": "Expression", "mark": 5 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 5,
+    "pride": "perceive",
+    "skill": "memory",
+    "intelligence": "awareness"
   },
+
   {
     "sort_order": 12,
-    "question_body": "Preethi is good at rewriting the essay exactly the same at home which was dictated by the teacher during school hours. What skill do you think she possesses that makes it easier for her to do it?",
-    "option1": "Auditory Memory skills",
-    "option2": "Visual Memory Skills",
-    "option3": "Kinesthetic Memory Skills",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Listen to the options and Identify which instrument was played before",
+    "options": [
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/Sad%20music%20Piano%20Sound%20Effect%20%28download%29-%5BAudioTrimmer.com%5D.mp3-1646765241562Sad%20music%20Piano%20Sound%20Effect%20%28download%29-%5BAudioTrimmer.com%5D.mp3",
+        "mark": 3
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/Flute%20-%20what%20it%20sounds%20like-%5BAudioTrimmer.com%5D.mp3-1646764925298Flute%20-%20what%20it%20sounds%20like-%5BAudioTrimmer.com%5D.mp3",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/GUITAR%20SOUND%20EFFECT-%5BAudioTrimmer.com%5D.mp3-1646765076558GUITAR%20SOUND%20EFFECT-%5BAudioTrimmer.com%5D.mp3",
+        "mark": 4
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/Drum%20Roll%20Sound%20Effect.mp3-1646764925284Drum%20Roll%20Sound%20Effect.mp3",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/Sitar%20Sound%20Effect-%5BAudioTrimmer.com%5D.mp3-1646765462893Sitar%20Sound%20Effect-%5BAudioTrimmer.com%5D.mp3",
+        "mark": 5
+      },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 5,
+    "pride": "perceive",
+    "skill": "memory",
+    "intelligence": "awareness"
   },
+
   {
     "sort_order": 13,
-    "question_body": "What is the number shown in the image",
-    "option1": "844 633 4433",
-    "option2": "833 644 3344",
-    "option3": "744 833 4433",
-    "option4": "844 733 4433",
-    "option5": "822 733 4433",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What is the number shown in the picture?",
+    "options": [
+      { "option": "9786756", "mark": 5 },
+      { "option": "9785756", "mark": 4 },
+      { "option": "987656", "mark": 2 },
+      { "option": "8987656", "mark": 1 },
+      { "option": "956785", "mark": 4 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "perceive",
+    "skill": "memory",
+    "intelligence": "application"
   },
+
   {
     "sort_order": 14,
-    "question_body": "What is the number spoken in the audio(Audio Question)?",
-    "option1": "32 456 78962",
-    "option2": "42 465 78908",
-    "option3": "38427 48105",
-    "option4": "38428 48105",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What are the letters spoken in the audio?",
+    "options": [
+      { "option": "NZXBXIO", "mark": 1 },
+      { "option": "NZSBXOI", "mark": 5 },
+      { "option": "NZCBXIO", "mark": 2 },
+      { "option": "NBZCXOI", "mark": 4 },
+      { "option": "NZBZXIO", "mark": 2 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "perceive",
+    "skill": "memory",
+    "intelligence": "application"
   },
+
   {
     "sort_order": 15,
-    "question_body": "Which are the alphabets shown in the image",
-    "option1": "ABXRTZ UPWMNV",
-    "option2": "ATX RBZ UVW MNP",
-    "option3": "ABXRTZ  UVWMNP",
-    "option4": "ATX RBZ UPW MNV",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What are the alphabets and numbers shown in the video?",
+    "options": [
+      { "option": "73o9p70", "mark": 5 },
+      { "option": "7309p70", "mark": 4 },
+      { "option": "7390p70", "mark": 1 },
+      { "option": "73o970", "mark": 1 },
+      { "option": "73o9p0", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "perceive",
+    "skill": "memory",
+    "intelligence": "application"
   },
+
   {
     "sort_order": 16,
-    "question_body": "Ram has to memorize the lessons taught by his teacher to write in exams. What work do you think he should do to remember the lessons?",
-    "option1": "Create a mental pictures of the lessons with the appropriate functional descriptions",
-    "option2": "Create list of pointers and read regularly",
-    "option3": "Remember the lessons in the form of a story & tag with a appropriate topic",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Pinto had a childhood friend named Paltu. she usually comes to school in a rolls royce car which was an unique blue design one. No two cars will have a same design or colour  in rolls royce brand. Once pinto's father got transferred to new city, he lost his touch with Paltu. one fine day when he was going to his new school, he saw a rolls royce car which looked exactly like paltu's car standing in the school. He decided....",
+    "options": [
+      {
+        "option": "it was not paltu's car as he moved to a different city.",
+        "mark": 1
+      },
+      {
+        "option": "it was paltu's car as he remembers the  blue design very well",
+        "mark": 5
+      },
+      {
+        "option": "It may not be paltu's car as there are many cars with same colours and designs",
+        "mark": 2
+      },
+      {
+        "option": "It could be paltu's car as we can travel to new city with cars",
+        "mark": 3
+      },
+      { "option": "All the above", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "perceive",
+    "skill": "memory",
+    "intelligence": "advantage"
   },
+
   {
     "sort_order": 17,
-    "question_body": "What would be the best way to memorize the details regarding any person or subject for future use",
-    "option1": "Use any of the memorizing techniques to store properly in my mind",
-    "option2": "Store the details in any notebook or computer for future use",
-    "option3": "Request your friend to store the details on behalf of you",
-    "option4": "Both 1 & 2",
-    "option5": "Both 2 & 3",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "The Value of 0 is high when it is",
+    "options": [
+      { "option": "Front of the number", "mark": 1 },
+      { "option": "After the number", "mark": 5},
+      { "option": "After the decimal point", "mark": 3 },
+      { "option": "In all the ways", "mark": 1 },
+      { "option": "None", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "perceive",
+    "skill": "memory",
+    "intelligence": "advantage"
   },
+
   {
     "sort_order": 18,
-    "question_body": "Sachin can memorize the given information with 100% accuracy for only 2 hours and goes blank. Sindhu can memorize with 60% accuracy for 10 hours. Suresh can memorize with 80% accuracy for 6 hours, Shyans can memorize with 70% accuracy for 8 hours. Sreeja can memorize with 90% accuracy for 4 hours. Who would you choose as your partner for the upcoming word memory competition which usually happens for 2 hours and 30 minutes for/with 100 questions.",
-    "option1": "Sachin",
-    "option2": "Sindhu",
-    "option3": "Suresh",
-    "option4": "Shyans",
-    "option5": "Sreeja",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which of the following helps with good memory?",
+    "options": [
+      { "option": "Repetition/practice", "mark": 4 },
+      { "option": "Quality Sleep", "mark": 4 },
+      { "option": "Writing notes", "mark": 4 },
+      { "option": "Creating a story", "mark": 4 },
+      { "option": "All of the above", "mark": 5 },
+      { "option": "None of the above", "mark": 1}
+    ],
+    "right_option": 5,
+    "pride": "perceive",
+    "skill": "memory",
+    "intelligence": "advantage"
   },
+
   {
     "sort_order": 19,
-    "question_body": "Anaya has the power of finding out all the possible and probable obstacles she would face while solving a problem. What skill do you think she possess that makes it easier for her to find it",
-    "option1": "Analytical Skills",
-    "option2": "Listening Skills",
-    "option3": "Memory Skills",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which face looks more angry through their facial reactions?",
+    "options": [
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/1.1.png-16467342354861.1.png",
+        "mark": 3
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/1.2.png-16467342376051.2.png",
+        "mark": 4
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/1.3.png-16467342375541.3.png",
+        "mark": 2
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/1.4.png-16467342541381.4.png",
+        "mark": 3
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/1.5.png-16467342355131.5.png",
+        "mark": 1
+      },
+      { "option": "Can't Judge", "mark": 5 }
+    ],
+    "right_option": 6,
+    "pride": "resolve",
+    "skill": "critical",
+    "intelligence": "awareness"
   },
+
   {
     "sort_order": 20,
-    "question_body": "Zinda always takes her decisions only based on the data or information which has facts and realistic information, She doesn’t take her decisions based on random beliefs or details. What do we call this type of person as.",
-    "option1": "Logical Thinker",
-    "option2": "Irrational Thinker",
-    "option3": "Wild Thinker",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Ram's mother wanted to remove the misfit from the set of mangoes in the box. what methods shall be used to decide the misfit",
+    "options": [
+      {
+        "option": "compare the sizes of mangoes and remove the smaller or bigger ones",
+        "mark": 3
+      },
+      {
+        "option": "Check if all the fruits inside the box are actually mangoes if not remove that particular fruit",
+        "mark": 2
+      },
+      {
+        "option": "compare the colours of mangoes and remove the darker or lighter ones",
+        "mark": 2
+      },
+      {
+        "option": "compare the quality of mangoes and remove the rotten or older ones",
+        "mark": 4
+      },
+      {
+        "option": "Can't Judge misfit untill explanation for misfit is provided",
+        "mark": 5
+      },
+      { "option": "None of the Above", "mark": 1 }
+    ],
+    "right_option": 6,
+    "pride": "resolve",
+    "skill": "critical",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 21,
-    "question_body": "Tinku has the power of forecasting the results of this year’s competition using the data of the previous winners of the competitions . What do we call this type of person as.",
-    "option1": "Predictive Thinker",
-    "option2": "Irrational Thinker",
-    "option3": "Wild Thinker",
-    "option4": "Astrologer",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Arjun is unable to find enough time for his studies. No matter how much he tries he ends up spending all his time on video games. what  shall be followed to improve his studies Course of action:- Plan 1. Arjun's parents should take back his mobile phone.Plan 2. Arjun should have a set time for playing games and for studying.Plan 3. Arjun should study whenever he gets time",
+    "options": [
+      {
+        "option": "Plan 1",
+        "mark": 3
+      },
+      {
+        "option": "Plan 2",
+        "mark": 5
+      },
+      {
+        "option": "Plan 3",
+        "mark": 1
+      },
+      {
+        "option": "Plan 1&3",
+        "mark": 1
+      },
+      {
+        "option": "Plan 2&3",
+        "mark": 1
+      },
+      { "option": "None of the Above", "mark": 1 }
+    ],
+    "right_option": 6,
+    "pride": "resolve",
+    "skill": "critical",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 22,
-    "question_body": "Two people played chess 5 times. Both of them won the same number of games and there was not a single draw. How is this possible?",
-    "option1": "This is impossible",
-    "option2": "One game was a tie",
-    "option3": "One game was forfeited",
-    "option4": "They were playing with different people",
-    "option5": "The last game is still happening",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "The stadium was packed when we entered. My dad and I were looking for our seats and I could see a few volunteers trying to control the excited crowd. My dad had brought a scarf with his favourite player's name on it for cheering them. We had a lot of fun. It was an eventful evening.",
+    "options": [
+      { "option": "A game match", "mark": 5 },
+      { "option": "A concert", "mark": 4 },
+      { "option": "A movie", "mark": 1 },
+      { "option": "A circus", "mark": 1 },
+      { "option": "A picnic", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "resolve",
+    "skill": "critical",
+    "intelligence": "application"
   },
   {
     "sort_order": 23,
-    "question_body": "Turn me on my side I am everything, but cut me by half I am nothing",
-    "option1": "Scarf",
-    "option2": 8,
-    "option3": "Heart",
-    "option4": "God",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 2
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Five of the following are similar in a way. Find the odd man out",
+    "options": [
+      { "option": "Eye", "mark": 1 },
+      { "option": "Ear", "mark": 1 },
+      { "option": "Nose", "mark": 1 },
+      { "option": "Tongue", "mark": 1 },
+      { "option": "Skin", "mark": 1 },
+      { "option": "Brain", "mark": 5 }
+    ],
+    "right_option": 6,
+    "pride": "resolve",
+    "skill": "critical",
+    "intelligence": "application"
   },
   {
     "sort_order": 24,
-    "question_body": "A man is looking at a photograph of someone. His friend asks who it is. The man replies, “Brothers and sisters, I have none. But that man’s father is my father’s son.” Who is in the picture?",
-    "option1": "His son",
-    "option2": "Himself",
-    "option3": "His Father",
-    "option4": "His Grandfather",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "All humans feel happy and Happiness always leads to smile.Which of the following statements are true?",
+    "options": [
+      { "option": "All humans always smile", "mark": 1 },
+      { "option": "Happy humans always smile", "mark": 4 },
+      { "option": "All humans are always happy", "mark": 1 },
+      { "option": "Happy humans don't always smile", "mark": 5 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "resolve",
+    "skill": "critical",
+    "intelligence": "application"
   },
   {
     "sort_order": 25,
-    "question_body": "How do we need to analyze all the potential reasons for any problem?",
-    "option1": "Analyze the functional properties of the problem",
-    "option2": "Ask suggestions from random people regarding the problem",
-    "option3": "Ask suggestions from the concerned people regarding the problem",
-    "option4": "Check if any relevant information is missing",
-    "option5": "Option 1,3 & 4",
-    "option6": "Option 2,3 & 4",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which route will be the best way to reach the destination in quickly?",
+    "options": [
+      { "option": "Route 1", "mark": 4 },
+      { "option": "Route 2", "mark": 3 },
+      { "option": "Route 3", "mark": 5 },
+      { "option": "Route 4", "mark": 1 },
+      { "option": "Route 5", "mark": 2 },
+      { "option": "All of the above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "resolve",
+    "skill": "critical",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 26,
-    "question_body": "What would be the appropriate way to analyze the root cause of any problem",
-    "option1": "Check if anyone has already done any research regarding the problem",
-    "option2": "Analyze the probable and possible reasons based on your own research",
-    "option3": "Get help from experts to analyze the cause & effect of the problem",
-    "option4": "Expect some miracle to happen to analyze the problem",
-    "option5": "Option 1,2, & 3",
-    "option6": "Option 2,3 & 4",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Match the parent with the right child.",
+    "options": [
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/child1.png-1647329240064child1.png",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/child2.png-1647329240071child2.png",
+        "mark": 2
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/child3.png-1647329240074child3.png",
+        "mark": 5
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/child4.png-1647329240076child4.png",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/child5.png-1647329240085child5.png",
+        "mark": 1
+      },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "resolve",
+    "skill": "critical",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 27,
-    "question_body": "Anand was not able to complete a science experiment in spite of trying it for many times, what should he do to complete the experiment?",
-    "option1": "Refer to books regarding the experiment",
-    "option2": "Write down all the steps followed sequentially to find out where the mistake was started",
-    "option3": "Get help from his teacher",
-    "option4": "Get help from his close friend",
-    "option5": "Option  1,2, & 3",
-    "option6": "Option 2,3 & 4",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "How many iPads are there in the world?",
+    "options": [
+      { "option": "Infinite + 1", "mark": 1 },
+      { "option": "Finite + 1", "mark": 2 },
+      { "option": "Infinite", "mark": 1 },
+      { "option": "Finite", "mark": 5},
+      { "option": "All of the above", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 4,
+    "pride": "resolve",
+    "skill": "critical",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 28,
-    "question_body": "Sherin has an ability to create a solution and come out from any kind of awkward situation she is put into. What skill do you think she possesses that makes it easier for her to do that.",
-    "option1": "Problem Solving Skills",
-    "option2": "Attention Skills",
-    "option3": "Collaboration Skills",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What among these could not be converted as a possible replacement for a straw?",
+    "options": [
+      { "option": "Bamboo sticks", "mark": 1 },
+      { "option": "Paper roll", "mark": 1 },
+      { "option": "Stainless steel pipes", "mark": 1 },
+      { "option": "Sip cup lids", "mark": 1 },
+      { "option": "Plastic rolls", "mark": 5 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 6,
+    "pride": "resolve",
+    "skill": "creative",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 29,
-    "question_body": "Ragav has an ability to make any place better than before using his intelligent thoughts and wisdom. What skill do you think he possesses that makes it easier for him to do it.",
-    "option1": "Innovative Thinking Skills",
-    "option2": "Irrational Thinking Skills",
-    "option3": "Leadership Skills",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What among these would be a good replacement for a book cover?",
+    "options": [
+      { "option": "Plastic", "mark": 3 },
+      { "option": "Cardboard", "mark": 3 },
+      { "option": "Paper", "mark": 5 },
+      { "option": "Cloth", "mark": 2 },
+      { "option": "Wood", "mark": 1 },
+      { "option": "All of the above", "mark": 1 }
+    ],
+    "right_option": 6,
+    "pride": "resolve",
+    "skill": "creative",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 30,
-    "question_body": "Divya’s teacher asked the students to make a new nice & useful Product with the household waste materials , Divya created a nice hanging flower vase using old water bottles and made her house a eco friendly house , She has a great",
-    "option1": "Attention Skills",
-    "option2": "Memory Skills",
-    "option3": "Creativity Skills",
-    "option4": "Analytical Skills",
-    "option5": "None of the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What among these cannot absorb water?",
+    "options": [
+      { "option": "Sponge", "mark": 1 },
+      { "option": "Cloth", "mark": 1 },
+      { "option": "Paper", "mark": 1 },
+      { "option": "Air", "mark": 1 },
+      { "option": "Earth", "mark": 1 },
+      { "option": "None of the above", "mark": 5 }
+    ],
+    "right_option": 6,
+    "pride": "resolve",
+    "skill": "creative",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 31,
-    "question_body": "What would be the best fitted next word in the sequence: <br/> fly, air, wind, weather, ……..",
-    "option1": "Eagle",
-    "option3": "Sounding Balloon",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You want to make a green environment, so you plan to sell your old clothes and buy saplings with the money. What would be an appropriate statement to sell them?",
+    "options": [
+      { "option": "Save the planet.", "mark": 2 },
+      { "option": "Go eco-friendly", "mark": 3 },
+      { "option": "Buy old-go green", "mark": 5 },
+      { "option": "Less is more.", "mark": 2 },
+      { "option": "Old clothes can grow trees.", "mark": 4 },
+      { "option": "All of the above .", "mark": 3 }
+    ],
+    "right_option": 3,
+    "pride": "resolve",
+    "skill": "creative",
+    "intelligence": "application"
   },
   {
     "sort_order": 32,
-    "question_body": "What would be the next word in the sequence  <br>  problem- opportunity, <br/> planning - direction, <br/> effort - confidence, <br/> Output - ………., <br/> Outcome - Happiness.",
-    "option1": "Solution",
-    "option2": "Success",
-    "option3": "Result",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which one of this is required to visualize a bigger lemon in our mind",
+    "options": [
+      { "option": "We need to see a lemon in front of us", "mark": 2 },
+      { "option": "We need to feel the smell of the lemon", "mark": 1 },
+      {
+        "option": "We need to touch the lemon even if we are blindfolded",
+        "mark": 3
+      },
+      { "option": "We need to taste the lemon", "mark": 1 },
+      { "option": "All the Above", "mark": 2 },
+      { "option": "None of the Above", "mark": 5 }
+    ],
+    "right_option": 6,
+    "pride": "resolve",
+    "skill": "creative",
+    "intelligence": "application"
   },
   {
     "sort_order": 33,
-    "question_body": "What can be done using words",
-    "option1": "Create a Sentence",
-    "option2": "Communicate to others",
-    "option3": "Change someone’s world",
-    "option4": "Make two people fight",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which one of this looks tough to imagine in mind",
+    "options": [
+      { "option": "4 Eyed man", "mark": 2 },
+      { "option": "Flying Elephants", "mark": 1 },
+      { "option": "Swimming Aeroplanes", "mark": 1 },
+      { "option": "You with 10 heads", "mark": 1 },
+      { "option": "All the Above", "mark": 2 },
+      { "option": "None of the Above", "mark": 5 }
+    ],
+    "right_option": 6,
+    "pride": "resolve",
+    "skill": "creative",
+    "intelligence": "application"
   },
+
   {
     "sort_order": 34,
-    "question_body": "What would be the expectations of any new scientific product which comes to the market for sale..",
-    "option1": "It should be easy for the most to operate",
-    "option2": "It should be cheap to buy",
-    "option3": "It should benefit the most",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "The image has a wheel missing. Which wheel is the right replacement from the options given?",
+    "options": [
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/1%20%281%29.png-16467313480571%20%281%29.png",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/2%20%283%29.png-16467313480442%20%283%29.png",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/3%20%281%29.png-16467313480683%20%281%29.png",
+        "mark": 5
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/4%20%281%29.png-16467319353664%20%281%29.png",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/5%20%281%29.png-16467319353915%20%281%29.png",
+        "mark": 1
+      },
+      { "option": "All of the above", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "resolve",
+    "skill": "creative",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 35,
-    "question_body": "In order to create a better solution for the problem, what do we need to do",
-    "option1": "Try to visualize all potential solutions of the problem",
-    "option2": "Imagine what would be the ideal solution of the problem",
-    "option3": "Create the most realistically possible solution of the problem",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which would be the best title for the paragraph given below? \n\n\"On a bright and sunny summer morning, Mrs. Roy decided to take her kids out for a fun trip to the waterpark. Mr. Roy had to leave for his office so, Mrs. Roy excitedly agreed to take the kids herself. The two Roy kids, Kiara aged eight and Rahul aged 11 were very happy about this surprise plan. The three of them got into their car and Mrs. Roy drove them to the waterpark. There all the three of them had much fun enjoying the joy rides and playing in water. By the time they got back home it was dusk and even Mr. Roy had returned from his office. The kids couldn’t stop talking about their lovely time at te waterpark and asked their father to go along with them the next time.\"",
+    "options": [
+      { "option": "A Summer Morning Adventure", "mark": 3 },
+      { "option": "The Roy's Fun day at the Waterpark", "mark": 5 },
+      { "option": "Kids Day Out", "mark": 3 },
+      { "option": "A Trip to the Waterpark", "mark": 4 },
+      { "option": "A Fun Summer Day", "mark": 3 },
+      { "option": "All of the above", "mark": 3 }
+    ],
+    "right_option": 2,
+    "pride": "resolve",
+    "skill": "creative",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 36,
-    "question_body": "What would be the appropriate way that can be taken to create a practical solution of the problem?",
-    "option1": "Use our imagination skills to visualize a new way",
-    "option2": "Use innovative ideas & strategies",
-    "option3": "Create a realistic & appropriate solution",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What among the following always has the colours green, red, brown in it.",
+    "options": [
+      { "option": "Apple", "mark": 1 },
+      { "option": "Watermelon", "mark": 1 },
+      { "option": "Frogs", "mark": 1 },
+      { "option": "Flower", "mark": 1 },
+      { "option": "All of the above", "mark": 1 },
+      {"option":"None of the Above","mark":5}
+    ],
+    "right_option": 7,
+    "pride": "resolve",
+    "skill": "creative",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 37,
-    "question_body": "Senthil takes all suggestions and advice given to him by anyone which will make him grow better even if it is provided by people he doesn’t like. What ability do you think he possesses that makes it easier for him to do it.",
-    "option1": "Growth mindset",
-    "option2": "Good communication",
-    "option3": "Good collaboration",
-    "option4": "Patience",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What is the appropriate way to think during difficult situations?",
+    "options": [
+      { "option": "I can always achieve no matter what happens!", "mark": 3 },
+      {
+        "option": "I may or may not be able to do it, but I will try my best!",
+        "mark": 5
+      },
+      {
+        "option": "I don't think it's very easy to do this and that is okay.",
+        "mark": 2
+      },
+      { "option": "What happens is not in my control.", "mark": 2 },
+      { "option": "All of the above", "mark": 1 },
+      {"option":"None of the Above","mark":1}
+    ],
+    "right_option": 2,
+    "pride": "influence",
+    "skill": "mindset",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 38,
-    "question_body": "Nethra always thinks that whatever she does is only correct even though it is not, and never takes suggestions and advice given by her teachers, and well wishers. What ability do you think she possesses that makes her to think like this.",
-    "option1": "Fixed mindset",
-    "option2": "Negative mindset",
-    "option3": "Positive mindset",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Mother scolds whenever I make a mistake. Which statement is most appropriate?",
+    "options": [
+      {
+        "option": "It is right to scold me whenever I make a mistake",
+        "mark": 3
+      },
+      {
+        "option": "Scolding is okay sometimes when I make a mistake",
+        "mark": 5
+      },
+      {
+        "option": "Mistakes happen, I should not be scolded for it.",
+        "mark": 1
+      },
+      { "option": "Scolding is completely wrong", "mark": 1},
+      { "option": "All of the above", "mark": 1 },
+      {"option":"None of the Above","mark":1}
+    ],
+    "right_option": 2,
+    "pride": "influence",
+    "skill": "mindset",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 39,
-    "question_body": "Shruthi and Virat are the two top rank holders in the class, shruthi has prepared for the exams fantastically, but she has a fear that Virat would become the first, she has",
-    "option1": "Positive Attitude",
-    "option2": "Negative mindset",
-    "option3": "Neutral thoughts",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 2
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Mahesh is worried about not doing well in his exam, even though he has prepared well. What should be his appropriate thought to this?",
+    "options": [
+      {
+        "option": "It is good to be worried, we never know what will happen in the exam.",
+        "mark": 2
+      },
+      {
+        "option": "There is no point in worrying, since there is nothing he can do about it now.",
+        "mark": 3
+      },
+      {
+        "option": "He should be a little confident in his preparation and perform how much ever he can.",
+        "mark": 5
+      },
+      {
+        "option": "He should be worried, because it will push him to do better.",
+        "mark": 2
+      },
+      { "option": "All of the above", "mark": 1},
+      {"option":"None of the Above","mark":1}
+    ],
+    "right_option": 3,
+    "pride": "influence",
+    "skill": "mindset",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 40,
-    "question_body": "When we lose any game 3 times continuously, it means",
-    "option1": "That sport is not for us",
-    "option2": "Luck is not in favour of us",
-    "option3": "Something is lacking in our skill or ability which needs to be addressed",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "If you were to write a story about a small boy, how would you end the story?",
+    "options": [
+      { "option": "I would make it a horror story.", "mark": 2 },
+      { "option": "I would make him a multi-millionaire.", "mark": 4 },
+      { "option": "I would make him grow into an old man", "mark": 3 },
+      {
+        "option": "I would make him a happy & successful human being",
+        "mark": 5
+      },
+      { "option": "All of the above.", "mark": 2 },
+      {"option":"None of the Above","mark":3}
+    ],
+    "right_option": 4,
+    "pride": "influence",
+    "skill": "mindset",
+    "intelligence": "application"
   },
+
   {
     "sort_order": 41,
-    "question_body": " Whenever things are not happening as per your expectations",
-    "option1": "Patience has to be maintained",
-    "option2": "Not to keep any high hopes that we can achieve",
-    "option3": "Something is lacking in our skill or effort",
-    "option4": "Option 1 & 2",
-    "option5": "Option 1 & 3",
-    "option6": "Option 2 & 3",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Find the odd one out",
+    "options": [
+      { "option": "Self-Confidence", "mark": 2 },
+      { "option": "Self-Respect", "mark": 2 },
+      { "option": "Self-Pity", "mark": 5 },
+      { "option": "Self-Esteem", "mark": 1 },
+      { "option": "Self-Satisfaction", "mark": 1 },
+      {"option":"None of the Above","mark":1}
+    ],
+    "right_option": 3,
+    "pride": "influence",
+    "skill": "mindset",
+    "intelligence": "application"
   },
   {
     "sort_order": 42,
-    "question_body": "Satish is a good learner, but unfortunately he is not scoring marks because",
-    "option1": "He might have distracted to bad things",
-    "option2": "There could be many reasons for that, we cant judge others from our perspective alone",
-    "option3": "He might have lost the focus",
-    "option4": "He might have had negative habits",
-    "option5": "All the above",
-    "option6": "Option 1 & 4",
-    "right_option": 2
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which of this statement looks true to you",
+    "options": [
+      {
+        "option": "It is easy to create whatever we think in our mind",
+        "mark": 3
+      },
+      {
+        "option": "It is easy to create at least few things which come in our mind",
+        "mark": 5
+      },
+      {
+        "option": "It is not easy to find a new way or different way to do the things which we do regularly",
+        "mark": 1
+      },
+      { "option": "All the above", "mark": 2 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "influence",
+    "skill": "mindset",
+    "intelligence": "application"
   },
   {
     "sort_order": 43,
-    "question_body": "Srijith failed in four exams consecutively, so he was not interested to write the 5th time. Even though his parents and friends had the faith in him, he had a strong",
-    "option1": "Negative belief",
-    "option2": "Negative thought process",
-    "option3": "Fear that he might fail again",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You are having a birthday party. But you forgot to invite some people. How would you invite them for the party?",
+    "options": [
+      {
+        "option": "Apologize for the delay and offer them help to reach the party.",
+        "mark": 5
+      },
+      {
+        "option": "Send a WhatsApp invite and hope they will come.",
+        "mark": 2
+      },
+      { "option": "Call them for the next party, since it's late already.", "mark": 1 },
+      {
+        "option": "Tell them the previous invite got lost and invite them again",
+        "mark": 1
+      },
+      {
+        "option": "All the Above",
+        "mark": 1
+      },
+      { "option": "None of the Above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "influence",
+    "skill": "mindset",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 44,
-    "question_body": "How do we need to receive any advice from others with the appropriate mindset,",
-    "option1": "Look for the quality of the information",
-    "option2": "Look for the importance of the information",
-    "option3": "Look for the relevance of the information",
-    "option4": "All the above",
-    "option5": "Option 1 & 2",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You need to prepare for your exam at the last minute. What is the best thing to do?",
+    "options": [
+      { "option": "Answer with what I know.", "mark": 4 },
+      {
+        "option": "I need to check and study only the important topics.",
+        "mark": 4
+      },
+      {
+        "option": "I will study whatever I can before the time runs out.",
+        "mark": 4
+      },
+      {
+        "option": "It's not possible to study in such a short time, I will skip the exam.",
+        "mark": 1
+      },
+      { "option": "Option 1, 2, 3", "mark": 5 },
+      { "option": "Option 1,2,4", "mark": 1 }
+    ],
+    "right_option": 5,
+    "pride": "influence",
+    "skill": "mindset",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 45,
-    "question_body": "What would be the best way or mindset to receive a suggestion or advice from others?",
-    "option1": "Accept all information which will help us to solve the problem even if it is from the person whom we don’t wish to listen or hear from",
-    "option2": "Use a pleasant facial reaction when receiving the suggestions from the source to provide the information with happy heart",
-    "option3": "Be ready to accept other’s point of views and change our plans for our betterment even if it is different from our beliefs",
-    "option4": "All the above",
-    "option5": "Both 1 & 2",
-    "option6": "Both 2 & 3",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Your teacher says you aren't good in this subject. What will you do?",
+    "options": [
+      {
+        "option": "I am not good at it, I will stop studying this subject and focus on other subjects.",
+        "mark": 1
+      },
+      { "option": "I will try my best to study better, but I cant control how my teacher grades me.", "mark": 4 },
+      {
+        "option": "I will go join the tuition",
+        "mark": 4
+      },
+      { "option": "I will ask my teacher where exactly I need to improve and I will work on it.", "mark": 4 },
+      {
+        "option": "Option 2,3 &4",
+        "mark": 5
+      },
+      { "option": "None of the Above", "mark": 1 }
+    ],
+    "right_option": 7,
+    "pride": "influence",
+    "skill": "mindset",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 46,
-    "question_body": "Whenever Indira plays a sport, she always sees the best that she learned or gained even while losing the game. What skill do you think she possesses that makes it easier for her do it.",
-    "option1": "Good Attitude",
-    "option3": "Good Expression",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which of the following is true?",
+    "options": [
+      { "option": "Calm people always get hurt", "mark": 1 },
+      { "option": "Lazy people can never succeed", "mark": 2 },
+      { "option": "Kind people are always loved", "mark": 3 },
+      { "option": "People with specs are very clumsy", "mark": 1 },
+      { "option": "1st rankers always get the best job.", "mark": 3 },
+      { "option": "None of the above.", "mark": 5 }
+    ],
+    "right_option": 6,
+    "pride": "influence",
+    "skill": "attitude",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 47,
-    "question_body": "Sanjana fails in english exams more frequently because she is weak in grammar. She always believes that she might pass consistently within the next 4 years. She has a",
-    "option1": "Positive Attitude",
-    "option2": "Good Confidence",
-    "option3": "Good Patience",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What among the following are positive statements-\n1. I can do anything if people help me.\n2. I choose to be happy. \n3. I am worthy of all the love people give me. \n4. I am surely help you but you need to give me chocolate. \n5. My parents are amazing when they get me gifts. ",
+    "options": [
+      { "option": "Statement 1,2 & 3", "mark": 3 },
+      { "option": "Statement 1,2 & 4", "mark": 2 },
+      { "option": "Statement 2 &3", "mark": 5 },
+      { "option": "Statement 3 &4", "mark": 2 },
+      { "option": "Statement 1,3 & 5.", "mark": 2 },
+      { "option": "None of the above.", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "influence",
+    "skill": "attitude",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 48,
-    "question_body": "Rohith always thinks nothing will be perfect, even if things are going good he complaints it will become worse later, he doesn’t want even others to succeed, he has a",
-    "option1": "Positive Attitude",
-    "option2": "Negative Attitude",
-    "option3": "Sikken Attitude",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What among the following are negative statements-\n1. It is okay to take a break.\n2. Stop doing things that waste your time. \n3. This work is impossible to do \n4. Some people can never complete this task\n5. She cannot learn this subject",
+    "options": [
+      { "option": "Statement 3,4&5", "mark": 5 },
+      { "option": "Statement 1,2 & 3", "mark": 2 },
+      { "option": "Statement 1,2 & 4", "mark": 2 },
+      { "option": "Statement 2,3&5", "mark": 3 },
+      { "option": "All of the above", "mark": 2 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "influence",
+    "skill": "attitude",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 49,
-    "question_body": "Whenever things are not going as per our plans",
-    "option1": "Need to be patient and maintain the positive attitude",
-    "option2": "Do whatever is mandatory even when things are not going properly",
-    "option3": "Try to use all external influences even the unethical ones to bring it back as planned",
-    "option4": "Option 1 & 2",
-    "option5": "Option 2 & 3",
-    "option6": "Option 1 & 3",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "When we dont get what we want, we should-",
+    "options": [
+      { "option": "Ask till I get it.", "mark": 3 },
+      { "option": "Take what is given to me.", "mark": 3 },
+      { "option": "Don't do anything", "mark": 1 },
+      { "option": "Argue until I get it", "mark": 1 },
+      { "option": "Be patient and explain why I want it.", "mark": 5 },
+      { "option": "All of the above", "mark": 2 }
+    ],
+    "right_option": 5,
+    "pride": "influence",
+    "skill": "attitude",
+    "intelligence": "application"
   },
   {
     "sort_order": 50,
-    "question_body": "You are in a situation where you have to win the next game tomorrow to stay in the competition. Your see your opponent about to fall down from the cycle and hurt his leg, as he don't see the stone nearby",
-    "option1": "Alarm him about the nearby stone",
-    "option2": "If it is fate that he has to fall down even after alarming him then no one can help",
-    "option3": "He is far away from me I am afraid he may not hear my voice",
-    "option4": "Option 1 & 2",
-    "option5": "Option 2 & 3",
-    "option6": "Option 1 & 3",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "When we see a difficult question in exam we should-",
+    "options": [
+      { "option": "Get worried", "mark": 2 },
+      { "option": "Ask my friend for the answer", "mark": 1 },
+      {
+        "option": "Skip the question and attempt it at last by myself",
+        "mark": 5
+      },
+      {
+        "option": "Try my best to complete it and only then move to the next question.",
+        "mark": 3
+      },
+      { "option": "Leave the questions unanswered.", "mark": 1 },
+      { "option": "All of the above", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "influence",
+    "skill": "attitude",
+    "intelligence": "application"
   },
+
   {
     "sort_order": 51,
-    "question_body": "I wanted to secure top rank at any cost for which I need to",
-    "option1": "Study tirelessly without even taking any break",
-    "option2": "Need to put all my efforts and accept the results with whole heart",
-    "option3": "Expect and pray for others to score low marks",
-    "option4": "Nothing is in my hands",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 2
+    "instruction":"",
+    "question_link":"",
+    "question_body": "When asked to give a public speech we -",
+    "options": [
+      { "option": "Make excuses and skip my turn.", "mark": 1 },
+      { "option": "Will feel nervous but still give it a try.", "mark": 5 },
+      { "option": "Will not give it because I don't like it.", "mark": 1 },
+      { "option": "Give the chance to another person", "mark": 2 },
+      { "option": "All of the above", "mark": 2 },
+      { "option": "None of the above.", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "influence",
+    "skill": "attitude",
+    "intelligence": "application"
   },
   {
     "sort_order": 52,
-    "question_body": "What would be the appropriate way to express our suggestions to others? ",
-    "option1": "Express our suggestions or advice which will benefit the receiver",
-    "option2": "Express the suggestions in the intended way we like to happen",
-    "option3": "Express our suggestions anyways whether they take it or not",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What would be the appropriate way to act or behave in a social place (Family Function, Community, Locality, School Etc)?",
+    "options": [
+      {
+        "option": "Do whatever we like, provided it doesn't disturb or hurt others",
+        "mark": 5
+      },
+      { "option": "Do only things which are liked by others", "mark": 3 },
+      { "option": "Do whatever we like to do", "mark": 1 },
+      { "option": "All the above", "mark": 2 },
+      { "option": "None of the Above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "influence",
+    "skill": "attitude",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 53,
-    "question_body": "How do we need to do act upon while expressing our solutions, or suggestions or advice to others towards",
-    "option1": "Express the solution without any bias towards any type of a result or person",
-    "option2": "Express the solution without any personal hidden agenda",
-    "option3": "Express the solution with pre-planned expectation",
-    "option4": "All the above",
-    "option5": "Only 1 & 2",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which of the following can be done when we are angry, happy, sad and scared?",
+    "options": [
+      { "option": "Shout", "mark": 4 },
+      { "option": "Smile", "mark": 1 },
+      { "option": "Laugh", "mark": 1 },
+      { "option": "Tears", "mark": 5},
+      { "option": "All the Above", "mark": 2 },
+      { "option": "None of the Above", "mark": 3 }
+    ],
+    "right_option": 1,
+    "pride": "influence",
+    "skill": "attitude",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 54,
-    "question_body": "What would be the appropriate way to show our attitude while doing any work or express our suggestion or advice to others?",
-    "option1": "Show a genuine & positive intent that I am trying to help others",
-    "option2": "Express in such a way that receiver should not feel bad or reserved to seek help or suggestion or advice from me",
-    "option3": "Inspire others positively when others are expecting a negative result from the situation",
-    "option4": "Express in such a way that other person should feel that I know more than them",
-    "option5": "All the above",
-    "option6": "Option 1,2 &3",
-    "right_option": 6
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which would not assure happiness every time in social life?",
+    "options": [
+      { "option": "Sharing", "mark": 4},
+      { "option": "Understanding", "mark": 1 },
+      { "option": "Expecting", "mark": 5 },
+      { "option": "Supporting", "mark": 1 },
+      { "option": "Helping", "mark": 2 },
+      { "option": "None of the Above", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "influence",
+    "skill": "attitude",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 55,
-    "question_body": "Manoj always feel bad about his life and looks sad and try to avoid interactions with other people, he is",
-    "option1": "Emotionally weak",
-    "option2": "Mentally weak",
-    "option3": "Physically weak",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which expression denotes anger?",
+    "options": [
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/4.1.png-16467360935174.1.png",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/4.2.png-16467360935354.2.png",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/4.3.png-16467360935524.3.png",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/4.4.png-16467360935774.4.png",
+        "mark": 1
+      },
+      {
+        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/4.5.png-16467360935854.5.png",
+        "mark": 5
+      },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 5,
+    "pride": "deliver",
+    "skill": "expression",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 56,
-    "question_body": "<h3 class=\"ql-align-center\"><h3 class=\"ql-align-center\"><h3 class=\"ql-align-center\">Which of this picture shows surprise out of fear",
-    "option1": "A",
-    "option2": "B",
-    "option3": "C",
-    "option4": "D",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What emotion matches the audio?",
+    "options": [
+      { "option": "Angry", "mark": 1 },
+      { "option": "Hungry", "mark": 2 },
+      { "option": "Playful", "mark": 5 },
+      { "option": "Sleepy", "mark": 1 },
+      { "option": "Sad", "mark": 1 },
+      { "option": "All of the above", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "deliver",
+    "skill": "expression",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 57,
-    "question_body": "Preethi was getting ready to school, She told her mother to iron the uniform while returning from the movie last night, on seeing the un ironed uniform she was disappointed which means she is",
-    "option1": "Angry",
-    "option2": "Sad",
-    "option3": "Feared",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 2
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which sentence fits the image better?",
+    "options": [
+      { "option": "The students are playing hide & seek", "mark": 1 },
+      {
+        "option": "The boy with his hands on his face is taking rest",
+        "mark": 3
+      },
+      { "option": "The boy is feeling left out from the group", "mark": 5 },
+      { "option": "The students are listening to class", "mark": 1 },
+      { "option": "All of the above", "mark": 1 },
+      {"option":"None of the Above","mark":3}
+    ],
+    "right_option": 3,
+    "pride": "deliver",
+    "skill": "expression",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 58,
-    "question_body": " Diana was travelling to the nearby town to meet her friend after 10 years, while walking on a lonely street at night by 10 pm suddenly she felt someone touched her shoulder from behind, she was initially ____ ",
-    "option1": "Surprised",
-    "option2": "Excited",
-    "option3": "Scared",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Diana was traveling to the nearby town to meet her friend after 10 years. While walking on a lonely street at night by 10 pm, she suddenly felt someone touch her shoulder from behind. She would be ……… initially",
+    "options": [
+      { "option": "Surprise", "mark": 3 },
+      { "option": "Scared", "mark": 5 },
+      { "option": "Excited", "mark": 3 },
+      { "option": "All the above", "mark": 3 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "deliver",
+    "skill": "expression",
+    "intelligence": "application"
   },
   {
     "sort_order": 59,
-    "question_body": "<h3 class=\"ql-align-center\"><h3 class=\"ql-align-center\"><h3 class=\"ql-align-center\">Anaya wants to please her friend to do a favour for anaya which would be the ideal, appropriate, and happily helping facial expression that will help to get the favour",
-    "option1": "A",
-    "option2": "B",
-    "option3": "C",
-    "option4": "D",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Anaya wants to please her friend to do a favor for Anaya. Which expression should she use when asking for the favor?",
+    "options": [
+      { "option": "Pleasing Face", "mark": 5 },
+      { "option": "Threatening Face", "mark": 1 },
+      { "option": "Nagging Face", "mark": 1 },
+      { "option": "Sad Face", "mark": 1 },
+      { "option": "All the above", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "deliver",
+    "skill": "expression",
+    "intelligence": "application"
   },
   {
     "sort_order": 60,
-    "question_body": "Shanvik was riding his bicycle and suddenly a dog came fierce fully near him and barked at him, so he applied the brakes, due to bad road the cycle skidded off the road and fell down causing an injury in his leg, What should he feel now?",
-    "option1": "Feel angry that the dog made him fall down",
-    "option2": "Feel feared that the dog may bite him",
-    "option3": "Feel happy that the dog did not bite him",
-    "option4": "Feel sad that his injury may cause pain",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Shanvik was riding his bicycle and suddenly a dog came fiercely near him and barked at him. He applied the brakes, but due to bad road, the cycle skidded off the road and fell down causing an injury in his leg. What are all the possible feelings that he would feel now?",
+    "options": [
+      { "option": "Feel angry at the dog as it made him fall down", "mark": 4 },
+      { "option": "Feel feared that the dog may bite him", "mark": 4 },
+      { "option": "Feel happy that the dog did not bite him", "mark": 4 },
+      { "option": "Feel sad that his injury may cause severe pain", "mark": 3 },
+      { "option": "All the Above", "mark": 5 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 5,
+    "pride": "deliver",
+    "skill": "expression",
+    "intelligence": "application"
   },
+
   {
     "sort_order": 61,
-    "question_body": "How do we need to do to convey our inner feelings or emotions about the current circumstances to others?",
-    "option1": "Express the appropriate behaviors without disturbing other people present in that situation",
-    "option3": "Use strong emotions and shout hard to seek others attention in the surroundings",
-    "option4": "Express our emotions along with hard emotional behaviors whenever & wherever possible",
-    "option5": "All the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "How do we need to do to convey our emotions to others?",
+    "options": [
+      {
+        "option": "Express your feelings in the right way and not disturb others around",
+        "mark": 5
+      },
+      {
+        "option": "Shout hard about how you are feeling to make people notice you",
+        "mark": 1
+      },
+      {
+        "option": "Stay silent and not express your emotions at all",
+        "mark": 2
+      },
+      { "option": "Express your emotions with violent behavior", "mark": 1 },
+      { "option": "All the Above", "mark": 2 }
+    ],
+    "right_option": 1,
+    "pride": "deliver",
+    "skill": "expression",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 62,
-    "question_body": "How do we need to express our feelings to the other person to understand it in the appropriate sense?",
-    "option1": "Use the strong emotions so that the people around it understands the way I want it to be",
-    "option2": "Don’t express our emotions as people around us are not going to understand my emotions",
-    "option3": "Express my regular emotions initially if no one responds increase the intensity till someone shows attention to my feelings",
-    "option4": "Express our emotional behavior without hurting the other person's feelings or properties and try to communicate our inner feelings in a verbal conversation",
-    "option5": "All the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "How do we express how we feel, so that others can understand?",
+    "options": [
+      {
+        "option": "Use the strong emotions and be stubborn because people should understand how you feel",
+        "mark": 1
+      },
+      {
+        "option": "Don’t express your emotions as people around us are not going to understand how you feel",
+        "mark": 1
+      },
+      {
+        "option": "Keep repeating how you feel until people listen",
+        "mark": 2
+      },
+      {
+        "option": "Express using the right facial reactions so they don't misunderstand how you feel.",
+        "mark": 5
+      },
+      { "option": "All the Above", "mark": 1 }
+    ],
+    "right_option": 4,
+    "pride": "deliver",
+    "skill": "expression",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 63,
-    "question_body": "What would be the advantageous time or place to express our feelings & emotions, to the receiver or the other person to understand it in the appropriate sense and respect our feelings?",
-    "option1": "Express our strong emotions at the right place & time where they have to accept mine due to social manners",
-    "option2": "Express our emotions with the appropriate emotional behaviours which are liked & accepted by the receiver",
-    "option3": "Express our emotions to the people who can influence the person to whom we want to show our emotions",
-    "option4": "Never express our emotions as they are not going to respect my emotions any how",
-    "option5": "Express our emotions consistently so that at least once they might listen to me",
-    "right_option": 2
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What would be the best way to express how you feel to others?",
+    "options": [
+      {
+        "option": "Express your strong emotions at the right place & time.",
+        "mark": 5
+      },
+      { "option": "Express your emotions with a lot of smile", "mark": 2 },
+      { "option": "Express your emotion through text", "mark": 1 },
+      {
+        "option": "Never express your emotions. They won't understand anyway.",
+        "mark": 1
+      },
+      {
+        "option": "Forcefully tell them how you feel, since they have to listen.",
+        "mark": 1
+      }
+    ],
+    "right_option": 1,
+    "pride": "deliver",
+    "skill": "expression",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 64,
-    "question_body": "Yashmikha knows exactly how to convey her inner feelings or expectations to her mother and makes her mother understand what she wants. What skill do you think she possess that makes it easier for her do it",
-    "option1": "Good communication",
-    "option2": "Good leadership",
-    "option3": "Good analysis",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Listen to the audio\nWhat was the person talking about?",
+    "options": [
+      { "option": "Hens", "mark": 5 },
+      { "option": "Crows", "mark": 1 },
+      { "option": "Ducks", "mark": 1 },
+      { "option": "Cars", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "deliver",
+    "skill": "communication",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 65,
-    "question_body": "What would we call the act of a person who is afraid of failing at the tasks that they need to complete and postpone or delay the work purposefully by giving reasons",
-    "option1": "Procrastination",
-    "option2": "Over Confident",
-    "option3": "Diffident",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "How did the person sound?",
+    "options": [
+      { "option": "Excited", "mark": 1 },
+      { "option": "Worried", "mark": 5 },
+      { "option": "Angry", "mark": 1 },
+      { "option": "Confused", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "deliver",
+    "skill": "communication",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 66,
-    "question_body": "What do we call a person who expresses his thoughts, emotions, beliefs and opinions in an honest and appropriate way",
-    "option1": "Assertive",
-    "option2": "Perfect",
-    "option3": "Non Assertive",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What kind of narration is this?",
+    "options": [
+      { "option": "A conversation", "mark": 2 },
+      { "option": "An interview", "mark": 1 },
+      { "option": "A speech", "mark": 1 },
+      { "option": "A complaint", "mark": 5 },
+      { "option": "None of the above", "mark": 1 },
+      { "option": "All of the above", "mark": 1 }
+    ],
+    "right_option": 4,
+    "pride": "deliver",
+    "skill": "communication",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 67,
-    "question_body": "How would you convey to your friend that she has committed a mistake and make her accept that mistake",
-    "option1": "Convey to her that its quite natural for everyone to make mistakes",
-    "option2": "Convey to her that it is ethical to accept the committed mistake",
-    "option3": "Convey to her that accept the mistake or else you might look bad",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Your friend is angry and doesn't want to talk to you. You know why she is angry, but the mistake is not on your side. How would you respond to her?",
+    "options": [
+      { "option": "Stop acting, you are wrong.", "mark": 1 },
+      {
+        "option": "I know you are angry, but I don't care about it.",
+        "mark": 1
+      },
+      {
+        "option": "I understand you are angry, I will give you some time alone.",
+        "mark": 5
+      },
+      {
+        "option": "I am going to complain to your mom, it's your fault.",
+        "mark": 1
+      },
+      { "option": "I am sorry.", "mark": 4 },
+      { "option": "None of the above.", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "deliver",
+    "skill": "communication",
+    "intelligence": "application"
   },
   {
     "sort_order": 68,
-    "question_body": "What would be the appropriate sentence to use instead of saying",
-    "option1": "”I Need this help badly from you”",
-    "option2": "“I need this help from you. You have to do it for me”",
-    "option3": "”Would you mind doing me a favour”",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Listen to the audio. What did Anaaya do wrong while talking to her mother?",
+    "options": [
+      { "option": "She was impolite while asking.", "mark": 5 },
+      { "option": "She was screaming while asking", "mark": 4 },
+      { "option": "She was crying while asking", "mark": 1 },
+      { "option": "Her mom did not like her asking for the dish", "mark": 1 },
+      { "option": "All of the above", "mark": 1 },
+      { "option": "None of the above.", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "deliver",
+    "skill": "communication",
+    "intelligence": "application"
   },
   {
     "sort_order": 69,
-    "question_body": "You want your friend to accept your viewpoint even though it will be unacceptable by him, how will you influence him to accept your view point",
-    "option1": "Convey that smart people like you can accept this easily",
-    "option2": "Convey that only smart people can accept it",
-    "option3": "Convey that only fools can't accept it",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You want your mom to cook your favorite food. How would you ask her for it?",
+    "options": [
+      {
+        "option": "Mom, I feel like eating that dish. Make it for me today!",
+        "mark": 3
+      },
+      {
+        "option": "Mom, its been soo many days since you made that dish. It would be nice if you can make it today.",
+        "mark": 3
+      },
+      { "option": "Mom, why don't you make this dish today?", "mark": 2 },
+      {
+        "option": "Mom, I am craving to eat this. Would it be possible for you to make it today for me?",
+        "mark": 5
+      },
+      { "option": "None of the above.", "mark": 1 }
+    ],
+    "right_option": 4,
+    "pride": "deliver",
+    "skill": "communication",
+    "intelligence": "application"
   },
   {
     "sort_order": 70,
-    "question_body": "What do we need to do to convey our planned solutions to the outer world or to other people?",
-    "option1": "Communicate our solutions in the form of words, actions, or expressions",
-    "option2": "Use friends help to convey our solutions to others",
-    "option3": "Never convey our solutions to others",
-    "option4": "Find if the person can understand by themselves",
-    "option5": "Option 2 & 3",
-    "option6": "Option 2 & 4",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What is the best way to genuinely ask for a favor?",
+    "options": [
+      { "option": "I hope you can do this for me.", "mark": 3 },
+      { "option": "Could you please do this for me?", "mark": 5 },
+      { "option": "I want you to do this for me.", "mark": 1},
+      { "option": "Can you do this for me?", "mark": 3 },
+      { "option": "Both 1&4", "mark": 3 },
+      {"option":"None of the Above","mark":1}
+    ],
+    "right_option": 2,
+    "pride": "deliver",
+    "skill": "communication",
+    "intelligence": "advantage"
   },
+
   {
     "sort_order": 71,
-    "question_body": "How do you need to communicate our intentions to others",
-    "option1": "Communicate using the appropriate words, which provides the exact meaning of my intentions ·",
-    "option2": "Communicate only to my friends as they can understand me better",
-    "option3": "Feel bad the other person was not able understand what i am trying convey",
-    "option4": "Find the right person who can understand my intentions and explain only to them",
-    "option5": "Option 2 & 4",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You get into your school van, and see someone else sitting in your place. You look around and there is no place for you to sit. What will you tell him/her to get yourself seated?",
+    "options": [
+      {
+        "option": "There is no place anyway so I won't say anything.",
+        "mark": 2
+      },
+      { "option": "Get up from that place. It is mine", "mark": 1},
+      {
+        "option": "I used to sit there, so are you open to move a little and adjust the space with me?",
+        "mark": 5
+      },
+      { "option": "I used to sit there, so can you please get up?", "mark": 2 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "deliver",
+    "skill": "communication",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 72,
-    "question_body": "What would be the appropriate way to communicate our intentions to others?",
-    "option1": "Communicate assertively using the appropriate linguistics when others are listening to my words",
-    "option2": "Communicate in the form of physical performance when my words are not accepted",
-    "option3": "Communicate in the form of emotions or facial expressions when others cant understand my language",
-    "option4": "Communicate in the form of written instructions when they are not around me",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You have difficulty understanding what your friend is trying to say. what will you tell him?",
+    "options": [
+      {
+        "option": "Kindly explain it to me clearly again. I find it difficult to understand",
+        "mark": 5
+      },
+      { "option": "I have difficulty understanding this.", "mark": 4},
+      { "option": "You don't make any sense.", "mark": 1 },
+      {
+        "option": "What you are saying might be right, but I don't understand.",
+        "mark": 3
+      },
+      { "option": "Both 2& 4", "mark": 3 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 1,
+    "pride": "deliver",
+    "skill": "communication",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 73,
-    "question_body": "Puneeth’s mathematics teacher gave new problems to be solved as homework to his class students; Puneeth knew only how to solve the first few steps of the problem. His friend knew to do only the last steps of the problem. So Puneeth convinced his friend to join him together to solve the problem and they both received appreciation from their teacher. What skill did they both used to solve the problem?",
-    "option1": "Collaborative work skills",
-    "option2": "Leadership skills",
-    "option3": "Communication skills",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Look at the video. Why was Rachana (the leader) removed from the team?",
+    "options": [
+      { "option": "Because she was doing all the work by herself", "mark": 1 },
+      { "option": "She was late to the meeting", "mark": 1 },
+      { "option": "She did not work along with the team", "mark": 5 },
+      { "option": "She was not doing any work", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "engage",
+    "skill": "collaboration",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 74,
-    "question_body": "Smirthi has promised her mother that she will score good marks in the final exams and also make her younger brother and sister do the same. What ability will help her to achieve the result?",
-    "option1": "Coordination",
-    "option2": "Cooperation",
-    "option3": "Collaboration",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Who was a good team player?",
+    "options": [
+      { "option": "Seema", "mark": 5 },
+      { "option": "Vishal", "mark": 1 },
+      { "option": "Anirudh", "mark": 1 },
+      { "option": "Gayathri", "mark": 1},
+      { "option": "Rachna", "mark": 1},
+      {"option":"None of the Above","mark":1}
+    ],
+    "right_option": 1,
+    "pride": "engage",
+    "skill": "collaboration",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 75,
-    "question_body": "What skill is to be exhibited by everyone in a dance troop while doing step movements so that it looks in order while watching from outside",
-    "option1": "Collaborative work",
-    "option2": "Cooperation",
-    "option3": "Coordination",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What was the good quality portrayed in the story?",
+    "options": [
+      { "option": "Helping fellow teammates.", "mark": 1 },
+      { "option": "Being super punctual.", "mark": 2 },
+      { "option": "Listening to leader", "mark": 3 },
+      { "option": "Putting the team goal first", "mark": 4 },
+      { "option": "Being very kind", "mark": 5 },
+      { "option": "Both 1 & 4", "mark": 6 },
+      { "option": "Both 1 & 3", "mark": 7 }
+    ],
+    "right_option": 6,
+    "pride": "engage",
+    "skill": "collaboration",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 76,
-    "question_body": "Sooraj’s best friends krish, varun, and priyanka were put in different teams when the class was divided for the school Inter House competition. Tina, swaroop and ruchi were added to his team whom he doesn’t usually like. This new team combination will",
-    "option1": "Create an opportunity to make new friends",
-    "option3": "Reduce teams victory options due to new people",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Your teammate (Karan) doesn't understand the work given to him by the leader. What will you do?",
+    "options": [
+      {
+        "option": "It is better to inform the teammates about his inefficiency.",
+        "mark": 2
+      },
+      { "option": "Explain the work and help him.", "mark": 5 },
+      { "option": "Do his work for him.", "mark": 2},
+      { "option": "Not do anything, and let him find his own way.", "mark": 1 },
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 2,
+    "pride": "engage",
+    "skill": "collaboration",
+    "intelligence": "application"
   },
   {
     "sort_order": 77,
-    "question_body": "What would be the first step in order to gain confidence and respect from teammate",
-    "option1": "Complete the committed tasks on time",
-    "option2": "Commit only what can fulfilled",
-    "option3": "Commit to things what others expect",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Your best friend Nisha is in the same project team as yours. But she is not working properly in the team project. What will you do?",
+    "options": [
+      {
+        "option": "Tell her that she has duties to do as a part of this team and request her to work.",
+        "mark": 5
+      },
+      {
+        "option": "She has helped me in many things before, so it is okay.",
+        "mark": 1
+      },
+      {
+        "option": "Ask her to work or she might be removed from the team.",
+        "mark": 3
+      },
+      {
+        "option": "Suggest the team leader to remove her/him from team directly.",
+        "mark": 2
+      },
+      { "option": "None of the above", "mark": 1}
+    ],
+    "right_option": 1,
+    "pride": "engage",
+    "skill": "collaboration",
+    "intelligence": "application"
   },
   {
     "sort_order": 78,
-    "question_body": "One of your classmates needs a pen to write as her pen is not writing, you have an extra pen.",
-    "option1": "Its better to go forward and offer my pen if we can help someone why to wait for request.",
-    "option2": "Should wait and check if she asks me for pen else I may feel embarrassed if she rejects my pen",
-    "option3": "I am ready to give my pen if she requests me",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You are asked to pair up with a classmate, by your teacher, to complete the activity list for the day. But you find it difficult to work with that classmate. What would you do?",
+    "options": [
+      { "option": "Ask for a new partner to the teacher", "mark": 2},
+      {
+        "option": "It is just for a day. I will try my best to complete the work with that person.",
+        "mark": 4
+      },
+      {
+        "option": "I might let my partner do the work because we aren't working well together.",
+        "mark": 1
+      },
+      {
+        "option": "I will convey the difficulty to my partner and try to sort out the differences.",
+        "mark": 5
+      },
+      { "option": "None of the above", "mark": 1}
+    ],
+    "right_option": 4,
+    "pride": "engage",
+    "skill": "collaboration",
+    "intelligence": "application"
   },
   {
     "sort_order": 79,
-    "question_body": "What do we need to do to become a good teammate and a contributing member of the team?",
-    "option1": "Do all the work with commitment",
-    "option2": "Show genuine interest on others well being",
-    "option3": "Try to avoid conflicts within the team",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You and your teammate Amisha want to do the same drawing as your contribution for the class project. She is not ready to change her idea. What will you do?",
+    "options": [
+      {
+        "option": "We are a team. So I will change my idea and come up with a new drawing.",
+        "mark": 3
+      },
+      {
+        "option": "I don't think I will change because I can draw better than Amisha.",
+        "mark": 2
+      },
+      {
+        "option": "I will not take part in the project, since I can't do anything else.",
+        "mark": 1
+      },
+      { "option": "Talk to her and see if we can share the work.", "mark": 3},
+      { "option": "Option 1, 2 & 4", "mark": 2},
+      { "option": "Both 1& 4", "mark": 5 }
+    ],
+    "right_option": 6,
+    "pride": "engage",
+    "skill": "collaboration",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 80,
-    "question_body": "How do we need to help, share and cooperate with others towards a higher goal than self",
-    "option1": "Understand others needs, desires, and their values",
-    "option2": "Respect and accept others point of views, and their way of working and behaving",
-    "option3": "Help others when they have trouble working towards their goal",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "It's sports day and you are about to play finals kho-kho. Your friend gets hurt before the game. What will you do?",
+    "options": [
+      {
+        "option": "Get frustrated and angry at her. Because this will make the chances of losing high",
+        "mark": 3
+      },
+      { "option": "Check with her if she can adjust and play.", "mark": 3 },
+      { "option": "Tell your PT teacher about it", "mark": 3 },
+      {
+        "option": "Discuss with your team and alter the game strategy.",
+        "mark": 3
+      },
+      { "option": "Option 2,3 &4", "mark": 5 },
+      { "option": "Option 1&2& 3", "mark": 3}
+    ],
+    "right_option": 5,
+    "pride": "engage",
+    "skill": "collaboration",
+    "intelligence": "advantage"
   },
+
   {
     "sort_order": 81,
-    "question_body": "Your class is split into four teams in the name of house, What do you need to do to achieve the best team award of the year.",
-    "option1": "Do my work properly and expect others to do the same",
-    "option2": "Do my work properly even if others don’t do it",
-    "option3": "Help, share and cooperate in process towards success",
-    "option4": "Wait till the team leader gives the instructions for us to do",
-    "option5": "Do it by myself when the leader is not directing properly",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "You are a part of the team and you are given a work. Due to some reasons you aren't able to do it. What will you do?",
+    "options": [
+      { "option": "Ask another teammate for help.", "mark": 3 },
+      { "option": "Tell my leader I will do it later", "mark": 2 },
+      {
+        "option": "Even if I don't do it, no problem! Someone else will do it. It has happened before.",
+        "mark": 1
+      },
+      { "option": "Ask for some more time and complete it myself", "mark": 4 },
+      { "option": "Both 1 & 4", "mark": 5 },
+      { "option": "Both 1&2", "mark": 2}
+    ],
+    "right_option": 5,
+    "pride": "engage",
+    "skill": "collaboration",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 82,
-    "question_body": "Franky wanted to create a green environment in his neighborhood. So he started first to plant saplings in his own backyard and his nearby places. Inspired by his activities his neighbors also wanted to grow trees but did not know how to do it. So he helped them by teaching them how to do it and his neighborhood became a green environment in reality within a few months. What skills did he use to inspire others?",
-    "option1": "Leadership skills",
-    "option2": "Marketing skills",
-    "option3": "Teamwork",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Anita is smart, but mean. Akilan is disciplined, but poor in math. Keshav is kind, but does not have team skills. Who do you think will be the best leader out of the three?",
+    "options": [
+      { "option": "Anita", "mark": 1 },
+      { "option": "Akilan", "mark": 5 },
+      { "option": "Keshav", "mark": 3 },
+      { "option": "All of the above", "mark": 1 },
+      { "option": "None of the above", "mark": 3}
+    ],
+    "right_option": 2,
+    "pride": "engage",
+    "skill": "leadership",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 83,
-    "question_body": "Narender wanted to become an IAS officer to make his village have all the necessary amenities and also wanted to start an IAS academy for creating more IAS officers and making their ambitions and aspirations true. Narender has a",
-    "option1": "Good Vision",
-    "option2": "Ambition",
-    "option3": "Aspiration",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What can be done by a team leader to reach the team goal quickly?",
+    "options": [
+      {
+        "option": "Use the power as a leader and force people to complete work",
+        "mark": 2
+      },
+      {
+        "option": "Give special treatment to friends and ask them to make rules",
+        "mark": 1
+      },
+      {
+        "option": "Choose people based on their talent- to complete the works",
+        "mark": 4
+      },
+      {
+        "option": "Help other students and guide them to complete work",
+        "mark": 4
+      },
+      { "option": "Both 1,2 &3", "mark": 2 },
+      { "option": "Both 3 & 4", "mark": 5 }
+    ],
+    "right_option": 6,
+    "pride": "engage",
+    "skill": "leadership",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 84,
-    "question_body": "Suchith was the best performing student in the class. He always wanted to become a scientist and help mankind through his discoveries and inventions. He has a noble",
-    "option1": "Intelligence",
-    "option2": "Ambition",
-    "option3": "Commitment",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 2
+    "instruction":"",
+    "question_link":"",
+    "question_body": "What qualities must a great class leader have?",
+    "options": [
+      {
+        "option": "Be a good example and help others to achieve their targets or goals",
+        "mark": 5
+      },
+      {
+        "option": "Carefully watch how the team performs and write down their mistakes",
+        "mark": 2
+      },
+      {
+        "option": "Everyone knows what to do, so just let them be free.",
+        "mark": 1
+      },
+      {
+        "option": "Support the people who work properly and complain about people who don’t do the work properly",
+        "mark": 3
+      },
+      { "option": "All the above", "mark": 2 }
+    ],
+    "right_option": 1,
+    "pride": "engage",
+    "skill": "leadership",
+    "intelligence": "awareness"
   },
   {
     "sort_order": 85,
-    "question_body": "There are 3 students who wants to become the leader of the class, who would be the right person for it so that the whole class benefits from it in terms of good education and unity",
-    "option1": "One who is the first rank holder in the class",
-    "option2": "One who is kind hearted",
-    "option3": "One who is good at studies and helps others",
-    "option4": "One who is your friend",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 3
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Sonali wants to become the class leader. What does she need to do for that?",
+    "options": [
+      { "option": "She needs to top the class", "mark": 3},
+      { "option": "She needs to make more friends", "mark": 3 },
+      {
+        "option": "She needs to help everyone in class even though she might not like them",
+        "mark": 4
+      },
+      { "option": "All the above", "mark": 5},
+      { "option": "None of the above", "mark": 1 }
+    ],
+    "right_option": 3,
+    "pride": "engage",
+    "skill": "leadership",
+    "intelligence": "application"
   },
   {
     "sort_order": 86,
-    "question_body": "Karan wants to become the class leader for which he needs to",
-    "option1": "He needs to top the class",
-    "option2": "He needs to make more friends",
-    "option3": "Need to help everyone in class even though he has difference of opinion with them",
-    "option4": "All the above",
-    "option5": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "During the exam, Shyam's best friend asked him the answer to one question. How should Rajit respond?",
+    "options": [
+      { "option": "Tell him the answer", "mark": 2 },
+      { "option": "Ignore his friend", "mark": 1 },
+      { "option": "Inform the teacher", "mark": 1 },
+      {
+        "option": "Ignore him and later after the exam is over, politely convey to him that it is wrong to cheat.",
+        "mark": 5
+      },
+      { "option": "All the Above", "mark": 2 },
+      { "option": "None of the above", "mark": 3 }
+    ],
+    "right_option": 4,
+    "pride": "engage",
+    "skill": "leadership",
+    "intelligence": "application"
   },
   {
     "sort_order": 87,
-    "question_body": "During the exam, Rajit's best friend asked him the answer of one question. What should Rajit do",
-    "option1": "Tell him the answer",
-    "option2": "Ignore his friend",
-    "option3": "Inform the teacher",
-    "option4": "Convey to him politely that its unethical",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 4
+    "instruction":"",
+    "question_link":"",
+    "question_body": "How will you convince your teacher to become a class / team leader?",
+    "options": [
+      {
+        "option": "Tell that I am popular and I have a lot of friends",
+        "mark": 2
+      },
+      {
+        "option": "Tell that I look nice and people will listen to me",
+        "mark": 2
+      },
+      { "option": "Tell that I can understand people", "mark": 4 },
+      {
+        "option": "Tell that I do my classworks and homeworks properly",
+        "mark": 4
+      },
+      { "option": "Both 1 & 4", "mark": 2 },
+      { "option": "Both 3&4", "mark": 5}
+    ],
+    "right_option": 6,
+    "pride": "engage",
+    "skill": "leadership",
+    "intelligence": "application"
   },
   {
     "sort_order": 88,
-    "question_body": "What are the duties & advantages you can use as a team leader to reach the team goal at the earliest?",
-    "option1": "Use my influence and achieve results using my position",
-    "option2": "Make my friends in the top positions and make them happy",
-    "option3": "Choose & appoint the appropriate people for the work roles who are specialized in it",
-    "option4": "Inspire & motivate others through my actions and make them work with wholeheartedness",
-    "option5": "Option 1 & 2",
-    "option6": "Option 3 & 4",
-    "right_option": 6
+    "instruction":"",
+    "question_link":"",
+    "question_body": "Which is the right way to go about being a leader?",
+    "options": [
+      {
+        "option": "Get to know your group-> make a plan-> delegate work properly-> reach goal",
+        "mark": 5
+      },
+      {
+        "option": "Make a plan-> Get to know your group-> reach goal",
+        "mark": 4
+      },
+      { "option": "Make a plan-> delegate work-> reach goal", "mark": 3 },
+      {
+        "option": "Get to know your group-> delegate work-> make a plan-> reach goal",
+        "mark": 1
+      },
+      { "option": "Both 1 & 2", "mark": 4 },
+      { "option": "Both 1&4", "mark": 2}
+    ],
+    "right_option": 1,
+    "pride": "engage",
+    "skill": "leadership",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 89,
-    "question_body": "What do we need to do to be a great leader in our team, classroom, organization or community?",
-    "option1": "Lead by example, help others, to achieve their targets or goals",
-    "option2": "Direct the team from behind so that we can monitor who commits mistakes",
-    "option3": "Provide freedom to the members of the team to work as they wish as everyone knows what to do",
-    "option4": "Support the people who do properly and criticize who don’t do the work properly",
-    "option5": "All the above",
-    "right_option": 1
+    "instruction":"",
+    "question_link":"",
+    "question_body": "In which of the situations is the role of a leader very important?",
+    "options": [
+      { "option": "To manage household duties", "mark": 2 },
+      { "option": "During assembly prayer", "mark": 2 },
+      { "option": "To organize the classroom", "mark": 2},
+      { "option": "To run a restaurant", "mark": 2 },
+      { "option": "Both 2 & 3", "mark": 2 },
+      { "option": "All of the above", "mark": 5 }
+    ],
+    "right_option": 6,
+    "pride": "engage",
+    "skill": "leadership",
+    "intelligence": "advantage"
   },
   {
     "sort_order": 90,
-    "question_body": "How do we need to lead the team towards success and gain respect from others",
-    "option1": "Understand everyone’s capabilities and assign work accordingly",
-    "option2": "Foresee the results and plan accordingly",
-    "option3": "Take responsibilities for the teams shortcomings",
-    "option4": "Give credit to the appropriate efforts",
-    "option5": "All the above",
-    "option6": "None of the above",
-    "right_option": 5
+    "instruction":"",
+    "question_link":"",
+    "question_body": "When someone doesn't listen to you, as a leader how will you respond?",
+    "options": [
+      { "option": "Complain about them to the teacher", "mark": 2 },
+      { "option": "Fight with them and prove you are right", "mark": 1 },
+      {
+        "option": "Tell them you are the leader and they must listen",
+        "mark": 1
+      },
+      {
+        "option": "Ask them why they aren't listening and find a way to help them",
+        "mark": 4
+      },
+      {
+        "option": "It is okay if they don't listen. You will ask someone else to do the work",
+        "mark": 4
+      },
+      { "option": "Both 1 & 3", "mark": 5 }
+    ],
+    "right_option": 7,
+    "pride": "engage",
+    "skill": "leadership",
+    "intelligence": "advantage"
   }
 ]

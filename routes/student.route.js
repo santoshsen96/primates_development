@@ -34,8 +34,9 @@ studentRouter.post("/login", async (req, res) => {
         // result == true
         if (result) {
           let token = jwt.sign(
-            { userID: user._id, user: user.name },
-            "piramates"
+            { userID: user._id, user: user.name, standard: user.standard },
+            "piramates",
+            //console.log(user.standard,"standard")
           );
           res.status(200).json({ msg: "Login Successfull!!", token: token });
         } else {

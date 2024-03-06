@@ -10,11 +10,13 @@ const auth=(req,res,next)=>{
         try{
             const decoded= jwt.verify(token,"piramates")
             if(decoded){
-                console.log(decoded)
+                
                 req.body.userID=decoded.userID
                 req.body.user=decoded.user
                 req.body.studentName=decoded.studentName
                 req.body.userName=decoded.userName
+                req.body.standard=decoded.standard
+                console.log(decoded)
                next()
             }else{
                 res.json({msg:"Token not recognised!!"})

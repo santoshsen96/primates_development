@@ -9,8 +9,11 @@ app.use(express.json())
 
 const {studentRouter}=require("./routes/student.route")
 const {questionRouter}=require("./routes/question.route")
+const { questionBankRouter } = require('./routes/questionBank.route')
+
 app.use("/student",studentRouter)
 app.use('/quiz',questionRouter)
+app.use('/',questionBankRouter)
 
 app.listen(process.env.port,async()=>{
     try{

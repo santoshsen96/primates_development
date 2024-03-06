@@ -29,12 +29,14 @@ questionRouter.post("/", async (req, res) => {
 
 questionRouter.get("/testOption", async (req, res) => {
   try {
-    const { userID } = req.body;
+    const { userID,standard } = req.body;
+    //console.log(userID,standard)
     const Assesments = await examDataModel.find({ studentId: userID });
     const totalAssesment = Assesments.length;
     const examData = await examDataModel
       .findOne({ studentId: userID })
       .sort({ date: -1 });
+      console.log(examData)
     const previousExamData = await examDataModel
       .findOne({ studentId: userID, date: { $lt: examData.date } })
       .sort({ date: -1 })
@@ -128,7 +130,8 @@ questionRouter.get("/testOption", async (req, res) => {
     let consistencyPercentage = 0;
 
     if (countOf5Pointers !== 0) {
-      consistencyPercentage = countOf5Pointers * (1 / ratio) * (1 / 100);
+      //consistencyPercentage = countOf5Pointers * (1 / ratio) * (1 / 100);
+      consistencyPercentage=(countOf5Pointers/questions.length)*100
     } //consistency percentage
 
     const mpiScore =
@@ -478,7 +481,11 @@ questionRouter.get("/prideScore", async (req, res) => {
       scores.advantageScore,
       50
     );
-   
+   outputResult.perceiveAccuracy=calculateAccuracy(scores.perceiveScore,30)
+   outputResult.resolveAccuracy=calculateAccuracy(scores.resolveScore,30)
+   outputResult.influenceAccuracy=calculateAccuracy(scores.influenceScore,30)
+   outputResult.deliverAccuracy=calculateAccuracy(scores.deliverScore,30)
+   outputResult.engageAccuracy=calculateAccuracy(scores.engageScore,30)
     // Return outputResult
     res.status(200).json(outputResult);
   } catch (error) {
