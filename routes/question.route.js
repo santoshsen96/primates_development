@@ -3,9 +3,10 @@ const { examDataModel } = require("../model/question.model");
 const { auth } = require("../middleware/auth.middleware");
 const questionRouter = express.Router();
 const questions = require("../output");
+const { questionBankModel } = require("../model/questionBank.model");
 //const {scores} = require("../variables/pride.variables");
 //const calculateOptionReadTime=require("../functions/optionReadTime")
-console.log(questions.length);
+//console.log(questions.length);
 questionRouter.use(auth);
 
 questionRouter.post("/", async (req, res) => {
@@ -30,13 +31,19 @@ questionRouter.post("/", async (req, res) => {
 questionRouter.get("/testOption", async (req, res) => {
   try {
     const { userID,standard } = req.body;
-    //console.log(userID,standard)
+    // let questionModel;
+    // if(standard===5 || standard===6){
+    //   questionModel = questionBankModel;
+    // }
+    // const questions = await questionModel.find();
+    // console.log(questions.length)
+    
     const Assesments = await examDataModel.find({ studentId: userID });
     const totalAssesment = Assesments.length;
     const examData = await examDataModel
       .findOne({ studentId: userID })
       .sort({ date: -1 });
-      console.log(examData)
+     // console.log(examData)
     const previousExamData = await examDataModel
       .findOne({ studentId: userID, date: { $lt: examData.date } })
       .sort({ date: -1 })
@@ -320,7 +327,8 @@ questionRouter.get("/prideScore", async (req, res) => {
         scores.influenceScore +
         scores.deliverScore +
         scores.engageScore;
-
+      totalSkillScore=scores.attentionScore+scores.memoryScore+scores.criticalScore+scores.creativeScore+scores.mindsetScore+scores.attitudeScore+scores.expressionScore+scores.communicationScore+scores.collaborationScore+scores.leadershipScore  
+     
       if (totalPrideScore !== 0) {
         outputResult.perceiveContribution = (
           (scores.perceiveScore / totalPrideScore) *
@@ -346,6 +354,23 @@ questionRouter.get("/prideScore", async (req, res) => {
         outputResult.perceiveContribution = 0;
       }
     }
+    //calculation of skil contribution
+    outputResult.attentionContribution=((scores.attentionScore/totalSkillScore)*100).toFixed(2)
+    outputResult.memoryContribution = ((scores.memoryScore / totalSkillScore) * 100).toFixed(2);
+    outputResult.criticalContribution = ((scores.criticalScore / totalSkillScore) * 100).toFixed(2);
+    outputResult.creativeContribution = ((scores.creativeScore / totalSkillScore) * 100).toFixed(2);
+    outputResult.mindsetContribution = ((scores.mindsetScore / totalSkillScore) * 100).toFixed(2);
+    outputResult.attitudeContribution = ((scores.attitudeScore / totalSkillScore) * 100).toFixed(2);
+    outputResult.expressionContribution = ((scores.expressionScore / totalSkillScore) * 100).toFixed(2);
+    outputResult.communicationContribution = ((scores.communicationScore / totalSkillScore) * 100).toFixed(2);
+    outputResult.collaborationContribution = ((scores.collaborationScore / totalSkillScore) * 100).toFixed(2);
+    outputResult.leadershipContribution = ((scores.leadershipScore / totalSkillScore) * 100).toFixed(2);
+
+    //calculate of intelligence contribution
+    outputResult.awarenessContribution=((scores.awarenessScore/totalSkillScore)*100).toFixed(2)
+    outputResult.applicationContribution=((scores.applicationScore/totalSkillScore)*100).toFixed(2)
+    outputResult.advantageContribution=((scores.advantageScore/totalSkillScore)*100).toFixed(2)
+    
 
     // Calculation of all ORT of skill and intelligence
 
@@ -431,6 +456,7 @@ questionRouter.get("/prideScore", async (req, res) => {
       return scores;
     };
     console.log("total pride score:", totalPrideScore);
+    console.log(scores.attentionScore)
     calculateOptionReadTime(examData, questions);
     function calculateAccuracy(score, total) {
       return ((score / total) * 100).toFixed(2);
