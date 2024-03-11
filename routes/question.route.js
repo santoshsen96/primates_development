@@ -458,6 +458,7 @@ questionRouter.get("/prideScore", async (req, res) => {
     console.log("total pride score:", totalPrideScore);
     console.log(scores.attentionScore)
     calculateOptionReadTime(examData, questions);
+
     function calculateAccuracy(score, total) {
       return ((score / total) * 100).toFixed(2);
     }
@@ -465,53 +466,53 @@ questionRouter.get("/prideScore", async (req, res) => {
     // Assign calculated accuracy values to outputResult
     outputResult.attentionAccuracy = calculateAccuracy(
       scores.attentionScore,
-      15
+      (questions.length/10)*5
     );
     outputResult.memoryAccuracy = calculateAccuracy(scores.memoryScore, 15);
     outputResult.criticalThinkingAccuracy = calculateAccuracy(
       scores.criticalScore,
-      15
+      (questions.length/10)*5
     );
     outputResult.creativeThinkingAccuracy = calculateAccuracy(
       scores.creativeScore,
-      15
+      (questions.length/10)*5
     );
     outputResult.mindsetAccuracy = calculateAccuracy(scores.mindsetScore, 15);
     outputResult.attitudeAccuracy = calculateAccuracy(scores.attitudeScore, 15);
     outputResult.expressionAccuracy = calculateAccuracy(
       scores.expressionScore,
-      15
+      (questions.length/10)*5
     );
     outputResult.communicationAccuracy = calculateAccuracy(
       scores.communicationScore,
-      15
+      (questions.length/10)*5
     );
     outputResult.collaborationAccuracy = calculateAccuracy(
       scores.collaborationScore,
-      15
+      (questions.length/10)*5
     );
     outputResult.leadershipAccuracy = calculateAccuracy(
       scores.leadershipScore,
-      15
+      (questions.length/10)*5
     );
 
     outputResult.awarenessAccuracy = calculateAccuracy(
       scores.awarenessScore,
-      50
+      (questions.length/3)*5
     );
     outputResult.applicationAccuracy = calculateAccuracy(
       scores.applicationScore,
-      50
+      (questions.length/3)*5
     );
     outputResult.advantageAccuracy = calculateAccuracy(
       scores.advantageScore,
-      50
+      (questions.length/3)*5
     );
-   outputResult.perceiveAccuracy=calculateAccuracy(scores.perceiveScore,30)
-   outputResult.resolveAccuracy=calculateAccuracy(scores.resolveScore,30)
-   outputResult.influenceAccuracy=calculateAccuracy(scores.influenceScore,30)
-   outputResult.deliverAccuracy=calculateAccuracy(scores.deliverScore,30)
-   outputResult.engageAccuracy=calculateAccuracy(scores.engageScore,30)
+   outputResult.perceiveAccuracy=calculateAccuracy(scores.perceiveScore,(questions.length/5)*5)
+   outputResult.resolveAccuracy=calculateAccuracy(scores.resolveScore,(questions.length/5)*5)
+   outputResult.influenceAccuracy=calculateAccuracy(scores.influenceScore,(questions.length/5)*5)
+   outputResult.deliverAccuracy=calculateAccuracy(scores.deliverScore,(questions.length/5)*5)
+   outputResult.engageAccuracy=calculateAccuracy(scores.engageScore,(questions.length/5)*5)
     // Return outputResult
     res.status(200).json(outputResult);
   } catch (error) {

@@ -38,7 +38,7 @@ studentRouter.post("/login", async (req, res) => {
             "piramates",
             //console.log(user.standard,"standard")
           );
-          res.status(200).json({ msg: "Login Successfull!!", token: token });
+          res.status(200).json({ msg: "Login Successfull!!", token: token ,name:user.name});
         } else {
           res.status(200).json({ msg: "Wrong Credential!!" });
         }
