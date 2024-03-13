@@ -117,12 +117,12 @@ questionRouter.get("/testOption", async (req, res) => {
     const totalMaxTimeAlloted = questions.length * allottedTimePerQuestion;
     AvgSecPerQuestion = totalTimeTaken / questions.length;
     const mentalSpeedInSec = (totalTimeTaken / questions.length).toFixed(2);
-    const MentalProcessingSpeed = (
+    const mentalProcessingSpeed = (
       ((allottedTimePerQuestion - AvgSecPerQuestion + allottedTimePerQuestion) /
         allottedTimePerQuestion) *
       100
     ).toFixed(2); //speed
-
+    const MentalProcessingSpeed = Math.min(100, Math.max(0, mentalProcessingSpeed));
     const maxMarks = questions.length * 5;
     const prideAccuracyScorePercentage = (
       (totalMarks / maxMarks) *
