@@ -3,12 +3,15 @@ const mongoose = require("mongoose");
 const questionBankSchema=mongoose.Schema({
     sort_order: Number,
     instruction: String,
-    question_link: String,
+    video: String,
+    audio:String,
+    image:String,
     question_body: String,
     options: [{ option: String, mark: Number }],
     pride: String,
     skill: String,
     intelligence: String,
+    skillDemand:String,
     standard: Number,
     date: {
         type: Date,

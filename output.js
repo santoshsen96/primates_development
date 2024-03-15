@@ -15,7 +15,8 @@ const questions =
     pride: "perceive",
     skill: "attention",
     intelligence: "awareness",
-    standard: 10
+    standard: 10,
+    skillDemand:"Considering the relevent details to complete work"
   },
   {
     sort_order: 2,
@@ -31,7 +32,8 @@ const questions =
     pride: "perceive",
     skill: "attention",
     intelligence: "application",
-    standard: 10
+    standard: 10,
+    skillDemand:"Searching the viable options to achieve results"
   },
   {
     sort_order: 3,
@@ -46,7 +48,8 @@ const questions =
     pride: "perceive",
     skill: "attention",
     intelligence: "advantage",
-    standard: 10
+    standard: 10,
+    skillDemand:"Considering the relevent details to complete work"
   },
   {
     sort_order: 4,

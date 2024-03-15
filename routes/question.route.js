@@ -2,7 +2,7 @@ const express = require("express");
 const { examDataModel } = require("../model/question.model");
 const { auth } = require("../middleware/auth.middleware");
 const questionRouter = express.Router();
-const questions = require("../output");
+//const questions = require("../output");
 const { questionBankModel } = require("../model/questionBank.model");
 //const {scores} = require("../variables/pride.variables");
 //const calculateOptionReadTime=require("../functions/optionReadTime")
@@ -31,12 +31,12 @@ questionRouter.post("/", async (req, res) => {
 questionRouter.get("/testOption", async (req, res) => {
   try {
     const { userID,standard } = req.body;
-    // let questionModel;
-    // if(standard===5 || standard===6){
-    //   questionModel = questionBankModel;
-    // }
-    // const questions = await questionModel.find();
-    // console.log(questions.length)
+    let questionModel;
+    if(standard===5 || standard===6){
+      questionModel = questionBankModel;
+    }
+    const questions = await questionModel.find();
+    console.log(questions.length)
     
     const Assesments = await examDataModel.find({ studentId: userID });
     const totalAssesment = Assesments.length;
@@ -190,7 +190,13 @@ questionRouter.get("/testOption", async (req, res) => {
 });
 questionRouter.get("/prideScore", async (req, res) => {
   try {
-    const { userID } = req.body;
+    const { userID,standard } = req.body;
+    let questionModel;
+    if(standard===5 || standard===6 || standard===9){
+      questionModel = questionBankModel;
+    }
+    const questions = await questionModel.find();
+    console.log(questions.length)
     const examData = await examDataModel
       .findOne({ studentId: userID })
       .sort({ date: -1 });
@@ -286,10 +292,10 @@ questionRouter.get("/prideScore", async (req, res) => {
         (opt) => opt.option === answer.selectedOption
       );
 
+      
       if (!selectedOption) {
-        return res
-          .status(404)
-          .json({ error: "Selected option not found for the answer" });
+        console.log("Selected option not found for the answer:", answer);
+        continue; // Skip processing this answer and move to the next one
       }
 
       // Award marks dynamically based on selected option for each pride, skill, and intelligence
@@ -375,21 +381,6 @@ questionRouter.get("/prideScore", async (req, res) => {
     // Calculation of all ORT of skill and intelligence
 
     const calculateOptionReadTime = (examData, questions) => {
-      // const scores = {
-      //     optionReadTimeAttention: 0,
-      //     optionReadTimeMemory: 0,
-      //     optionReadTimeCriticalThinking: 0,
-      //     optionReadTimeCreativeThinking: 0,
-      //     optionReadTimeMindset: 0,
-      //     optionReadTimeAttitude: 0,
-      //     optionReadTimeExpression: 0,
-      //     optionReadTimeCommunication: 0,
-      //     optionReadTimeCollaboration: 0,
-      //     optionReadTimeLeadership: 0,
-      //     optionReadTimeAwareness: 0,
-      //     optionReadTimeApplication: 0,
-      //     optionReadTimeAdvantage: 0
-      // };
 
       examData.answers.forEach((frontendItem) => {
         // Find corresponding backend question
@@ -456,7 +447,6 @@ questionRouter.get("/prideScore", async (req, res) => {
       return scores;
     };
     console.log("total pride score:", totalPrideScore);
-    console.log(scores.attentionScore)
     calculateOptionReadTime(examData, questions);
 
     function calculateAccuracy(score, total) {
@@ -468,7 +458,7 @@ questionRouter.get("/prideScore", async (req, res) => {
       scores.attentionScore,
       (questions.length/10)*5
     );
-    outputResult.memoryAccuracy = calculateAccuracy(scores.memoryScore, 15);
+    outputResult.memoryAccuracy = calculateAccuracy(scores.memoryScore,  (questions.length/10)*5);
     outputResult.criticalThinkingAccuracy = calculateAccuracy(
       scores.criticalScore,
       (questions.length/10)*5
@@ -477,8 +467,8 @@ questionRouter.get("/prideScore", async (req, res) => {
       scores.creativeScore,
       (questions.length/10)*5
     );
-    outputResult.mindsetAccuracy = calculateAccuracy(scores.mindsetScore, 15);
-    outputResult.attitudeAccuracy = calculateAccuracy(scores.attitudeScore, 15);
+    outputResult.mindsetAccuracy = calculateAccuracy(scores.mindsetScore,  (questions.length/10)*5);
+    outputResult.attitudeAccuracy = calculateAccuracy(scores.attitudeScore,  (questions.length/10)*5);
     outputResult.expressionAccuracy = calculateAccuracy(
       scores.expressionScore,
       (questions.length/10)*5
@@ -520,6 +510,87 @@ questionRouter.get("/prideScore", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
+
+
+questionRouter.get("/SkillContent", async (req, res) => {
+  try {
+    const { userID, standard } = req.body;
+    let questionModel;
+    if (standard === 5 || standard === 6 || standard === 9) {
+      questionModel = questionBankModel;
+    }
+    const questions = await questionModel.find();
+    console.log(questions.length);
+
+    let contentObject = {
+      attention: {
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
+      },
+      memory: {
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
+      },
+      critical: {
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
+      },
+      creative: {
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
+      }
+    };
+
+    const examData = await examDataModel
+      .findOne({ studentId: userID })
+      .sort({ date: -1 });
+
+    if (!examData) {
+      return res.status(404).json({ error: "No exam data found for the student" });
+    }
+
+    for (const answer of examData.answers) {
+      const question = questions.find((q) => q.sort_order == answer.sort_order);
+
+      if (!question) {
+        return res.status(404).json({ error: "Question not found for the answer" });
+      }
+
+      const selectedOption = question.options.find(
+        (opt) => opt.option === answer.selectedOption
+      );
+
+      if (!selectedOption) {
+        console.log("Selected option not found for the answer:", answer);
+        continue; // Skip processing this answer and move to the next one
+      }
+
+      const { skill, intelligence, skillDemand } = question;
+      const strengthOrWeakness = selectedOption.mark >= 3 ? 'strength' : 'weakness';
+
+      if (contentObject[skill] && contentObject[skill][intelligence]) {
+        contentObject[skill][intelligence][strengthOrWeakness].push(skillDemand);
+      } else {
+        console.log("Invalid skill or intelligence:", skill, intelligence);
+      }
+    }
+
+    console.log(contentObject);
+
+    // Send success response if no errors occurred
+    res.status(200).json({ message: "Skill content retrieved successfully", contentObject });
+
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+
 
 module.exports = {
   questionRouter,

@@ -1,8 +1,10 @@
 [
   {
     "sort_order": 1,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"read the question and answer accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Teacher is giving you a homework. What would you pay attention to?",
     "options": [
       { "option": "The topic of the homework", "mark": 2 },
@@ -15,12 +17,15 @@
     "pride": "perceive",
     "skill": "attention",
     "intelligence": "awareness",
+    "skillDemand":"Considering the relevent details to complete work",
     "standard": 10
   },
   {
     "sort_order": 2,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"read the question and answer accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You are in a park with your friends playing. You need to get away from the catcher. What are some things you will look for?",
     "options": [
       {
@@ -41,12 +46,15 @@
     ],
     "pride": "perceive",
     "skill": "attention",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":"Searching the viable options to achieve results"
   },
   {
     "sort_order": 3,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"read the question and answer accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "When you are crossing the road, what will you pay attention to?",
     "options": [
       { "option": "Right and left for vehicles", "mark": 4 },
@@ -61,12 +69,15 @@
     ],
     "pride": "perceive",
     "skill": "attention",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":"Focusing on safety measure to avoid unnecessary problems"
   },
   {
     "sort_order": 4,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"See the Video and answer the question accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "How many ducks are shown in the video?",
     "options": [
       { "option": "10", "mark": 1 },
@@ -78,12 +89,15 @@
     ],
     "pride": "perceive",
     "skill": "attention",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":"tracking the moving objects which require sustained Visual focus demands"
   },
   {
     "sort_order": 5,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"See the Video and answer the question accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Find the font colour of the word which starts with P (VIBGYOR Video)",
     "options": [
       { "option": "green", "mark": 1 },
@@ -95,12 +109,15 @@
     ],
     "pride": "perceive",
     "skill": "attention",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":"Identifying the Specific information which involves cognisensory Classification"
   },
   {
     "sort_order": 6,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"See the Picture and answer the question accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "How many animals are there in the picture?",
     "options": [
       { "option": "6", "mark": 4 },
@@ -112,12 +129,15 @@
     ],
     "pride": "perceive",
     "skill": "attention",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":"Recognising the Physical Structures to interpret hidden Information"
   },
   {
     "sort_order": 7,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"Listen to the audio where santosh explains why he feels confused What were the reasons he gave as to why he felt confused?",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Hi, I am santosh! I was told to give a preference for streams i would like to study in my 11th and 12th today. I am uncertain about what I want to do in the future. I like social studies but I'm also good in science. Making a choice between the two is confusing to me. I wish I could just do them both.",
     "options": [
       { "option": "Choosing between science and social studies", "mark": 5 },
@@ -130,12 +150,15 @@
     "right_option": 1,
     "pride": "perceive",
     "skill": "attention",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":"Observing the exact Cognitive cues to understand the intended meanings"
   },
   {
     "sort_order": 8,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"See the Picture and answer the question accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Count the number of ducks in the picture",
     "options": [
       { "option": "12", "mark": 2 },
@@ -148,13 +171,16 @@
     "right_option": 2,
     "pride": "perceive",
     "skill": "attention",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":"locating the minute details to complete work demands"
   },
 
   {
     "sort_order": 9,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"See the Picture and answer the question accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Count the words that are in pink colour font and are the names of fruits. ",
     "options": [
       {
@@ -176,13 +202,16 @@
     "right_option": 4,
     "pride": "perceive",
     "skill": "attention",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":"Observing carefully on the intended Instructions which demand Cognisensory precision"
   },
 
   {
     "sort_order": 10,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"read the question and answer accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Shreyans is good at remembering all the lessons taught by his teacher during the class hours. He has the ability to remember it even after a month. What skill does he have that helps him with this?",
     "options": [
       { "option": "Memory skills", "mark": 5 },
@@ -195,12 +224,15 @@
     "right_option": 1,
     "pride": "perceive",
     "skill": "memory",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 11,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"read the question and answer accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Find the odd one out",
     "options": [
       { "option": "Concentration", "mark": 1 },
@@ -213,33 +245,36 @@
     "right_option": 5,
     "pride": "perceive",
     "skill": "memory",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
 
   {
     "sort_order": 12,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"listen to the audios and answer accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Listen to the options and Identify which instrument was played before",
     "options": [
       {
-        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/Sad%20music%20Piano%20Sound%20Effect%20%28download%29-%5BAudioTrimmer.com%5D.mp3-1646765241562Sad%20music%20Piano%20Sound%20Effect%20%28download%29-%5BAudioTrimmer.com%5D.mp3",
+        "option": "Piano",
         "mark": 3
       },
       {
-        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/Flute%20-%20what%20it%20sounds%20like-%5BAudioTrimmer.com%5D.mp3-1646764925298Flute%20-%20what%20it%20sounds%20like-%5BAudioTrimmer.com%5D.mp3",
+        "option": "Flute",
         "mark": 1
       },
       {
-        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/GUITAR%20SOUND%20EFFECT-%5BAudioTrimmer.com%5D.mp3-1646765076558GUITAR%20SOUND%20EFFECT-%5BAudioTrimmer.com%5D.mp3",
+        "option": "Guitar",
         "mark": 4
       },
       {
-        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/Drum%20Roll%20Sound%20Effect.mp3-1646764925284Drum%20Roll%20Sound%20Effect.mp3",
+        "option": "Drums",
         "mark": 1
       },
       {
-        "option": "https://jv-content.s3.ap-south-1.amazonaws.com/uploads/Sitar%20Sound%20Effect-%5BAudioTrimmer.com%5D.mp3-1646765462893Sitar%20Sound%20Effect-%5BAudioTrimmer.com%5D.mp3",
+        "option": "Sitar",
         "mark": 5
       },
       { "option": "None of the above", "mark": 1 }
@@ -247,13 +282,16 @@
     "right_option": 5,
     "pride": "perceive",
     "skill": "memory",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
 
   {
     "sort_order": 13,
-    "instruction":"",
-    "question_link":"",
+    "instruction":"See the Picture and answer the question accordingly",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What is the number shown in the picture?",
     "options": [
       { "option": "9786756", "mark": 5 },
@@ -266,13 +304,16 @@
     "right_option": 1,
     "pride": "perceive",
     "skill": "memory",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
 
   {
     "sort_order": 14,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What are the letters spoken in the audio?",
     "options": [
       { "option": "NZXBXIO", "mark": 1 },
@@ -285,13 +326,16 @@
     "right_option": 2,
     "pride": "perceive",
     "skill": "memory",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
 
   {
     "sort_order": 15,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What are the alphabets and numbers shown in the video?",
     "options": [
       { "option": "73o9p70", "mark": 5 },
@@ -304,13 +348,16 @@
     "right_option": 1,
     "pride": "perceive",
     "skill": "memory",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
 
   {
     "sort_order": 16,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Pinto had a childhood friend named Paltu. she usually comes to school in a rolls royce car which was an unique blue design one. No two cars will have a same design or colour  in rolls royce brand. Once pinto's father got transferred to new city, he lost his touch with Paltu. one fine day when he was going to his new school, he saw a rolls royce car which looked exactly like paltu's car standing in the school. He decided....",
     "options": [
       {
@@ -335,13 +382,16 @@
     "right_option": 2,
     "pride": "perceive",
     "skill": "memory",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
 
   {
     "sort_order": 17,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "The Value of 0 is high when it is",
     "options": [
       { "option": "Front of the number", "mark": 1 },
@@ -353,13 +403,16 @@
     "right_option": 2,
     "pride": "perceive",
     "skill": "memory",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
 
   {
     "sort_order": 18,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which of the following helps with good memory?",
     "options": [
       { "option": "Repetition/practice", "mark": 4 },
@@ -372,13 +425,16 @@
     "right_option": 5,
     "pride": "perceive",
     "skill": "memory",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
 
   {
     "sort_order": 19,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which face looks more angry through their facial reactions?",
     "options": [
       {
@@ -406,13 +462,16 @@
     "right_option": 6,
     "pride": "resolve",
     "skill": "critical",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
 
   {
     "sort_order": 20,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Ram's mother wanted to remove the misfit from the set of mangoes in the box. what methods shall be used to decide the misfit",
     "options": [
       {
@@ -440,12 +499,15 @@
     "right_option": 6,
     "pride": "resolve",
     "skill": "critical",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 21,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Arjun is unable to find enough time for his studies. No matter how much he tries he ends up spending all his time on video games. what  shall be followed to improve his studies Course of action:- Plan 1. Arjun's parents should take back his mobile phone.Plan 2. Arjun should have a set time for playing games and for studying.Plan 3. Arjun should study whenever he gets time",
     "options": [
       {
@@ -473,12 +535,15 @@
     "right_option": 6,
     "pride": "resolve",
     "skill": "critical",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 22,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "The stadium was packed when we entered. My dad and I were looking for our seats and I could see a few volunteers trying to control the excited crowd. My dad had brought a scarf with his favourite player's name on it for cheering them. We had a lot of fun. It was an eventful evening.",
     "options": [
       { "option": "A game match", "mark": 5 },
@@ -491,12 +556,15 @@
     "right_option": 3,
     "pride": "resolve",
     "skill": "critical",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 23,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Five of the following are similar in a way. Find the odd man out",
     "options": [
       { "option": "Eye", "mark": 1 },
@@ -509,29 +577,35 @@
     "right_option": 6,
     "pride": "resolve",
     "skill": "critical",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 24,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "All humans feel happy and Happiness always leads to smile.Which of the following statements are true?",
     "options": [
       { "option": "All humans always smile", "mark": 1 },
-      { "option": "Happy humans always smile", "mark": 4 },
+      { "option": "Happy humans always smile", "mark": 5 },
       { "option": "All humans are always happy", "mark": 1 },
-      { "option": "Happy humans don't always smile", "mark": 5 },
+      { "option": "Happy humans don't always smile", "mark": 4 },
       { "option": "None of the above", "mark": 1 }
     ],
     "right_option": 2,
     "pride": "resolve",
     "skill": "critical",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 25,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which route will be the best way to reach the destination in quickly?",
     "options": [
       { "option": "Route 1", "mark": 4 },
@@ -544,12 +618,15 @@
     "right_option": 1,
     "pride": "resolve",
     "skill": "critical",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 26,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Match the parent with the right child.",
     "options": [
       {
@@ -577,12 +654,15 @@
     "right_option": 3,
     "pride": "resolve",
     "skill": "critical",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 27,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "How many iPads are there in the world?",
     "options": [
       { "option": "Infinite + 1", "mark": 1 },
@@ -595,30 +675,36 @@
     "right_option": 4,
     "pride": "resolve",
     "skill": "critical",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 28,
     "instruction":"",
-    "question_link":"",
-    "question_body": "What among these could not be converted as a possible replacement for a straw?",
+    "video":"",
+    "audio":"",
+    "image":"",
+    "question_body": "What among these could not be converted as a possible replacement for a straw if the sizes are reduced?",
     "options": [
       { "option": "Bamboo sticks", "mark": 1 },
       { "option": "Paper roll", "mark": 1 },
       { "option": "Stainless steel pipes", "mark": 1 },
       { "option": "Sip cup lids", "mark": 1 },
-      { "option": "Plastic rolls", "mark": 5 },
-      { "option": "None of the above", "mark": 1 }
+      { "option": "Plastic rolls", "mark": 1},
+      { "option": "None of the above", "mark": 5 }
     ],
     "right_option": 6,
     "pride": "resolve",
     "skill": "creative",
-    "intelligence": "awareness"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 29,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What among these would be a good replacement for a book cover?",
     "options": [
       { "option": "Plastic", "mark": 3 },
@@ -631,12 +717,15 @@
     "right_option": 6,
     "pride": "resolve",
     "skill": "creative",
-    "intelligence": "awareness"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 30,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What among these cannot absorb water?",
     "options": [
       { "option": "Sponge", "mark": 1 },
@@ -649,12 +738,15 @@
     "right_option": 6,
     "pride": "resolve",
     "skill": "creative",
-    "intelligence": "awareness"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 31,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You want to make a green environment, so you plan to sell your old clothes and buy saplings with the money. What would be an appropriate statement to sell them?",
     "options": [
       { "option": "Save the planet.", "mark": 2 },
@@ -667,12 +759,15 @@
     "right_option": 3,
     "pride": "resolve",
     "skill": "creative",
-    "intelligence": "application"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 32,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which one of this is required to visualize a bigger lemon in our mind",
     "options": [
       { "option": "We need to see a lemon in front of us", "mark": 2 },
@@ -688,12 +783,15 @@
     "right_option": 6,
     "pride": "resolve",
     "skill": "creative",
-    "intelligence": "application"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 33,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which one of this looks tough to imagine in mind",
     "options": [
       { "option": "4 Eyed man", "mark": 2 },
@@ -706,13 +804,16 @@
     "right_option": 6,
     "pride": "resolve",
     "skill": "creative",
-    "intelligence": "application"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
 
   {
     "sort_order": 34,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "The image has a wheel missing. Which wheel is the right replacement from the options given?",
     "options": [
       {
@@ -740,12 +841,15 @@
     "right_option": 3,
     "pride": "resolve",
     "skill": "creative",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 35,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which would be the best title for the paragraph given below? \n\n\"On a bright and sunny summer morning, Mrs. Roy decided to take her kids out for a fun trip to the waterpark. Mr. Roy had to leave for his office so, Mrs. Roy excitedly agreed to take the kids herself. The two Roy kids, Kiara aged eight and Rahul aged 11 were very happy about this surprise plan. The three of them got into their car and Mrs. Roy drove them to the waterpark. There all the three of them had much fun enjoying the joy rides and playing in water. By the time they got back home it was dusk and even Mr. Roy had returned from his office. The kids couldn’t stop talking about their lovely time at te waterpark and asked their father to go along with them the next time.\"",
     "options": [
       { "option": "A Summer Morning Adventure", "mark": 3 },
@@ -758,12 +862,15 @@
     "right_option": 2,
     "pride": "resolve",
     "skill": "creative",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 36,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What among the following always has the colours green, red, brown in it.",
     "options": [
       { "option": "Apple", "mark": 1 },
@@ -776,12 +883,15 @@
     "right_option": 7,
     "pride": "resolve",
     "skill": "creative",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 37,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What is the appropriate way to think during difficult situations?",
     "options": [
       { "option": "I can always achieve no matter what happens!", "mark": 3 },
@@ -800,12 +910,15 @@
     "right_option": 2,
     "pride": "influence",
     "skill": "mindset",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 38,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Mother scolds whenever I make a mistake. Which statement is most appropriate?",
     "options": [
       {
@@ -827,12 +940,15 @@
     "right_option": 2,
     "pride": "influence",
     "skill": "mindset",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 39,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Mahesh is worried about not doing well in his exam, even though he has prepared well. What should be his appropriate thought to this?",
     "options": [
       {
@@ -857,12 +973,15 @@
     "right_option": 3,
     "pride": "influence",
     "skill": "mindset",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 40,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "If you were to write a story about a small boy, how would you end the story?",
     "options": [
       { "option": "I would make it a horror story.", "mark": 2 },
@@ -878,13 +997,16 @@
     "right_option": 4,
     "pride": "influence",
     "skill": "mindset",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
 
   {
     "sort_order": 41,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Find the odd one out",
     "options": [
       { "option": "Self-Confidence", "mark": 2 },
@@ -897,12 +1019,15 @@
     "right_option": 3,
     "pride": "influence",
     "skill": "mindset",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 42,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which of this statement looks true to you",
     "options": [
       {
@@ -923,12 +1048,15 @@
     "right_option": 2,
     "pride": "influence",
     "skill": "mindset",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 43,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You are having a birthday party. But you forgot to invite some people. How would you invite them for the party?",
     "options": [
       {
@@ -953,12 +1081,15 @@
     "right_option": 1,
     "pride": "influence",
     "skill": "mindset",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 44,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You need to prepare for your exam at the last minute. What is the best thing to do?",
     "options": [
       { "option": "Answer with what I know.", "mark": 4 },
@@ -980,12 +1111,15 @@
     "right_option": 5,
     "pride": "influence",
     "skill": "mindset",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 45,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Your teacher says you aren't good in this subject. What will you do?",
     "options": [
       {
@@ -1007,12 +1141,15 @@
     "right_option": 7,
     "pride": "influence",
     "skill": "mindset",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 46,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which of the following is true?",
     "options": [
       { "option": "Calm people always get hurt", "mark": 1 },
@@ -1025,12 +1162,15 @@
     "right_option": 6,
     "pride": "influence",
     "skill": "attitude",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 47,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What among the following are positive statements-\n1. I can do anything if people help me.\n2. I choose to be happy. \n3. I am worthy of all the love people give me. \n4. I am surely help you but you need to give me chocolate. \n5. My parents are amazing when they get me gifts. ",
     "options": [
       { "option": "Statement 1,2 & 3", "mark": 3 },
@@ -1043,12 +1183,15 @@
     "right_option": 3,
     "pride": "influence",
     "skill": "attitude",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 48,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What among the following are negative statements-\n1. It is okay to take a break.\n2. Stop doing things that waste your time. \n3. This work is impossible to do \n4. Some people can never complete this task\n5. She cannot learn this subject",
     "options": [
       { "option": "Statement 3,4&5", "mark": 5 },
@@ -1061,12 +1204,15 @@
     "right_option": 1,
     "pride": "influence",
     "skill": "attitude",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 49,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "When we dont get what we want, we should-",
     "options": [
       { "option": "Ask till I get it.", "mark": 3 },
@@ -1079,12 +1225,15 @@
     "right_option": 5,
     "pride": "influence",
     "skill": "attitude",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 50,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "When we see a difficult question in exam we should-",
     "options": [
       { "option": "Get worried", "mark": 2 },
@@ -1103,13 +1252,16 @@
     "right_option": 3,
     "pride": "influence",
     "skill": "attitude",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
 
   {
     "sort_order": 51,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "When asked to give a public speech we -",
     "options": [
       { "option": "Make excuses and skip my turn.", "mark": 1 },
@@ -1122,12 +1274,15 @@
     "right_option": 2,
     "pride": "influence",
     "skill": "attitude",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 52,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What would be the appropriate way to act or behave in a social place (Family Function, Community, Locality, School Etc)?",
     "options": [
       {
@@ -1142,12 +1297,15 @@
     "right_option": 1,
     "pride": "influence",
     "skill": "attitude",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 53,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which of the following can be done when we are angry, happy, sad and scared?",
     "options": [
       { "option": "Shout", "mark": 4 },
@@ -1160,12 +1318,15 @@
     "right_option": 1,
     "pride": "influence",
     "skill": "attitude",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 54,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which would not assure happiness every time in social life?",
     "options": [
       { "option": "Sharing", "mark": 4},
@@ -1178,12 +1339,15 @@
     "right_option": 3,
     "pride": "influence",
     "skill": "attitude",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 55,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which expression denotes anger?",
     "options": [
       {
@@ -1211,12 +1375,15 @@
     "right_option": 5,
     "pride": "deliver",
     "skill": "expression",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 56,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What emotion matches the audio?",
     "options": [
       { "option": "Angry", "mark": 1 },
@@ -1229,12 +1396,15 @@
     "right_option": 3,
     "pride": "deliver",
     "skill": "expression",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 57,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which sentence fits the image better?",
     "options": [
       { "option": "The students are playing hide & seek", "mark": 1 },
@@ -1250,12 +1420,15 @@
     "right_option": 3,
     "pride": "deliver",
     "skill": "expression",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 58,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Diana was traveling to the nearby town to meet her friend after 10 years. While walking on a lonely street at night by 10 pm, she suddenly felt someone touch her shoulder from behind. She would be ……… initially",
     "options": [
       { "option": "Surprise", "mark": 3 },
@@ -1267,12 +1440,15 @@
     "right_option": 2,
     "pride": "deliver",
     "skill": "expression",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 59,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Anaya wants to please her friend to do a favor for Anaya. Which expression should she use when asking for the favor?",
     "options": [
       { "option": "Pleasing Face", "mark": 5 },
@@ -1285,12 +1461,15 @@
     "right_option": 1,
     "pride": "deliver",
     "skill": "expression",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 60,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Shanvik was riding his bicycle and suddenly a dog came fiercely near him and barked at him. He applied the brakes, but due to bad road, the cycle skidded off the road and fell down causing an injury in his leg. What are all the possible feelings that he would feel now?",
     "options": [
       { "option": "Feel angry at the dog as it made him fall down", "mark": 4 },
@@ -1303,13 +1482,16 @@
     "right_option": 5,
     "pride": "deliver",
     "skill": "expression",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
 
   {
     "sort_order": 61,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "How do we need to do to convey our emotions to others?",
     "options": [
       {
@@ -1330,12 +1512,15 @@
     "right_option": 1,
     "pride": "deliver",
     "skill": "expression",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 62,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "How do we express how we feel, so that others can understand?",
     "options": [
       {
@@ -1359,12 +1544,15 @@
     "right_option": 4,
     "pride": "deliver",
     "skill": "expression",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 63,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What would be the best way to express how you feel to others?",
     "options": [
       {
@@ -1385,12 +1573,15 @@
     "right_option": 1,
     "pride": "deliver",
     "skill": "expression",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 64,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Listen to the audio\nWhat was the person talking about?",
     "options": [
       { "option": "Hens", "mark": 5 },
@@ -1402,12 +1593,15 @@
     "right_option": 1,
     "pride": "deliver",
     "skill": "communication",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 65,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "How did the person sound?",
     "options": [
       { "option": "Excited", "mark": 1 },
@@ -1419,12 +1613,15 @@
     "right_option": 2,
     "pride": "deliver",
     "skill": "communication",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 66,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What kind of narration is this?",
     "options": [
       { "option": "A conversation", "mark": 2 },
@@ -1437,12 +1634,15 @@
     "right_option": 4,
     "pride": "deliver",
     "skill": "communication",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 67,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Your friend is angry and doesn't want to talk to you. You know why she is angry, but the mistake is not on your side. How would you respond to her?",
     "options": [
       { "option": "Stop acting, you are wrong.", "mark": 1 },
@@ -1464,12 +1664,15 @@
     "right_option": 3,
     "pride": "deliver",
     "skill": "communication",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 68,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Listen to the audio. What did Anaaya do wrong while talking to her mother?",
     "options": [
       { "option": "She was impolite while asking.", "mark": 5 },
@@ -1482,12 +1685,15 @@
     "right_option": 1,
     "pride": "deliver",
     "skill": "communication",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 69,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You want your mom to cook your favorite food. How would you ask her for it?",
     "options": [
       {
@@ -1508,12 +1714,15 @@
     "right_option": 4,
     "pride": "deliver",
     "skill": "communication",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 70,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What is the best way to genuinely ask for a favor?",
     "options": [
       { "option": "I hope you can do this for me.", "mark": 3 },
@@ -1526,13 +1735,16 @@
     "right_option": 2,
     "pride": "deliver",
     "skill": "communication",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
 
   {
     "sort_order": 71,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You get into your school van, and see someone else sitting in your place. You look around and there is no place for you to sit. What will you tell him/her to get yourself seated?",
     "options": [
       {
@@ -1550,12 +1762,15 @@
     "right_option": 3,
     "pride": "deliver",
     "skill": "communication",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 72,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You have difficulty understanding what your friend is trying to say. what will you tell him?",
     "options": [
       {
@@ -1574,12 +1789,15 @@
     "right_option": 1,
     "pride": "deliver",
     "skill": "communication",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 73,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Look at the video. Why was Rachana (the leader) removed from the team?",
     "options": [
       { "option": "Because she was doing all the work by herself", "mark": 1 },
@@ -1591,12 +1809,15 @@
     "right_option": 3,
     "pride": "engage",
     "skill": "collaboration",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 74,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Who was a good team player?",
     "options": [
       { "option": "Seema", "mark": 5 },
@@ -1609,12 +1830,15 @@
     "right_option": 1,
     "pride": "engage",
     "skill": "collaboration",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 75,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What was the good quality portrayed in the story?",
     "options": [
       { "option": "Helping fellow teammates.", "mark": 1 },
@@ -1628,12 +1852,15 @@
     "right_option": 6,
     "pride": "engage",
     "skill": "collaboration",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 76,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Your teammate (Karan) doesn't understand the work given to him by the leader. What will you do?",
     "options": [
       {
@@ -1648,12 +1875,15 @@
     "right_option": 2,
     "pride": "engage",
     "skill": "collaboration",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 77,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Your best friend Nisha is in the same project team as yours. But she is not working properly in the team project. What will you do?",
     "options": [
       {
@@ -1677,12 +1907,15 @@
     "right_option": 1,
     "pride": "engage",
     "skill": "collaboration",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 78,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You are asked to pair up with a classmate, by your teacher, to complete the activity list for the day. But you find it difficult to work with that classmate. What would you do?",
     "options": [
       { "option": "Ask for a new partner to the teacher", "mark": 2},
@@ -1703,12 +1936,15 @@
     "right_option": 4,
     "pride": "engage",
     "skill": "collaboration",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 79,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You and your teammate Amisha want to do the same drawing as your contribution for the class project. She is not ready to change her idea. What will you do?",
     "options": [
       {
@@ -1730,12 +1966,15 @@
     "right_option": 6,
     "pride": "engage",
     "skill": "collaboration",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 80,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "It's sports day and you are about to play finals kho-kho. Your friend gets hurt before the game. What will you do?",
     "options": [
       {
@@ -1754,13 +1993,16 @@
     "right_option": 5,
     "pride": "engage",
     "skill": "collaboration",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
 
   {
     "sort_order": 81,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "You are a part of the team and you are given a work. Due to some reasons you aren't able to do it. What will you do?",
     "options": [
       { "option": "Ask another teammate for help.", "mark": 3 },
@@ -1776,12 +2018,15 @@
     "right_option": 5,
     "pride": "engage",
     "skill": "collaboration",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 82,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Anita is smart, but mean. Akilan is disciplined, but poor in math. Keshav is kind, but does not have team skills. Who do you think will be the best leader out of the three?",
     "options": [
       { "option": "Anita", "mark": 1 },
@@ -1793,12 +2038,15 @@
     "right_option": 2,
     "pride": "engage",
     "skill": "leadership",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 83,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What can be done by a team leader to reach the team goal quickly?",
     "options": [
       {
@@ -1823,12 +2071,15 @@
     "right_option": 6,
     "pride": "engage",
     "skill": "leadership",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 84,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "What qualities must a great class leader have?",
     "options": [
       {
@@ -1852,12 +2103,15 @@
     "right_option": 1,
     "pride": "engage",
     "skill": "leadership",
-    "intelligence": "awareness"
+    "intelligence": "awareness",
+    "skillDemand":""
   },
   {
     "sort_order": 85,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Sonali wants to become the class leader. What does she need to do for that?",
     "options": [
       { "option": "She needs to top the class", "mark": 3},
@@ -1872,12 +2126,15 @@
     "right_option": 3,
     "pride": "engage",
     "skill": "leadership",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 86,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "During the exam, Shyam's best friend asked him the answer to one question. How should Rajit respond?",
     "options": [
       { "option": "Tell him the answer", "mark": 2 },
@@ -1893,12 +2150,15 @@
     "right_option": 4,
     "pride": "engage",
     "skill": "leadership",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 87,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "How will you convince your teacher to become a class / team leader?",
     "options": [
       {
@@ -1920,12 +2180,15 @@
     "right_option": 6,
     "pride": "engage",
     "skill": "leadership",
-    "intelligence": "application"
+    "intelligence": "application",
+    "skillDemand":""
   },
   {
     "sort_order": 88,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "Which is the right way to go about being a leader?",
     "options": [
       {
@@ -1947,12 +2210,15 @@
     "right_option": 1,
     "pride": "engage",
     "skill": "leadership",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 89,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "In which of the situations is the role of a leader very important?",
     "options": [
       { "option": "To manage household duties", "mark": 2 },
@@ -1965,12 +2231,15 @@
     "right_option": 6,
     "pride": "engage",
     "skill": "leadership",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   },
   {
     "sort_order": 90,
     "instruction":"",
-    "question_link":"",
+    "video":"",
+    "audio":"",
+    "image":"",
     "question_body": "When someone doesn't listen to you, as a leader how will you respond?",
     "options": [
       { "option": "Complain about them to the teacher", "mark": 2 },
@@ -1992,6 +2261,7 @@
     "right_option": 7,
     "pride": "engage",
     "skill": "leadership",
-    "intelligence": "advantage"
+    "intelligence": "advantage",
+    "skillDemand":""
   }
 ]
