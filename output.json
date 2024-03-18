@@ -225,7 +225,7 @@
     "pride": "perceive",
     "skill": "memory",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Labeling the nature of work basis their functional process"
   },
   {
     "sort_order": 11,
@@ -246,7 +246,7 @@
     "pride": "perceive",
     "skill": "memory",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Eliminating the functional processes which may not produce the expected outcomes"
   },
 
   {
@@ -283,7 +283,7 @@
     "pride": "perceive",
     "skill": "memory",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"tagging the appropriates functions to their respective Headings"
   },
 
   {
@@ -305,7 +305,7 @@
     "pride": "perceive",
     "skill": "memory",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"encoding Independent numerical information using chunking logics"
   },
 
   {
@@ -327,7 +327,7 @@
     "pride": "perceive",
     "skill": "memory",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"encoding Linguistic information using Phonic sound patterns"
   },
 
   {
@@ -349,7 +349,7 @@
     "pride": "perceive",
     "skill": "memory",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"encoding Alphanumerical information basis mnemonical arrangement pattern"
   },
 
   {
@@ -383,7 +383,7 @@
     "pride": "perceive",
     "skill": "memory",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"retriving the memorized information basis their unique representation values"
   },
 
   {
@@ -404,7 +404,7 @@
     "pride": "perceive",
     "skill": "memory",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"estimating values to achieve better results based on their operating positions"
   },
 
   {
@@ -426,7 +426,7 @@
     "pride": "perceive",
     "skill": "memory",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"listing the information based on their retrival Consistency"
   },
 
   {
@@ -463,7 +463,7 @@
     "pride": "resolve",
     "skill": "critical",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"following respective guidelines/procedures to Conclude results"
   },
 
   {
@@ -500,7 +500,7 @@
     "pride": "resolve",
     "skill": "critical",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"following respective qualifying criterion to evaluate any product or work"
   },
   {
     "sort_order": 21,
@@ -536,7 +536,7 @@
     "pride": "resolve",
     "skill": "critical",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Classifying the appropriate actions to achieve planned outcomes"
   },
   {
     "sort_order": 22,
@@ -557,7 +557,7 @@
     "pride": "resolve",
     "skill": "critical",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Summarizing the Concepts based on Circumstancial happenings from the incident"
   },
   {
     "sort_order": 23,
@@ -578,7 +578,7 @@
     "pride": "resolve",
     "skill": "critical",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Removing the irrelevent topics based on their functional capabilities"
   },
   {
     "sort_order": 24,
@@ -598,7 +598,7 @@
     "pride": "resolve",
     "skill": "critical",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Verifying statements logically purely based on the predefined set of criterion"
   },
   {
     "sort_order": 25,
@@ -619,7 +619,7 @@
     "pride": "resolve",
     "skill": "critical",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"estimating the effect based on the cause"
   },
   {
     "sort_order": 26,
@@ -655,7 +655,7 @@
     "pride": "resolve",
     "skill": "critical",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"exploring similarities to identify relationships"
   },
   {
     "sort_order": 27,
@@ -676,7 +676,7 @@
     "pride": "resolve",
     "skill": "critical",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"Confirming possiblities using cognitive consolidation methodoligies"
   },
   {
     "sort_order": 28,
@@ -697,7 +697,7 @@
     "pride": "resolve",
     "skill": "creative",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Visualizing the structural properties to verify the differences"
   },
   {
     "sort_order": 29,
@@ -718,7 +718,7 @@
     "pride": "resolve",
     "skill": "creative",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Thinking alternate functional prespectives to match current demands"
   },
   {
     "sort_order": 30,
@@ -739,7 +739,7 @@
     "pride": "resolve",
     "skill": "creative",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Visualizing the functional properties to verify the differences"
   },
   {
     "sort_order": 31,
@@ -760,7 +760,7 @@
     "pride": "resolve",
     "skill": "creative",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Conceptualizing human actions to create inspiring statements"
   },
   {
     "sort_order": 32,
@@ -784,7 +784,7 @@
     "pride": "resolve",
     "skill": "creative",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Choosing appropriate visualization techniques to create novel ideas"
   },
   {
     "sort_order": 33,
@@ -805,7 +805,7 @@
     "pride": "resolve",
     "skill": "creative",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Expanding already existing visuals to generate new ones"
   },
 
   {
@@ -842,7 +842,7 @@
     "pride": "resolve",
     "skill": "creative",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"Inserting appropriate Physical structures to match the current requirements"
   },
   {
     "sort_order": 35,
@@ -863,7 +863,7 @@
     "pride": "resolve",
     "skill": "creative",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"Naming appropriate taglines to express real life happenings"
   },
   {
     "sort_order": 36,
@@ -884,7 +884,7 @@
     "pride": "resolve",
     "skill": "creative",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"verifying the structural requirments to confirm the planned outputs"
   },
   {
     "sort_order": 37,
@@ -911,7 +911,7 @@
     "pride": "influence",
     "skill": "mindset",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Following the appropriate frame of mind to achieve results during difficult times"
   },
   {
     "sort_order": 38,
@@ -941,7 +941,7 @@
     "pride": "influence",
     "skill": "mindset",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"accepting the by-product of Criticism without self justifications"
   },
   {
     "sort_order": 39,
@@ -974,7 +974,7 @@
     "pride": "influence",
     "skill": "mindset",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"maintaining positive hope even towards upcoming results where we have no control over it."
   },
   {
     "sort_order": 40,
@@ -998,7 +998,7 @@
     "pride": "influence",
     "skill": "mindset",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"expecting prosperity over negativity to progress life endevours"
   },
 
   {
@@ -1020,7 +1020,7 @@
     "pride": "influence",
     "skill": "mindset",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Inhibiting the negative life functionalities which hinder personal growth"
   },
   {
     "sort_order": 42,
@@ -1049,7 +1049,7 @@
     "pride": "influence",
     "skill": "mindset",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"believing the realistic possiblities to produce maximum outputs"
   },
   {
     "sort_order": 43,
@@ -1082,7 +1082,7 @@
     "pride": "influence",
     "skill": "mindset",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"accepting past mistakes and moving on towards rectifying past shortcomings"
   },
   {
     "sort_order": 44,
@@ -1112,7 +1112,7 @@
     "pride": "influence",
     "skill": "mindset",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"understanding prevailing drawbacks and moving towards possible solutions"
   },
   {
     "sort_order": 45,
@@ -1142,7 +1142,7 @@
     "pride": "influence",
     "skill": "mindset",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"Accepting feedback gracefully and taking measures to reactify the shortcomings"
   },
   {
     "sort_order": 46,
@@ -1163,7 +1163,7 @@
     "pride": "influence",
     "skill": "attitude",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Approaching life with realistic achievement values"
   },
   {
     "sort_order": 47,
@@ -1184,7 +1184,7 @@
     "pride": "influence",
     "skill": "attitude",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Attaining prosperity without using any biased obligations"
   },
   {
     "sort_order": 48,
@@ -1205,7 +1205,7 @@
     "pride": "influence",
     "skill": "attitude",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Identifying the difference between negative actions & inhibiting actions"
   },
   {
     "sort_order": 49,
@@ -1226,7 +1226,7 @@
     "pride": "influence",
     "skill": "attitude",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"maintaining patience when things are not going the right way"
   },
   {
     "sort_order": 50,
@@ -1253,7 +1253,7 @@
     "pride": "influence",
     "skill": "attitude",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"taking timely decisions / actions while facing unexpected challenges"
   },
 
   {
@@ -1275,7 +1275,7 @@
     "pride": "influence",
     "skill": "attitude",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"facing the challenge with courage even at fearful Situations"
   },
   {
     "sort_order": 52,
@@ -1298,7 +1298,7 @@
     "pride": "influence",
     "skill": "attitude",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"having maximum personal fun without disturbing the harmony of the surroundings"
   },
   {
     "sort_order": 53,
@@ -1319,7 +1319,7 @@
     "pride": "influence",
     "skill": "attitude",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"Knowing the behaviours which are universally accepted in Social life Structures"
   },
   {
     "sort_order": 54,
@@ -1340,7 +1340,7 @@
     "pride": "influence",
     "skill": "attitude",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"having clarity on the possibilities of negative outcomes even for positive actions"
   },
   {
     "sort_order": 55,
@@ -1376,7 +1376,7 @@
     "pride": "deliver",
     "skill": "expression",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"identifying the aesthetic features of aggressive emotions"
   },
   {
     "sort_order": 56,
@@ -1397,7 +1397,7 @@
     "pride": "deliver",
     "skill": "expression",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Sensing the emotional patterns displayed through Visual and Auditory modes"
   },
   {
     "sort_order": 57,
@@ -1421,7 +1421,7 @@
     "pride": "deliver",
     "skill": "expression",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Summarizing the emotional prespective from the Circumstancial happenings from the incident"
   },
   {
     "sort_order": 58,
@@ -1441,7 +1441,7 @@
     "pride": "deliver",
     "skill": "expression",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"displaying the reflective body language based on the past experience & expectations"
   },
   {
     "sort_order": 59,
@@ -1462,7 +1462,7 @@
     "pride": "deliver",
     "skill": "expression",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Expressing the intentions using the personality traits of self"
   },
   {
     "sort_order": 60,
@@ -1483,7 +1483,7 @@
     "pride": "deliver",
     "skill": "expression",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"feeling the reality of the situation with true emotions"
   },
 
   {
@@ -1513,7 +1513,7 @@
     "pride": "deliver",
     "skill": "expression",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"Exhibiting the inner feelings still maintaining the harmony of the moment"
   },
   {
     "sort_order": 62,
@@ -1545,7 +1545,7 @@
     "pride": "deliver",
     "skill": "expression",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"maintaining the right balance of being pleasing without missing the mandatory"
   },
   {
     "sort_order": 63,
@@ -1574,7 +1574,7 @@
     "pride": "deliver",
     "skill": "expression",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"knowing the value of timely display to reap benefis under different situations"
   },
   {
     "sort_order": 64,
@@ -1594,7 +1594,7 @@
     "pride": "deliver",
     "skill": "communication",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"conveying the intentions with the appropriate framing of words"
   },
   {
     "sort_order": 65,
@@ -1614,7 +1614,7 @@
     "pride": "deliver",
     "skill": "communication",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"applying the word intonations to express the inner emotions"
   },
   {
     "sort_order": 66,
@@ -1635,7 +1635,7 @@
     "pride": "deliver",
     "skill": "communication",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"detailing of the sentence framing structure to display the intended idea"
   },
   {
     "sort_order": 67,
@@ -1665,7 +1665,7 @@
     "pride": "deliver",
     "skill": "communication",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"responding back in a diplomatic way"
   },
   {
     "sort_order": 68,
@@ -1686,7 +1686,7 @@
     "pride": "deliver",
     "skill": "communication",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"having fair idea about the exact meaning of the used words"
   },
   {
     "sort_order": 69,
@@ -1715,7 +1715,7 @@
     "pride": "deliver",
     "skill": "communication",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"requesting help using the aesthtic display of words"
   },
   {
     "sort_order": 70,
@@ -1736,7 +1736,7 @@
     "pride": "deliver",
     "skill": "communication",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"conveying the intentions in the assertive manner"
   },
 
   {
@@ -1763,7 +1763,7 @@
     "pride": "deliver",
     "skill": "communication",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"Voicing out the opinions without disturbing the harmony of the surroundings"
   },
   {
     "sort_order": 72,
@@ -1790,7 +1790,7 @@
     "pride": "deliver",
     "skill": "communication",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"requesting assistance for self hardship without blaming the source"
   },
   {
     "sort_order": 73,
@@ -1810,7 +1810,7 @@
     "pride": "engage",
     "skill": "collaboration",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Aligning to the greater cause more than self"
   },
   {
     "sort_order": 74,
@@ -1831,7 +1831,7 @@
     "pride": "engage",
     "skill": "collaboration",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"Contributing to the welfare of the team"
   },
   {
     "sort_order": 75,
@@ -1853,7 +1853,7 @@
     "pride": "engage",
     "skill": "collaboration",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"potraying the qualities of being compassionate in pratical use"
   },
   {
     "sort_order": 76,
@@ -1876,7 +1876,7 @@
     "pride": "engage",
     "skill": "collaboration",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Providing the possible support to others without any personal bias"
   },
   {
     "sort_order": 77,
@@ -1908,7 +1908,7 @@
     "pride": "engage",
     "skill": "collaboration",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Emphasizing the needs without offending the wrongdoings"
   },
   {
     "sort_order": 78,
@@ -1937,7 +1937,7 @@
     "pride": "engage",
     "skill": "collaboration",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"adapting to the prevailing circumstances to achieve purpose"
   },
   {
     "sort_order": 79,
@@ -1967,7 +1967,7 @@
     "pride": "engage",
     "skill": "collaboration",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"larifying differences and collaborate for higher pursuit"
   },
   {
     "sort_order": 80,
@@ -1994,7 +1994,7 @@
     "pride": "engage",
     "skill": "collaboration",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"handling difficullties times through team synergy"
   },
 
   {
@@ -2019,7 +2019,7 @@
     "pride": "engage",
     "skill": "collaboration",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"requesting for support without compromising the needs"
   },
   {
     "sort_order": 82,
@@ -2039,7 +2039,7 @@
     "pride": "engage",
     "skill": "leadership",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"contemplating the prerequisites for leadership charecteristics"
   },
   {
     "sort_order": 83,
@@ -2072,7 +2072,7 @@
     "pride": "engage",
     "skill": "leadership",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"delegating work without any ulterior motives"
   },
   {
     "sort_order": 84,
@@ -2104,7 +2104,7 @@
     "pride": "engage",
     "skill": "leadership",
     "intelligence": "awareness",
-    "skillDemand":""
+    "skillDemand":"exhibiting progressive leadership characteristics"
   },
   {
     "sort_order": 85,
@@ -2127,7 +2127,7 @@
     "pride": "engage",
     "skill": "leadership",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"initiating the leadership capabilities to inspire others"
   },
   {
     "sort_order": 86,
@@ -2151,7 +2151,7 @@
     "pride": "engage",
     "skill": "leadership",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"Providiing constructive feedback towards self betterment and wellbeing"
   },
   {
     "sort_order": 87,
@@ -2181,7 +2181,7 @@
     "pride": "engage",
     "skill": "leadership",
     "intelligence": "application",
-    "skillDemand":""
+    "skillDemand":"frequently performing activities which build credibility and trust among others"
   },
   {
     "sort_order": 88,
@@ -2211,7 +2211,7 @@
     "pride": "engage",
     "skill": "leadership",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"Forecasting the process to reap the best results from the available resources"
   },
   {
     "sort_order": 89,
@@ -2232,7 +2232,7 @@
     "pride": "engage",
     "skill": "leadership",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"discharging the duties and responsibilities of personal and organisation leadership"
   },
   {
     "sort_order": 90,
@@ -2262,6 +2262,6 @@
     "pride": "engage",
     "skill": "leadership",
     "intelligence": "advantage",
-    "skillDemand":""
+    "skillDemand":"acknowledging and respecting the difference of opinions"
   }
 ]

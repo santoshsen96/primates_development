@@ -4,9 +4,7 @@ const { auth } = require("../middleware/auth.middleware");
 const questionRouter = express.Router();
 //const questions = require("../output");
 const { questionBankModel } = require("../model/questionBank.model");
-//const {scores} = require("../variables/pride.variables");
-//const calculateOptionReadTime=require("../functions/optionReadTime")
-//console.log(questions.length);
+
 questionRouter.use(auth);
 
 questionRouter.post("/", async (req, res) => {
@@ -165,7 +163,7 @@ questionRouter.get("/testOption", async (req, res) => {
       prideGrowthPercentage = (
         ((totalMarks - totalMarksOfPreviousExam) / totalMarksOfPreviousExam) * //growth %
         100
-      ).toFixed(2);
+      ).toFixed(1);
     }
 
     res.status(200).json({
@@ -188,6 +186,7 @@ questionRouter.get("/testOption", async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
+
 questionRouter.get("/prideScore", async (req, res) => {
   try {
     const { userID,standard } = req.body;
@@ -511,7 +510,6 @@ questionRouter.get("/prideScore", async (req, res) => {
   }
 });
 
-
 questionRouter.get("/SkillContent", async (req, res) => {
   try {
     const { userID, standard } = req.body;
@@ -542,6 +540,36 @@ questionRouter.get("/SkillContent", async (req, res) => {
         awareness: { strength: [], weakness: [] },
         application: { strength: [], weakness: [] },
         advantage: { strength: [], weakness: [] }
+      },
+      mindset:{
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
+      },
+      attitude:{
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
+      },
+      expression:{
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
+      },
+      communication:{
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
+      },
+      collaboration:{
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
+      },
+      leadership:{
+        awareness: { strength: [], weakness: [] },
+        application: { strength: [], weakness: [] },
+        advantage: { strength: [], weakness: [] }
       }
     };
 
@@ -554,7 +582,7 @@ questionRouter.get("/SkillContent", async (req, res) => {
     }
 
     for (const answer of examData.answers) {
-      const question = questions.find((q) => q.sort_order == answer.sort_order);
+      const question = questions?.find((q) => q.sort_order == answer.sort_order);
 
       if (!question) {
         return res.status(404).json({ error: "Question not found for the answer" });
@@ -570,16 +598,31 @@ questionRouter.get("/SkillContent", async (req, res) => {
       }
 
       const { skill, intelligence, skillDemand } = question;
-      const strengthOrWeakness = selectedOption.mark >= 3 ? 'strength' : 'weakness';
+       //const strengthOrWeakness = selectedOption.mark > 3 ? 'strength' : 'weakness';
+       let strengthOrWeakness = '';
+       if (selectedOption.mark > 3) {
+         strengthOrWeakness = 'strength';
+       } else if (selectedOption.mark < 3) {
+         strengthOrWeakness = 'weakness';
+       }
 
+      // if (contentObject[skill] && contentObject[skill][intelligence]) {
+      //   contentObject[skill][intelligence][strengthOrWeakness].push(skillDemand);
+      // } else {
+      //   console.log("Invalid skill or intelligence:", skill, intelligence);
+      // }
       if (contentObject[skill] && contentObject[skill][intelligence]) {
-        contentObject[skill][intelligence][strengthOrWeakness].push(skillDemand);
+        if (!contentObject[skill][intelligence][strengthOrWeakness]) {
+          contentObject[skill][intelligence][strengthOrWeakness] = []; // Create the array if it doesn't exist
+        }
+        if (strengthOrWeakness) {
+          contentObject[skill][intelligence][strengthOrWeakness].push(skillDemand);
+        }
       } else {
         console.log("Invalid skill or intelligence:", skill, intelligence);
       }
     }
 
-    console.log(contentObject);
 
     // Send success response if no errors occurred
     res.status(200).json({ message: "Skill content retrieved successfully", contentObject });
