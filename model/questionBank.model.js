@@ -20,9 +20,10 @@ const questionBankSchema=mongoose.Schema({
 })
 
 const questionBankModel = mongoose.model("questionBankJunior", questionBankSchema);
-
+const questionBankModelSenior=mongoose.model("questionBankSenior",questionBankSchema)
 module.exports={
-    questionBankModel
+    questionBankModel,
+    questionBankModelSenior
 }
 
 // questionBankModel.insertMany(questionBank)

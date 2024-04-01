@@ -2,7 +2,7 @@
   {
     "sort_order": 1,
     "instruction":"read the question and answer accordingly",
-    "video":"",
+    "video":"https://github.com/santoshsen96/ice_cream/assets/112757984/2b548e85-c3e7-4294-81b0-fc43e23fd63e",
     "audio":"",
     "image":"",
     "question_body": "Teacher is giving you a homework. What would you pay attention to?",
@@ -23,7 +23,7 @@
   {
     "sort_order": 2,
     "instruction":"read the question and answer accordingly",
-    "video":"",
+    "video":"https://github.com/santoshsen96/ice_cream/assets/112757984/2b548e85-c3e7-4294-81b0-fc43e23fd63e",
     "audio":"",
     "image":"",
     "question_body": "You are in a park with your friends playing. You need to get away from the catcher. What are some things you will look for?",
@@ -54,7 +54,7 @@
     "instruction":"read the question and answer accordingly",
     "video":"",
     "audio":"",
-    "image":"",
+    "image":"https://github.com/santoshsen96/ice_cream/assets/112757984/d0914702-cd51-4da4-9c4d-3ec54fc03433",
     "question_body": "When you are crossing the road, what will you pay attention to?",
     "options": [
       { "option": "Right and left for vehicles", "mark": 4 },
@@ -76,7 +76,7 @@
     "sort_order": 4,
     "instruction":"See the Video and answer the question accordingly",
     "video":"",
-    "audio":"",
+    "audio":"https://drive.google.com/file/d/1Tftl7AhsWTSS_vCyx3jEQfb0Hg_Bts5E/view?usp=sharing",
     "image":"",
     "question_body": "How many ducks are shown in the video?",
     "options": [

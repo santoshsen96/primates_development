@@ -3,7 +3,7 @@ const { examDataModel } = require("../model/question.model");
 const { auth } = require("../middleware/auth.middleware");
 const questionRouter = express.Router();
 //const questions = require("../output");
-const { questionBankModel } = require("../model/questionBank.model");
+const { questionBankModel, questionBankModelSenior } = require("../model/questionBank.model");
 
 questionRouter.use(auth);
 
@@ -30,8 +30,10 @@ questionRouter.get("/testOption", async (req, res) => {
   try {
     const { userID,standard } = req.body;
     let questionModel;
-    if(standard===5 || standard===6){
-      questionModel = questionBankModel;
+    if(standard===5 || standard===6 ){
+       questionModel = questionBankModel;
+    }else if(standard==7 || standard===8){
+        questionModel=questionBankModelSenior
     }
     const questions = await questionModel.find();
     console.log(questions.length)
@@ -191,8 +193,10 @@ questionRouter.get("/prideScore", async (req, res) => {
   try {
     const { userID,standard } = req.body;
     let questionModel;
-    if(standard===5 || standard===6 || standard===9){
-      questionModel = questionBankModel;
+    if(standard===5 || standard===6 ){
+       questionModel = questionBankModel;
+    }else if(standard==7 || standard===8){
+        questionModel=questionBankModelSenior
     }
     const questions = await questionModel.find();
     console.log(questions.length)
@@ -514,8 +518,10 @@ questionRouter.get("/SkillContent", async (req, res) => {
   try {
     const { userID, standard } = req.body;
     let questionModel;
-    if (standard === 5 || standard === 6 || standard === 9) {
-      questionModel = questionBankModel;
+    if(standard===5 || standard===6 ){
+       questionModel = questionBankModel;
+    }else if(standard==7 || standard===8){
+        questionModel=questionBankModelSenior
     }
     const questions = await questionModel.find();
     console.log(questions.length);

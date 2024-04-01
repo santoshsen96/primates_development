@@ -1,26 +1,4 @@
 const calculateScores=(examData, questions)=> {
-    // const scores = {
-    //     perceiveScore: 0,
-    //     resolveScore: 0,
-    //     influenceScore: 0,
-    //     deliverScore: 0,
-    //     engageScore: 0,
-    //     perceiveContribution: 0,
-    //     resolveContribution: 0,
-    //     influenceContribution: 0,
-    //     deliverContribution: 0,
-    //     engageContribution: 0,
-    //     countOf5PointerPerceive: 0,
-    //     countOf5PointerResolve: 0,
-    //     countOf5PointerInfluence: 0,
-    //     countOf5PointerDeliver: 0,
-    //     countOf5PointerEngage: 0,
-    //     optionReadTimePerceive: 0,
-    //     optionReadTimeResolve: 0,
-    //     optionReadTimeInfluence: 0,
-    //     optionReadTimeDeliver: 0,
-    //     optionReadTimeEngage: 0
-    // };
 
     for (const answer of examData.answers) {
         const question = questions.find((q) => q.sort_order == answer.sort_order);
