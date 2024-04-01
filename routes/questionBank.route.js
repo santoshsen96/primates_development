@@ -2,29 +2,29 @@ const express = require("express");
 const { questionBankModel, questionBankModelSenior} = require("../model/questionBank.model");
 const {auth}=require('../middleware/auth.middleware')
 const questionBank=require("../output.json")
-const questionBankSenior=require('../senior.json')
+//const questionBankSenior=require('../senior.json')
 const questionBankRouter = express.Router();
 
-questionBankRouter.post('/addData', async (req, res) => {
-    try {
-        // Insert data from JSON file into MongoDB
-        await questionBankModel.insertMany(questionBank);
-        res.status(200).json({ message: 'Data added successfully' });
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({ error: 'Internal Server Error' });
-    }
-});
-questionBankRouter.post('/addDataSenior', async (req, res) => {
-    try {
-        // Insert data from JSON file into MongoDB
-        await questionBankModelSenior.insertMany(questionBankSenior);
-        res.status(200).json({ message: 'senior Data added successfully' });
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({ error: 'Internal Server Error' });
-    }
-});
+// questionBankRouter.post('/addData', async (req, res) => {
+//     try {
+//         // Insert data from JSON file into MongoDB
+//         await questionBankModel.insertMany(questionBank);
+//         res.status(200).json({ message: 'Data added successfully' });
+//     } catch (err) {
+//         console.error(err);
+//         res.status(500).json({ error: 'Internal Server Error' });
+//     }
+// });
+// questionBankRouter.post('/addDataSenior', async (req, res) => {
+//     try {
+//         // Insert data from JSON file into MongoDB
+//         await questionBankModelSenior.insertMany(questionBankSenior);
+//         res.status(200).json({ message: 'senior Data added successfully' });
+//     } catch (err) {
+//         console.error(err);
+//         res.status(500).json({ error: 'Internal Server Error' });
+//     }
+// });
 questionBankRouter.get("/questions",auth,async(req,res)=>{
     try {
         // Retrieve data from MongoDB
