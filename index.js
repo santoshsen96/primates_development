@@ -3,6 +3,7 @@ const app=express()
 const {connection}=require("./db")
 require("dotenv").config()
 const cors=require('cors')
+// const PORT = process.env.PORT || 300
 app.use(cors())
 
 app.use(express.json())
